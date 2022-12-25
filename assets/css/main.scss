@@ -2,8 +2,23 @@
 ---
 
 @import "no-style-please";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+
+* {box-sizing: border-box;}
+::selection {background-color: #f3f3f3;}
 
 body {
-  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+  color: #111;
+  line-height: 1.5;
+  padding: 0;
   }
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: inherit;
+  transition: 0.1s ease-in background;
+  }
+
+a:hover {background: #f3f3f3;}
