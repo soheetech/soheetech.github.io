@@ -4,21 +4,54 @@
 @import "no-style-please";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 
-* {box-sizing: border-box;}
-::selection {background-color: #f3f3f3;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #FFE57F;
+  opacity: 0.7;
+}
 
 body {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   color: #111;
   line-height: 1.5;
-  padding: 0;
   }
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.7);
   color: inherit;
-  transition: 0.1s ease-in background;
+  opacity: 0.7;
+  transition: 0.1s ease-in all;
   }
 
-a:hover {background: #f3f3f3;}
+a:hover {
+  border-bottom-color: rgba(17, 17, 17, 1);
+  opacity: 1;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.w {
+  max-width: 600px;
+  padding: 10rem 2rem;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
