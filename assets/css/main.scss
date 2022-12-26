@@ -47,6 +47,7 @@ body {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
   color: var(--color-black);
   line-height: 1.5;
+  letter-spacing: -0.01rem;
   }
 
 a {
@@ -148,6 +149,7 @@ a.type-button.type-text {
 }
 
 a.type-button.type-text:hover {
+  background: inherit;
   opacity: 1;
 }
 
@@ -168,15 +170,25 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
 
 .post-meta .post-title {
   font-size: var(--font-big);
+  margin-bottom: 0.2rem;
 }
 
-.post-meta time {
+.post-meta .post-category, .post-meta time {
   opacity: var(--color-opacity);
   font-size: var(--font-small);
 }
 
+.post-content .post-category {
+  margin-bottom: var(--space-basic);
+}
+
 
 /* post content */
+
+.post-content {
+  border-bottom: 1px solid var(--color-gray);
+  margin-bottom: var(--space-basic);
+}
 
 .post-content p {
   padding-bottom: var(--space-basic);
