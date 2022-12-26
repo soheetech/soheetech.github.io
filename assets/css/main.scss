@@ -19,12 +19,13 @@
   /* font */
   --font-size: 1rem;
   --font-small: 0.9rem;
+  --font-big: 1.2rem;
   
   /* button */
   --button-height: 2rem;
   
   /* size */
-  --base-space: 2rem;
+  --space-basic: 2rem;
 }
 
 
@@ -60,6 +61,7 @@ ul, ol, li {
 h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size);
   font-weight: normal;
+  margin: 0;
 }
 
 p {
@@ -71,7 +73,28 @@ p {
 
 .w {
   max-width: 600px;
-  padding: var(--base-space);
+  padding: var(--space-basic);
+}
+
+
+/* header & footer */
+
+header {
+  margin-bottom: 10rem;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  line-height: var(--button-height);
+}
+
+header .social {
+  float: right;
+}
+
+footer {
+  padding-top: 6rem;
 }
 
 
@@ -97,29 +120,17 @@ a.TypeBlank::after, .post-content a[target="_blank"]::after {
 }
 
 
-/* header */
-
-header {
-  margin-bottom: 10rem;
-  overflow: hidden;
-}
-
-header h1 {
-  float: left;
-  line-height: var(--button-height);
-}
-
-header .social {
-  float: right;
-}
-
-
 /* post header */
 
 .post-meta {
+  text-align: left;
   border-bottom: 1px dashed var(--color-gray);
-  padding-bottom: var(--base-space);
-  margin-bottom: var(--base-space);
+  padding-bottom: var(--space-basic);
+  margin-bottom: var(--space-basic);
+}
+
+.post-meta .post-title {
+  font-size: var(--font-big);
 }
 
 .post-meta time {
@@ -131,7 +142,7 @@ header .social {
 /* post content */
 
 .post-content p {
-  padding-bottom: var(--base-space);
+  padding-bottom: var(--space-basic);
 }
 
 .post-content a {
