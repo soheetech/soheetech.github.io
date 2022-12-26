@@ -4,11 +4,14 @@ layout: default
 
 <article>
   <div class="post-meta">
+    <div class="back-link">{%-include back_link.html-%}</div>
     <h2 class="post-category">{{ page.category }}</h2>
     <h3 class="post-title">{{ page.title }}</h3>
     <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
   </div>
   <div class="post-content">{{ content }}</div>
-  <div class="share">{%-include back_link.html-%}</div>
+  <div class="share">
+    <span class="back-link">{%-include back_link.html-%}</span>
+  </div>
 </article>
 
