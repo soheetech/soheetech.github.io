@@ -111,6 +111,10 @@ footer {
   padding-top: 6rem;
 }
 
+footer .copyright {
+  font-size: var(--font-small);
+}
+
 
 /* common */
 
@@ -121,7 +125,7 @@ footer {
 
 /* button */
 
-a.TypeButton {
+a.type-button {
   display: inline-block;
   font-size: var(--font-small);
   height: var(--button-height);
@@ -131,11 +135,11 @@ a.TypeButton {
   padding: 0 var(--space-sides);
 }
 
-a.TypeButton:hover {
+a.type-button:hover {
   background: var(--color-hover);
 }
 
-a.TypeButton.TypeText {
+a.type-button.type-text {
   border: 0;
   border-radius: 0;
   padding: 0;
@@ -143,11 +147,11 @@ a.TypeButton.TypeText {
   text-decoration: underline;
 }
 
-a.TypeButton.TypeText:hover {
+a.type-button.type-text:hover {
   opacity: 1;
 }
 
-a.TypeBlank::after, .post-content a[target="_blank"]::after {
+a.type-blank::after, .post-content a[target="_blank"]::after {
   content: "↗";
   padding-left: 4px;
 }
