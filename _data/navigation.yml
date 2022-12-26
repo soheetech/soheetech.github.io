@@ -2,8 +2,8 @@
   url: /
 - title: Posts
   url: /posts/
-- title: Categories
-  url: /categories/
+- title: Category
+  url: /category/
 - title: Tags
   url: /tags/
 - title: Search
