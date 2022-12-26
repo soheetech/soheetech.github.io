@@ -4,7 +4,7 @@ layout: default
 
 <article>
   <div class="post-meta">
-    <h2 class="post-category"><a href="">{{ page.category }}</a></h2>
+    <h2 class="post-category"><a href="{{ category.url | relative_url }}">{{ page.category }}</a></h2>
     <h3 class="post-title">{{ page.title }}</h3>
     <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
   </div>
