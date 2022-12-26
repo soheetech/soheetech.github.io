@@ -26,6 +26,7 @@
   
   /* size */
   --space-basic: 2rem;
+  --space-sides: 8px;
 }
 
 
@@ -89,12 +90,32 @@ header h1 {
   line-height: var(--button-height);
 }
 
+header h1 a {
+  display: flex;
+}
+
+header h1 svg {
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+header h1 span {
+  padding-left: var(--space-sides);
+}
+
 header .social {
   float: right;
 }
 
 footer {
   padding-top: 6rem;
+}
+
+
+/* common */
+
+.margin-right {
+  margin-right: var(--space-sides);
 }
 
 
@@ -107,11 +128,23 @@ a.TypeButton {
   line-height: var(--button-height);
   border: 1px solid var(--color-gray);
   border-radius: var(--button-height);
-  padding: 0 8px;
+  padding: 0 var(--space-sides);
 }
 
 a.TypeButton:hover {
   background: var(--color-hover);
+}
+
+a.TypeButton.TypeText {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  opacity: var(--color-opacity);
+  text-decoration: underline;
+}
+
+a.TypeButton.TypeText:hover {
+  opacity: 1;
 }
 
 a.TypeBlank::after, .post-content a[target="_blank"]::after {
