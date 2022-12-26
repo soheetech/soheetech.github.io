@@ -7,6 +7,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 
 
+/* variable */
+
+:root {
+  /* color */
+  --color-hover: #f3f3f3;
+  --color-opacity: 0.7;
+  --color-gray: #e5e5e5;
+  --color-black: #111;
+  
+  /* font */
+  --font-size: 1rem;
+  --font-small: 0.9rem;
+  
+  /* button */
+  --button-height: 2rem;
+  
+  /* size */
+  --base-space: 2rem;
+}
+
+
 /* reset */
 
 * {
@@ -17,12 +38,12 @@
 
 ::selection {
   background-color: #FFE57F;
-  opacity: 0.7;
+  opacity: var(--color-opacity);
 }
 
 body {
   font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
-  color: #111;
+  color: var(--color-black);
   line-height: 1.5;
   }
 
@@ -36,9 +57,13 @@ ul, ol, li {
   list-style: none;
 }
 
-h1 {
-  font-size: 1rem;
+h1, h2, h3, h4, h5, h6 {
+  font-size: var(--font-size);
   font-weight: normal;
+}
+
+p {
+  margin:0;
 }
 
 
@@ -46,7 +71,29 @@ h1 {
 
 .w {
   max-width: 600px;
-  padding: 2rem;
+  padding: var(--base-space);
+}
+
+
+/* button */
+
+a.TypeButton {
+  display: inline-block;
+  font-size: var(--font-small);
+  height: var(--button-height);
+  line-height: var(--button-height);
+  border: 1px solid var(--color-gray);
+  border-radius: var(--button-height);
+  padding: 0 8px;
+}
+
+a.TypeButton:hover {
+  background: var(--color-hover);
+}
+
+a.TypeBlank::after, .post-content a[target="_blank"]::after {
+  content: "↗";
+  padding-left: 4px;
 }
 
 
@@ -59,23 +106,38 @@ header {
 
 header h1 {
   float: left;
+  line-height: var(--button-height);
 }
 
-header a.contact {
+header .social {
   float: right;
 }
 
 
-/* post */
+/* post header */
 
-article a {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.7);
-  opacity: 0.7;
+.post-meta {
+  border-bottom: 1px dashed var(--color-gray);
+  padding-bottom: var(--base-space);
+  margin-bottom: var(--base-space);
 }
 
-article a:hover {
-  border-bottom-color: rgba(17, 17, 17, 1);
-  opacity: 1;
+.post-meta time {
+  opacity: var(--color-opacity);
+  font-size: var(--font-small);
 }
 
 
+/* post content */
+
+.post-content p {
+  padding-bottom: var(--base-space);
+}
+
+.post-content a {
+  border-bottom: 1px solid var(--color-black);
+}
+
+.post-content a:hover {
+  background: var(--color-hover);
+}
