@@ -58,7 +58,7 @@ body[a="dark"] { @include dark-appearance; }
   padding: 0;
 }
 
-::selection {
+::selection, *:target {
   background-color: var(--color-yellow);
   opacity: var(--color-opacity);
 }
@@ -84,18 +84,11 @@ a {
   transition: 0.1s ease-in all;
   }
 
-ul, ol, li {
-  list-style: none;
-}
+ul, ol, li { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size);
   font-weight: normal;
-  margin: 0;
-}
-
-p {
-  margin:0;
 }
 
 hr {
@@ -106,8 +99,6 @@ hr {
   &:before { content: '/////' }
   &:after { content: attr(data-content) '/////' }
 }
-
-*:target { background: var(--color-yellow); }
 
 table { width: 100%; }
 
