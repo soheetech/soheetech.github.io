@@ -159,7 +159,7 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
 }
 
 
-/* post header */
+/* post meta */
 
 .post-meta {
   text-align: left;
@@ -178,7 +178,7 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
   font-size: var(--font-small);
 }
 
-.post-content .post-category {
+.post-meta .post-category {
   margin-bottom: var(--space-basic);
 }
 
