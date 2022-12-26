@@ -59,7 +59,7 @@ body[a="dark"] { @include dark-appearance; }
 }
 
 ::selection {
-  background-color: #FFE57F;
+  background-color: var(--color-yellow);
   opacity: var(--color-opacity);
 }
 
@@ -112,14 +112,14 @@ hr {
 table { width: 100%; }
 
 table, th, td {
-  border: thin solid black;
+  border: thin solid var(--color-black);
   border-collapse: collapse;
   padding: 0.4rem;
 }
 
 code {
   color: white;
-  background: black;
+  background: var(--color-black);
 }
 
 div.highlighter-rouge code {
@@ -131,7 +131,7 @@ div.highlighter-rouge code {
 
 blockquote {
   font-style: italic;
-  border: thin solid black;
+  border: thin solid var(--color-black);
   padding: 1rem;
 
   p { margin: 0; }
