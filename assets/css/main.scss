@@ -6,13 +6,13 @@
 
 /* header & footer */
 
-header {
+header, footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10rem;
+  line-height: var(--button-height);
 }
 
-header h1 { line-height: var(--button-height); }
+header { margin-bottom: 10rem; }
 
 header h1 a { display: flex; }
 
@@ -23,9 +23,10 @@ header h1 svg {
 
 header h1 span { padding-left: var(--space-sides); }
 
-footer { padding-top: 6rem; }
-
-footer .copyright { font-size: var(--font-small); }
+footer {
+  padding-top: 6rem;
+  font-size: var(--font-small);
+}
 
 
 /* common */
