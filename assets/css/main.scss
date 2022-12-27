@@ -112,12 +112,10 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
   margin-bottom: 0.2rem;
 }
 
-.post-meta .post-category, .post-meta time {
+.post-meta time {
   opacity: var(--color-opacity);
   font-size: var(--font-small);
 }
-
-.post-meta .post-category { margin-bottom: var(--space-basic); }
 
 
 /* post content */
