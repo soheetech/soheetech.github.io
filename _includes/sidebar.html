@@ -8,7 +8,7 @@
         {% if node.layout == "category" %}
           {% assign nodesum = node.posts | size %}
           <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum }})</a></li>
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum[1] }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
