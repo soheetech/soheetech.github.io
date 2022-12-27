@@ -7,7 +7,7 @@
       {% if node.title != null %}
         {% if node.layout == "category" %}
          {% assign nodetotal = site.categories.node.title %}
-        <li><a class="category-link {% if page.url == node.url or page.category == node.title %}active{% endif %}"
+        <li><a class="category-link type-small {% if page.url == node.url or page.category == node.title %}active{% endif %}"
             href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodetotal.size }})</a></li>
         {% endif %}
       {% endif %}
