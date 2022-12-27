@@ -6,7 +6,7 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
-        {% assign nodetotal = node.value %}
+        {% assign nodetotal = node.values %}
         <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
             href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodetotal.size }})</a></li>
         {% endif %}
