@@ -23,6 +23,7 @@ sass:
   style: :compressed
 
 futrue: true
+timezone: Asia/Seoul
 
 plugins:
   - jekyll-feed
