@@ -3,13 +3,15 @@
     {% assign sum = site.posts | size %}
     <li><a href="{{ site.baseurl }}">All Posts({{ sum }})</a></li>
     {% assign pages_list = site.pages %}
+    {% for category in site.category %}
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
           <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ pages_list[1].size }})</a></li>
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ category[1].size }})</a></li>
         {% endif %}
       {% endif %}
+    {% endfor %}
     {% endfor %}
   </ul>
 </nav>
