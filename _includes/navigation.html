@@ -1,7 +1,6 @@
 <nav class="site-category">
   <ul>
-    {% assign sum = site.posts | size %}
-    <li><a href="{{ "/" }}">All Posts({{ sum }})</a></li>
+    <li><a href="{{ "/" }}">All Posts</a></li>
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
       {% if node.title != null %}
