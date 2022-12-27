@@ -64,6 +64,11 @@ footer {
 
 .margin-right { margin-right: var(--space-side); }
 
+.type-small {
+  opacity: var(--color-opacity);
+  font-size: var(--font-small);
+}
+
 
 /* button */
 
@@ -97,6 +102,8 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
   padding-left: 4px;
 }
 
+a.type-small:hover { opacity: 1; }
+
 
 /* post meta */
 
@@ -110,11 +117,6 @@ a.type-blank::after, .post-content a[target="_blank"]::after {
 .post-meta .post-title {
   font-size: var(--font-big);
   margin-bottom: 0.2rem;
-}
-
-.post-meta time {
-  opacity: var(--color-opacity);
-  font-size: var(--font-small);
 }
 
 
