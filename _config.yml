@@ -22,6 +22,8 @@ theme_config:
 sass:
   style: :compressed
 
+futrue: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
