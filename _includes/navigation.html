@@ -6,7 +6,7 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
-          {% assign category = site.categories[child.category] | where_exp: "item", "item.hidden != true" %}
+          {% assign category = site.categories %}
           <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ category.size }})</a></li>
         {% endif %}
