@@ -33,13 +33,13 @@ footer {
 
 #sidebar { margin-bottom: var(--space-basic); }
 
-.site-category > ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.site-category > ul li {
+  display: inline-block;
+  margin-left: var(--space-side);
 }
 
-.site-category > ul li { display: inline-block; }
+.site-category > ul li:first-child { margin-left: 0; }
+
 
 
 /* media */
@@ -58,10 +58,7 @@ footer {
   }
   
   .site-category > ul::-webkit-scrollbar { display: none; }
-  
-  .site-category > ul li { margin-right: var(--space-side); }
 }
-
 
 /* common */
 
