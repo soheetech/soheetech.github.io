@@ -5,8 +5,12 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
-          <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+          {% for postsum in site.category %}
+            {% if postsum[0] == node.title %}
+            <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
+            href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ postsum[1].size }})</a></li>
+            {% endif %}
+          {% endfor %}
         {% endif %}
       {% endif %}
     {% endfor %}
