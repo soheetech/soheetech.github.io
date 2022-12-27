@@ -6,9 +6,9 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
-          {% assign nodesum = node.posts | size %}
+          {% assign nodesum = node.posts %}
           <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum[1] }})</a></li>
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum[1].size }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
