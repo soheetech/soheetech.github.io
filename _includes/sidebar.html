@@ -4,11 +4,11 @@
     <li><a href="{{ "/" }}">All Posts({{ sum }})</a></li>
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
-    {% assign nodesum = node.posts | size %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
+          {% assign nodesum = node.posts | size %}
           <li><a class="category-link {% if page.url == node.url %}active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum.size }})</a></li>
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}({{ nodesum }})</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
