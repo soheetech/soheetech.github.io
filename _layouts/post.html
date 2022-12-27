@@ -4,9 +4,8 @@ layout: default
 
 <article>
   <div class="post-meta">
-    <h2 class="post-category"><a href="/category/{{ page.category }}">{{ page.category }}</a></h2>
-    <h3 class="post-title">{{ page.title }}</h3>
-    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    <h2 class="post-title">{{ page.title }}</h2>
+    <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time>
   </div>
   <div class="post-content">{{ content }}</div>
   <div class="share">
