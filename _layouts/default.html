@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "ko" }}">
   {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "light" }}" class="{% if page.layout == "home" or "category" %}yellow{% elseif page.layout == "about" %}green{% else %}default{% endif %}">
+  <body a="{{ site.theme_config.appearance | default: "light" }}" class="{% if page.layout == "home" or page.layout == "category" %}yellow{% elsif page.layout == "about" %}green{% else %}default{% endif %}">
     <main class="page-content" aria-label="Content">
       <header>
         <h1><a href="{{ "/" }}">{{ site.title | upcase }}</a></h1>
