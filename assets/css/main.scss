@@ -41,8 +41,13 @@ header nav > ul > li {
   position: relative;
 }
 
-header nav > ul > li > a { opacity: var(--color-opacity); }
-header nav > ul > li > a:hover, header nav > ul > li > a.active { opacity: 1; }
+header nav > ul > li > a { 
+  display: block;
+  line-height: 60px;
+  opacity: var(--color-opacity);
+}
+
+header nav > ul > li:hover > a, header nav > ul > li.active > a { opacity: 1; }
 
 header nav > ul > li > ul {
   position: absolute;
@@ -78,7 +83,7 @@ header nav > ul > li > ul > li > a {
   line-height: var(--button-height);
 }
 
-header nav > ul > li > ul > li > a:hover {
+header nav > ul > li > ul > li > a:hover, header nav > ul > li > ul > li.active > a {
   background: rgba(0,0,0,0.1);
   opacity: 1;
 }
