@@ -36,16 +36,41 @@ header nav > ul > li {
 
 header nav > ul > li > ul {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 60px;
+  left: -12px;
+  height: 0;
   text-align: left;
   background: var(--bg-blue);
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+header nav > ul > li:hover > ul {
+  height: auto;
+  z-index: 1000;
+  opacity: 1;
 }
 
 header nav > ul > li > ul > li {
   display: block;
-  line-height: 1.5;
+}
+
+header nav > ul > li > ul > li:first-child { margin-top: var(--space-sides); }
+header nav > ul > li > ul > li:last-child { margin-bottom: var(--space-sides); }
+
+header nav > ul > li > ul > li > a {
+  display: block;
+  font-size: var(--font-small);
+  opacity: var(--color-opacity);
   padding: 0 var(--space-side);
+  line-height: var(--button-height);
+}
+
+header nav > ul > li > ul > li > a:hover {
+  background: rgba(0,0,0,0.1);
+  opacity: 1;
 }
 
 footer {
