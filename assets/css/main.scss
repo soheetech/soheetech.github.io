@@ -4,6 +4,13 @@
 @import "no-style-please";
 
 
+/* page background color */
+
+body.default { background: var(--bg-default); }
+body.yellow { background: var(--bg-yellow); }
+body.green { background: var(--bg-green); }
+
+
 /* header & footer */
 
 main { padding-top: 60px; }
@@ -33,6 +40,9 @@ header nav > ul > li {
   margin: 0 var(--space-side);
   position: relative;
 }
+
+header nav > ul > li > a { opacity: var(--color-opacity); }
+header nav > ul > li > a:hover, header nav > ul > li > a.active { opacity: 1; }
 
 header nav > ul > li > ul {
   position: absolute;
