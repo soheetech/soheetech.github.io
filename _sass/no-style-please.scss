@@ -37,15 +37,16 @@ body[a="dark"] { @include dark-appearance; }
   --bg-green: #d4d4d2;
   
   /* font */
-  --font-size: 1rem;
-  --font-small: 0.9rem;
-  --font-big: 1.3rem;
+  --font-size: 14px;
+  --font-small: 13px;
+  --font-big: 16px;
   
   /* button */
   --button-height: 2rem;
   
   /* size */
   --space-basic: 2rem;
+  --space-big: 6rem;
   --space-side: 12px;
   --space-sides: 8px;
 }
@@ -70,7 +71,7 @@ html { height: 100%; }
 body {
   font-family: 'Belgrano', 'Hahmlet', serif;
   color: var(--color-black);
-  font-size: 14px;
+  font-size: var(--font-size);
   line-height: 1.5;
   letter-spacing: -0.01rem;
   margin: 0;
@@ -84,10 +85,15 @@ a {
   transition: 0.1s ease-in all;
   }
 
-ul, ol, li { list-style: none; }
+ul, ol, li { 
+  list-style: none;
+  font-size: 0;
+}
+
+li { font-size: var(--font-size); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: var(--font-size);
+  font-size: inherit;
   font-weight: normal;
 }
 
@@ -140,5 +146,5 @@ img {
 .w {
   max-width: 800px;
   margin: 0 auto;
-  padding: var(--space-basic);
+  padding: var(--space-big) var(--space-basic);
 }
