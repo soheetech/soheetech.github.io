@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "ko" }}">
   {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "light" }}" class="{% if page.layout == "home" or page.layout == "category" %}bg-yellow{% elsif page.layout == "about" %}bg-green{% else %}bg-default{% endif %}">
+  <body a="{{ site.theme_config.appearance | default: "light" }}" class="{% if page.layout == "home" or page.layout == "category" %}bg-yellow{% elsif page.title == "About" %}bg-green{% else %}bg-default{% endif %}">
     <main class="page-content" aria-label="Content">
       <header class="{% if page.layout == "home" or page.layout == "category" %}bg-yellow{% elsif page.layout == "about" %}bg-green{% else %}bg-default{% endif %}">
         <h1><a href="{{ "/" }}">{{ site.title | upcase }}</a></h1>
         <nav>
           <ul>
             <li{% if page.layout == "home" %} class="active"{% endif %}><a href="{{ "/" }}">Home</a></li>
-            <li{% if page.layout == "about" %} class="active"{% endif %}><a href="#">About</a></li>
-            <li{% if page.layout == "post" or page.layout == "category" %} class="active"{% endif %}><a href="#">Category</a>{%-include navigation.html-%}</li>
-            <li{% if page.layout == "tags" %} class="active"{% endif %}><a href="#">Tags</a></li>
+            <li{% if page.title == "About" %} class="active"{% endif %}><a href="{{ "/about" }}">About</a></li>
+            <li{% if page.layout == "post" or page.layout == "category" %} class="active"{% endif %}><a href="{{ "/category" }}">Category</a>{%-include navigation.html-%}</li>
+            <li{% if page.layout == "tags" %} class="active"{% endif %}><a href="{{ "/tags" }}">Tags</a></li>
           </ul>
         </nav>
         <div><a href="">search</a></div>
