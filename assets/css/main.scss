@@ -9,10 +9,18 @@
 header, footer {
   display: flex;
   justify-content: space-between;
-  line-height: var(--button-height);
+  height: 60px;
+  line-height: 60px;
 }
 
-header { margin-bottom: 10rem; }
+header { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: var(--bg-default);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
 header h1 a { display: flex; }
 
