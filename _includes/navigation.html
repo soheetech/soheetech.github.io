@@ -4,7 +4,7 @@
       {% if node.title != null %}
         {% if node.layout == "category" %}
         {% assign nodetotal = site.categories[node.title] %}
-        <li><a class="category-link{% if page.url == node.url or page.category == node.title %} active{% endif %}"
+        <li{% if page.url == node.url or page.category == node.title %} class="active"{% endif %}><a class="category-link"
             href="{{ site.baseurl }}{{ node.url }}">{{ node.title | capitalize}}({% if nodetotal.size != null %}{{ nodetotal.size }}{% else %}0{% endif %})</a></li>
         {% endif %}
       {% endif %}
