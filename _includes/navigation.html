@@ -1,5 +1,4 @@
-<nav class="site-category">
-  <ul>
+  <ul class="site-category">
     {% assign total = site.posts %}
     <li><a href="{{ "/" }}" class="type-small{% if page.layout == "home" %} active{% endif %}">All posts({{ total.size }})</a></li>
     {% assign pages_list = site.pages %}
@@ -13,4 +12,3 @@
       {% endif %}
     {% endfor %}
   </ul>
-</nav>
