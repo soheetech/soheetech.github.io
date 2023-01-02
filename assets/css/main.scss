@@ -28,9 +28,24 @@ header {
 
 header nav { text-align: center; }
 
-header nav li {
+header nav > ul > li {
   display: inline-block;
   margin: 0 var(--space-side);
+  position: relative;
+}
+
+header nav > ul > li > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  background: var(--bg-blue);
+}
+
+header nav > ul > li > ul > li {
+  display: block;
+  line-height: 1.5;
+  padding: 0 var(--space-side);
 }
 
 footer {
