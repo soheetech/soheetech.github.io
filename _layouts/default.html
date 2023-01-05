@@ -6,7 +6,7 @@
       <header>
         <h1><a href="{{ "/" }}">{{ site.title | upcase }}</a></h1>
         <nav>
-          <ul>
+          <ul class="zero">
             <li{% if page.layout == "home" %} class="active"{% endif %}><a href="{{ "/" }}">Home</a></li>
             <li{% if page.title == "About" %} class="active"{% endif %}><a href="{{ "/about" }}">About</a></li>
             <li{% if page.layout == "post" or page.layout == "category" or page.layout == "archive" %} class="active"{% endif %}><a href="{{ "/category" }}">Category</a>{%-include navigation.html-%}</li>
