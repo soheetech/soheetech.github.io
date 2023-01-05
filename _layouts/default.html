@@ -51,7 +51,7 @@
          searchInput: document.getElementById('search-input'),
          resultsContainer: document.getElementById('results-container'),
          json: '/search.json',
-         searchResultTemplate: '<li><a href="{url}" title="{desc}" target="_blank">{title}</a></li>',
+         searchResultTemplate: '<li><a href="{url}">{title}</a><span class="type-small">{date}</span></li>',
          noResultsText: 'No results found',
          limit: 10000,
          fuzzy: false,
