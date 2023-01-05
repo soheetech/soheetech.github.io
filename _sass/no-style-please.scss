@@ -25,30 +25,28 @@ body[a="dark"] { @include dark-appearance; }
 
 :root {
   /* color */
-  --color-hover: #f3f3f3;
-  --color-opacity: 0.7;
+  --color-white: #fff;
+  --color-yellow: #f5f3e4;
+  --color-blue: #b3c9bf;
+  --color-green: #125b30;
+  --color-light-gray: #f3f3f3;
   --color-gray: #e5e5e5;
   --color-black: #111;
+  --color-opacity: 0.7;
   
-  /* background color */
-  --bg-default: #fff;
-  --bg-yellow: #f3efec;
-  --bg-blue: #dddee0;
-  --bg-green: #d4d4d2;
-  
-  /* font */
+  /* font size */
   --font-size: 14px;
   --font-small: 13px;
   --font-big: 16px;
   
-  /* button */
-  --button-height: 2rem;
-  
   /* size */
-  --space-basic: 2rem;
-  --space-big: 6rem;
-  --space-side: 12px;
-  --space-sides: 8px;
+  --size-10: 0.3rem;
+  --size-20: 0.5rem;
+  --size-30: 0.8rem;
+  --size-40: 1rem;
+  --size-50: 2rem;
+  --size-60: 6rem;
+
 }
 
 
@@ -61,14 +59,16 @@ body[a="dark"] { @include dark-appearance; }
 }
 
 ::selection, *:target {
-  background-color: var(--color-hover);
+  background-color: var(--color-light-gray);
 }
 
-html, body { background: white; }
-
-html { height: 100%; }
+html { 
+  height: 100%;
+  background: white;
+}
 
 body {
+  background: var(--color-yellow);
   font-family: 'Belgrano', 'Hahmlet', serif;
   color: var(--color-black);
   font-size: var(--font-size);
@@ -83,14 +83,16 @@ a {
   text-decoration: none;
   color: inherit;
   transition: 0.1s ease-in all;
-  }
+}
 
 ul, ol, li { 
   list-style: none;
-  font-size: 0;
 }
 
-li { font-size: var(--font-size); }
+ul.zero, ol.zero, ul.zero > li, ol.zero > li {
+  font-size: 0;
+  line-height: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
@@ -111,7 +113,6 @@ table { width: 100%; }
 table, th, td {
   border: thin solid var(--color-black);
   border-collapse: collapse;
-  padding: 0.4rem;
 }
 
 code {
@@ -146,5 +147,5 @@ img {
 .w {
   max-width: 800px;
   margin: 0 auto;
-  padding: var(--space-big) var(--space-basic);
+  padding: var(--size-60) var(--size-50);
 }
