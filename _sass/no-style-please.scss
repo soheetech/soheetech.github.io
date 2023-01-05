@@ -94,6 +94,11 @@ ul.zero, ol.zero, ul.zero > li, ol.zero > li {
   line-height: 0;
 }
 
+ul.zero a, ol.zero a {
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: normal;
