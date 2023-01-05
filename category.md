@@ -1,5 +1,5 @@
 ---
 layout: archive
-title: All posts
+title: Category
 ---
 
