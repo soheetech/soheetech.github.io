@@ -43,7 +43,7 @@ header nav > ul > li {
   position: relative;
 }
 
-header nav > ul > li > a { 
+header nav > ul.zero > li > a { 
   display: block;
   line-height: 60px;
   opacity: var(--color-opacity);
@@ -80,7 +80,7 @@ header nav > ul > li:hover > a, header nav > ul > li.active > a { opacity: 1; }
   header nav > ul > li > ul > li:first-child { margin-top: var(--size-10); }
   header nav > ul > li > ul > li:last-child { margin-bottom: var(--size-10); }
 
-  header nav > ul > li > ul > li > a {
+  header nav > ul > li > ul.zero > li > a {
     display: block;
     font-size: var(--font-small);
     opacity: var(--color-opacity);
