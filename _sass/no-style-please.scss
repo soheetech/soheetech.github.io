@@ -63,11 +63,6 @@ body[a="dark"] { @include dark-appearance; }
   background-color: var(--color-light-gray);
 }
 
-html { 
-  height: 100%;
-  background: white;
-}
-
 body {
   background: var(--color-yellow);
   font-family: 'Belgrano', 'Hahmlet', serif;
