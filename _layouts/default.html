@@ -13,7 +13,14 @@
             <li{% if page.title == "Tags" %} class="active"{% endif %}><a href="{{ "/tags" }}">Tags</a></li>
           </ul>
         </nav>
-        <div><input id="search-input" type="text" placeholder="Search..." /><a href="#">search</a></div>
+        <div>
+          <form id="search-form" action="javascript:;">
+            <fieldset>
+              <input id="search-header" type="text" placeholder="" onkeydown="enterSearch()" />
+              <input id="search-button" type="submit" onclick="headerSearch()" value="Search" />
+            </fieldset>
+          </form>
+        </div>
       </header>
       <section class="w">{{ content }}</section>
       <footer>
@@ -47,16 +54,27 @@
     <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-    SimpleJekyllSearch({
-         searchInput: document.getElementById('search-input'),
-         resultsContainer: document.getElementById('results-container'),
-         json: '/search.json',
-         searchResultTemplate: '<li><span class="type-small">{date}</span><span>{category}</span><a href="{url}">{title}</a></li>',
-         noResultsText: 'No results found',
-         limit: 10000,
-         fuzzy: false,
-         exclude: ['{date}']
-    });
+      SimpleJekyllSearch({
+           searchInput: document.getElementById('search-input'),
+           resultsContainer: document.getElementById('results-container'),
+           json: '/search.json',
+           searchResultTemplate: '<li><span class="type-small">{date}</span><span>{category}</span><a href="{url}">{title}</a></li>',
+           noResultsText: 'No results found',
+           limit: 10000,
+           fuzzy: false,
+           exclude: ['{date}']
+      });
+
+      function enterSearch() {
+        if(event.keyCode == 13){
+          headerSearch();
+        }
+      }
+
+      function headerSearch() {
+        var searchw = document.getElementById("search-header").value;
+        window.location.href = "{{ site.baseurl }}/search/"+searchw;
+      }
     </script>
 
   </body>
