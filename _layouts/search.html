@@ -22,8 +22,8 @@ layout: default
   noResultsText: 'No results found',
   limit: 10000,
   fuzzy: false,
-  success: function(json){
-    this.searchInput.value = requests.get(url, params = "keyword");
+  success: function(){
+    this.searchInput.value = (new URLSearchParams(window.location.search)).get("keyword");
     this.searchInput.dispatchEvent(new KeyboardEvent("keyup"));
   },
   exclude: []
