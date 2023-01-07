@@ -23,12 +23,15 @@ layout: default
   noResultsText: 'No results found',
   limit: 10000,
   fuzzy: false,
+  success: function(){
+    document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
+    setTimeout(() => {
+     window.simpleJekyllSearch.search(document.getElementById("search-input").value);
+    }, 100);
+  },
   exclude: []
  });
  
- document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
- setTimeout(() => {
-  window.simpleJekyllSearch.search(document.getElementById("search-input").value);
- }, 100)
+
   
 </script>
