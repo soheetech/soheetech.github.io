@@ -16,7 +16,8 @@
         <div>
           <form id="search-form" action="{{ site.baseurl }}/search/" method="get" target="_self" enctype="multipart/form-data">
             <fieldset>
-              <input id="search-header" type="keyword" name="keyword" placeholder="" />
+              <legend>search</legend>
+              <input id="search-header" type="text" name="keyword" placeholder="" />
               <input id="search-button" type="submit" value="Search" />
             </fieldset>
           </form>
@@ -64,17 +65,6 @@
            fuzzy: false,
            exclude: ['{date}']
       });
-
-      function enterSearch() {
-        if(event.keyCode == 13){
-          headerSearch();
-        }
-      }
-
-      function headerSearch() {
-        var searchw = document.getElementById("search-header").value;
-        window.location.href = "{{ site.baseurl }}/search/?keyword="+searchw;
-      }
     </script>
 
   </body>
