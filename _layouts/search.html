@@ -25,7 +25,7 @@ layout: default
   exclude: ['{date}']
  });
  
- var searchk = string((new URLSearchParams(window.location.search)).get("keyword"));
- document.getElementById("search-input").value = searchk
+ var searchk = (new URLSearchParams(window.location.search)).get("keyword");
+ document.getElementById("search-input").value = searchk;
  sjs.search(document.getElementById("search-input").value);
 </script>
