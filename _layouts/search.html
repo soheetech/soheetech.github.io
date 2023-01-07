@@ -27,7 +27,7 @@ layout: default
     document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
     setTimeout(() => {
      window.simpleJekyllSearch.search(document.getElementById("search-input").value);
-    }, 100);
+    }, 500);
   },
   exclude: []
  });
