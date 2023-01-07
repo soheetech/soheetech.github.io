@@ -23,11 +23,8 @@ layout: default
   limit: 10000,
   fuzzy: false,
   success: function(json){
-   var searchk = (new URLSearchParams(window.location.search)).get("keyword");
-   if (searchk != null) {
-    this.searchInput.value = searchk;
+    this.searchInput.value = (new URLSearchParams(window.location.search)).get("keyword");
     this.searchInput.dispatchEvent(new KeyboardEvent("keyup"));
-   }
   },
   exclude: []
  });
