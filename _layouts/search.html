@@ -27,5 +27,5 @@ layout: default
  
  var searchk = (new URLSearchParams(window.location.search)).get("keyword");
  document.getElementById("search-input").value = searchk
- sjs.search(searchk);
+ sjs.search(document.getElementById("search-input").value);
 </script>
