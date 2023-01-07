@@ -23,7 +23,7 @@ layout: default
   limit: 10000,
   fuzzy: false,
   success: function(){
-    this.searchInput.value = (new URLSearchParams(window.location.search)).get("keyword");
+    document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
     this.searchInput.dispatchEvent(new KeyboardEvent("keyup"));
   },
   exclude: []
