@@ -23,7 +23,7 @@ layout: default
   limit: 10000,
   fuzzy: false,
   success: function(json){
-    this.searchInput.value = requests.get(url, "keyword");
+    this.searchInput.value = requests.get(url, params = "keyword");
     this.searchInput.dispatchEvent(new KeyboardEvent("keyup"));
   },
   exclude: []
