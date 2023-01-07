@@ -4,7 +4,7 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <div id="search-bar">
- <input id="search-input" type="text" placeholder="Search" />
+ <input id="search-input" type="text" placeholder="Search" value="" />
 </div>
 <div>
  <ul id="results-container"></ul>
@@ -25,7 +25,7 @@ layout: default
   exclude: ['{date}']
  });
  
- var searchk = (new URLSearchParams(window.location.search)).get("keyword");
+ var searchk = string((new URLSearchParams(window.location.search)).get("keyword"));
  document.getElementById("search-input").value = searchk
- sjs.search();
+ sjs.search(document.getElementById("search-input").value);
 </script>
