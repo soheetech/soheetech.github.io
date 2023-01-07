@@ -22,14 +22,10 @@ layout: default
   noResultsText: 'No results found',
   limit: 10000,
   fuzzy: false,
-  success: headerSearch(),
+  success: function(){
+    document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
+    document.getElementById("search-input").dispatchEvent(new KeyboardEvent("keyup"));
+  },
   exclude: []
  });
- 
- function headerSearch() {
-  var searchk = (new URLSearchParams(window.location.search)).get("keyword");
-  if (searchk != null) {
-   document.getElementById("search-input").value = searchk;
-   this.searchInput.dispatchEvent(new KeyboardEvent("keyup"));
-  }
 </script>
