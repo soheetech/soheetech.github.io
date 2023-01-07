@@ -21,58 +21,12 @@ body[a="dark"] { @include dark-appearance; }
 // see: https://stackoverflow.com/a/61265706
 
 
-/* variable */
-
-:root {
-  /* color */
-  --color-white: #fff;
-  --color-yellow: #f5f3e4;
-  --color-blue: #b3c9bf;
-  --color-green: #125b30;
-  --color-light-gray: #f3f3f3;
-  --color-gray: #e5e5e5;
-  --color-black: #111;
-  --color-opacity: 0.7;
-  
-  /* font size */
-  --font-size: 14px;
-  --font-small: 13px;
-  --font-big: 16px;
-  
-  /* size */
-  --size-10: 0.3rem;
-  --size-20: 0.5rem;
-  --size-30: 0.8rem;
-  --size-30m: -0.8rem
-  --size-40: 1rem;
-  --size-50: 2rem;
-  --size-60: 6rem;
-
-}
-
-
 /* reset */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-::selection, *:target {
-  background-color: var(--color-light-gray);
-}
-
-body {
-  background: var(--color-yellow);
-  font-family: 'Belgrano', 'Hahmlet', serif;
-  color: var(--color-black);
-  font-size: var(--font-size);
-  line-height: 1.5;
-  letter-spacing: -0.01rem;
-  margin: 0;
-  min-height: 100%;
-  overflow-wrap: break-word;
 }
 
 a {
@@ -145,12 +99,3 @@ img {
 fieldset { border: 0; }
 
 legend { display: none; }
-
-
-/* layout */
-
-.w {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: var(--size-60) var(--size-50);
-}
