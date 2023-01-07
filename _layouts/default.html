@@ -14,10 +14,10 @@
           </ul>
         </nav>
         <div>
-          <form id="search-form" action="javascript:;">
+          <form id="search-form" action="{{ site.baseurl }}/search/" method="get" target="_self" enctype="multipart/form-data">
             <fieldset>
-              <input id="search-header" type="text" placeholder="" onkeydown="enterSearch()" />
-              <input id="search-button" type="submit" onclick="headerSearch()" value="Search" />
+              <input id="search-header" type="keyword" placeholder="" />
+              <input id="search-button" type="submit" value="Search" />
             </fieldset>
           </form>
         </div>
@@ -73,7 +73,7 @@
 
       function headerSearch() {
         var searchw = document.getElementById("search-header").value;
-        window.location.href = "{{ site.baseurl }}/search/"+searchw;
+        window.location.href = "{{ site.baseurl }}/search/?keyword="+searchw;
       }
     </script>
 
