@@ -24,8 +24,7 @@ layout: default
   fuzzy: false,
   success: function(){
     document.getElementById("search-input").value = (new URLSearchParams(window.location.search)).get("keyword");
-   document.getElementById("search-input").setTimeout(1000);
-    document.getElementById("search-input").dispatchEvent(new KeyboardEvent("keydown"));
+    setTimeout(document.getElementById("search-input").dispatchEvent(new KeyboardEvent("keydown")), 1000);
   },
   exclude: []
  });
