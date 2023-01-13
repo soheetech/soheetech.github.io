@@ -4,17 +4,19 @@
   <body a="{{ site.theme_config.appearance | default: "light" }}">
     <main class="page-content" aria-label="Content">
       <header>
-        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-        <nav>
-          <ul class="zero">
-            <li{% if page.layout == "home" %} class="active"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li{% if page.title == "About" %} class="active"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-            <li{% if page.layout == "post" or page.layout == "category" or page.layout == "archive" %} class="active"{% endif %}><a href="{{ "/category" | relative_url }}">Categories</a>{%-include navigation.html-%}</li>
-            <li{% if page.title == "Tags" %} class="active"{% endif %}><a href="{{ "/tags" | relative_url }}">Tags</a></li>
-            <li><a href="{{ "#" | relative_url }}" title="Search" alt="Search">Search</a></li>
-            <li><a href="{{ "#" | relative_url }}" title="Menu" alt="Menu">Menu</a></li>
-          </ul>
-        </nav>
+        <div class="w col-6">
+          <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+          <nav>
+            <ul class="zero">
+              <li{% if page.layout == "home" %} class="active"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
+              <li{% if page.title == "About" %} class="active"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
+              <li{% if page.layout == "post" or page.layout == "category" or page.layout == "archive" %} class="active"{% endif %}><a href="{{ "/category" | relative_url }}">Categories</a>{%-include navigation.html-%}</li>
+              <li{% if page.title == "Tags" %} class="active"{% endif %}><a href="{{ "/tags" | relative_url }}">Tags</a></li>
+              <li><a href="{{ "#" | relative_url }}" title="Search" alt="Search">Search</a></li>
+              <li><a href="{{ "#" | relative_url }}" title="Menu" alt="Menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <section>{{ content }}</section>
       <footer>
