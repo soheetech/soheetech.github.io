@@ -99,6 +99,8 @@ header nav > ul.zero > li > a {
 
 header nav > ul > li:hover > a, header nav > ul > li.active > a { color: var(--color-periwinkle); }
 
+header nav a.ico-search { background-image: url('/assets/images/ico-search.png'); }
+
 
   /* category dropdown */
 
@@ -154,11 +156,13 @@ footer .social svg {
 
 /* common */
 
-.margin-right { margin-right: var(--space-side); }
-
-.type-small {
-  opacity: var(--color-opacity);
-  font-size: var(--font-small);
+a[class*="ico"] {
+  display: inline-block;
+  text-indent: -9999;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
 }
 
 
