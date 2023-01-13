@@ -12,8 +12,8 @@
               <li{% if page.title == "About" %} class="active"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
               <li{% if page.layout == "post" or page.layout == "category" or page.layout == "archive" %} class="active"{% endif %}><a href="{{ "/category" | relative_url }}">Categories</a>{%-include navigation.html-%}</li>
               <li{% if page.title == "Tags" %} class="active"{% endif %}><a href="{{ "/tags" | relative_url }}">Tags</a></li>
-              <li><a href="#" title="Search" alt="Search" class="ico-search">Search</a></li>
-              <li><a href="#" title="Menu" alt="Menu" class="ico-menu">Menu</a></li>
+              <li class="m-search"><a href="#" title="Search" alt="Search" class="ico-search">Search</a></li>
+              <li class="m-menu"><a href="#" title="Menu" alt="Menu" class="ico-menu">Menu</a></li>
             </ul>
           </nav>
         </div>
