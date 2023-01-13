@@ -46,9 +46,25 @@
 .col-12 { width: 100%; }
 
 
+/* common */
+
+a[class*="ico"] {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+
 /* layout */
 
 ::selection, *:target { background-color: var(--color-light-gray); }
+
+html, body, header, footer { width: 100%; }
 
 body {
   background: var(--color-white);
@@ -65,8 +81,6 @@ body {
 .w { margin: 0 auto; }
 
 main { padding-top: 60px; }
-
-header, footer, section { width: 100%; }
 
 header .w, footer .w {
   display: flex;
@@ -86,62 +100,83 @@ header {
   background: var(--color-white);
 }
 
-header nav { text-align: right; }
+  /* logo */
+  header h1 a { font-size: var(--font-big); }
 
-header nav > ul > li {
-  display: inline-block;
-  margin: 0 var(--size-30);
-  position: relative;
-}
-
-header nav > ul.zero > li > a { 
-  display: block;
-  line-height: 60px;
-}
-
-header nav > ul > li:hover > a, header nav > ul > li.active > a { color: var(--color-periwinkle); }
-
-header nav a.ico-search { background-image: url('/assets/images/common/ico-search.png'); }
-
-
-  /* category dropdown */
-
-  header nav > ul > li > ul {
-    position: absolute;
-    top: 60px;
-    left: var(--size-30m);
-    height: 0;
-    text-align: left;
-    background: var(--color-blue);
-    transition: 0.3s ease-in-out all;
-    opacity: 0;
-    z-index: -1;
-    overflow: hidden;
+  /* menu */
+  header nav > ul { 
+    display: flex;
+    text-align: right;
   }
 
-  header nav > ul > li:hover > ul {
-    height: auto;
-    z-index: 1000;
-    opacity: 1;
+  header nav > ul > li {
+    margin-left: var(--size-50);
+    position: relative;
   }
 
-  header nav > ul > li > ul > li { display: block; }
-
-  header nav > ul > li > ul > li:first-child { margin-top: var(--size-10); }
-  header nav > ul > li > ul > li:last-child { margin-bottom: var(--size-10); }
-
-  header nav > ul > li > ul.zero > li > a {
+  header nav > ul.zero > li > a { 
     display: block;
-    font-size: var(--font-small);
-    opacity: var(--color-opacity);
-    padding: 0 var(--size-20);
-    line-height: var(--size-50);
+    height:60px;
+    line-height: 60px; 
   }
 
-  header nav > ul > li > ul > li > a:hover, header nav > ul > li > ul > li.active > a {
-    background: rgba(0,0,0,0.1);
-    opacity: 1;
-  }
+  header nav > ul > li:hover > a, header nav > ul > li.active > a { color: var(--color-periwinkle); }
+
+  header nav a.ico-search { background-image: url('/assets/images/common/ico-search.png'); }
+  header nav a.ico-menu { background-image: url('/assets/images/common/ico-menu.png'); }
+
+    /* mobile */
+    header nav li.m-menu { display: none; }
+
+    @media (max-width: 600px) {
+      header nav > ul > li { display: none; }
+      header nav li.m-search, header nav li.m-menu { display: block; }
+    }
+
+    /* dropdown menu */
+    header nav > ul > li > ul {
+      position: absolute;
+      top: 60px;
+      left: var(--size-50m);
+      height: 0;
+      text-align: left;
+      background: var(--color-white);
+      transition: 0.3s ease-in-out all;
+      opacity: 0;
+      z-index: -1;
+      overflow: hidden;
+      border: 0;
+    }
+
+    header nav > ul > li:hover > ul {
+      height: auto;
+      z-index: 1000;
+      opacity: 1;
+      border: 1px solid var(--color-light-gray);
+    }
+
+    header nav > ul > li > ul > li { 
+      display: block;
+      margin-left: var(--size-10);
+      margin-right: var(--size-10);
+    }
+
+    header nav > ul > li > ul > li:first-child { margin-top: var(--size-10); }
+    header nav > ul > li > ul > li:last-child { margin-bottom: var(--size-10); }
+
+    header nav > ul > li > ul.zero > li > a {
+      display: block;
+      font-size: var(--font-small);
+      opacity: var(--color-opacity);
+      padding: 0 var(--size-30);
+      line-height: var(--size-50);
+      border-radius: var(--size-20);
+    }
+
+    header nav > ul > li > ul > li > a:hover, header nav > ul > li > ul > li.active > a {
+      background: var(--color-light-gray);
+      opacity: 1;
+    }
 
 
 /* footer */
@@ -156,16 +191,7 @@ footer .social svg {
 }
 
 
-/* common */
 
-a[class*="ico"] {
-  display: inline-block;
-  text-indent: -9999;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 16px;
-  height: 16px;
-}
 
 
 /* button */
