@@ -66,6 +66,8 @@ body {
 
 main { padding-top: 60px; }
 
+header, footer, section { width: 100%; }
+
 header .w, footer .w {
   display: flex;
   justify-content: space-between;
