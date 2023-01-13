@@ -4,7 +4,7 @@
   <body a="{{ site.theme_config.appearance | default: "light" }}">
     <main class="page-content" aria-label="Content">
       <header>
-        <div class="w col-6">
+        <div class="w col col-6">
           <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
           <nav>
             <ul class="zero">
@@ -21,7 +21,7 @@
       <section>{{ content }}</section>
       <footer>
         <div>
-          <div class="w col-6">
+          <div class="w col col-6">
             <div>
               <h6>Categories</h6>
               {%-include navigation.html-%}
@@ -42,20 +42,22 @@
           </div>
         </div>
         <div class="copy">
-          <p class="w col-6">
+          <p class="w col col-6">
            <span class="copyright">&copy; 2022-2023 Sohee Moon.</span>
            <span class="powered">Powered by <a href="{{ "https://github.com/" | relative_url }}">Github.</a></span>
           </p>
         </div>
       </footer>
       <div id="search-wrap">
-        <form id="search-form" action="{{ site.baseurl }}/search/" method="get" target="_self" enctype="multipart/form-data">
-          <fieldset>
-            <legend>search</legend>
-            <input id="search-header" type="text" name="keyword" placeholder="" />
-            <input id="search-button" type="submit" value="Search" />
-           </fieldset>
-        </form>
+        <div class="w col col-6">
+          <form id="search-form" action="{{ site.baseurl }}/search/" method="get" target="_self" enctype="multipart/form-data">
+            <fieldset>
+              <legend>search</legend>
+              <input id="search-header" type="text" name="keyword" placeholder="" />
+              <input id="search-button" type="submit" value="Search" />
+             </fieldset>
+          </form>
+        </div>
       </div>
     </main>
 
