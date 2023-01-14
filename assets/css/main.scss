@@ -33,9 +33,14 @@
 
 /* grid */
 
+.container {
+  padding-left: var(--size-50);
+  padding-right: var(--size-50);
+}
+
 .col { 
-  padding-left: var(--size-20);
-  padding-right: var(--size-20);
+  padding-left: var(--size-40);
+  padding-right: var(--size-40);
 }
 
 .col-2 { width: calc((100% / 12) * 2); }
@@ -274,43 +279,14 @@ footer { font-size: var(--font-small); }
   footer .powered a::after { display: none; }
 
 
+/* post list */
 
-
-
-
-/* button */
-
-a.type-button {
-  display: inline-block;
-  font-size: var(--font-small);
-  height: var(--button-height);
-  line-height: var(--button-height);
-  border: 1px solid var(--color-gray);
-  border-radius: var(--button-height);
-  padding: 0 var(--space-sides);
+.post-list {
+  display: flex;
+  padding-top: var(--size-60);
+  padding-bottom: var(--size-60);
 }
 
-a.type-button:hover { background: var(--color-hover); }
-
-a.type-button.type-text {
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  opacity: var(--color-opacity);
-  text-decoration: underline;
-}
-
-a.type-button.type-text:hover {
-  background: inherit;
-  opacity: 1;
-}
-
-a.type-blank::after, .post-content a[target="_blank"]::after {
-  content: "↗";
-  padding-left: 4px;
-}
-
-a.type-small:hover { opacity: 1; }
 
 
 /* post meta */
