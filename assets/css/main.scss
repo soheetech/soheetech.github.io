@@ -67,15 +67,24 @@
 
 /* common */
 
-a[class*="ico"] {
+a[class*="ico"], a[class*="social"] {
   display: inline-block;
+  background-repeat: no-repeat;
+}
+
+a[class*="ico"] {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 16px;
   height: 16px;
+  background-position: center;
+}
+
+a[class*="social"] {
+  padding-left: 18px;
+  background-position: left center;
+  background-size: var(--font-small);
 }
 
 a[target="_blank"]::after {
@@ -239,16 +248,20 @@ footer { font-size: var(--font-small); }
     font-size: var(--font-small);
   }
 
-  footer .sitemap a[class*="social"] { display: inline-block; }
-
   footer .sitemap a[class*="social"] svg {
     vertical-align: text-bottom;
     fill: currentColor;
     margin-right: var(--size-10);
   }
 
-  footer .sitemap a.social-mail { margin-bottom: var(--size-50); }
-  footer .sitemap a.social-rss { margin-left: var(--size-40); }
+  footer .sitemap a.social-mail { 
+    margin-bottom: var(--size-50);
+    background-image: url('/assets/images/common/ico-mail.png');
+  }
+  footer .sitemap a.social-rss { 
+    margin-left: var(--size-40);
+    background-image: url('/assets/images/common/ico-rss.png');
+  }
 
   /* copyright */
   footer .copy { 
