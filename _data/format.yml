@@ -3,3 +3,4 @@ frontend: FrontEnd
 blog: Blog
 jekyll: Jekyll
 ruby: Ruby
+example: Example
