@@ -16,7 +16,7 @@
         <li>
           <p class="post-date">{{- post.date | date: site.theme_config.date_format -}}</p>
           <p class="post-title"><span>{{ post.category | capitalize }}</span><a href="{{ post.url | relative_url }}">{{ post.title | capitalize }}</a>
-          <div><img src="{{ teaser | relative_url }}" /></div>
+          <div><img src="{{ post.teaser | relative_url }}" /></div>
         </li>
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
