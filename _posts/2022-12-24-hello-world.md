@@ -2,7 +2,11 @@
 layout: post
 title: "Tests More and More"
 category: example
-tags: [example, example0]
+tags: 
+  - example
+  - example0
+header:
+  teaser: "/assets/images/post/test.png"
 ---
 
 위원은 정당에 가입하거나 정치에 관여할 수 없다. 군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다. 언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다.
