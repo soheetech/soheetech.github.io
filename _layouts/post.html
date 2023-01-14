@@ -9,6 +9,11 @@ layout: default
   </div>
   <div class="post-content w col col-6">{{ content }}</div>
   <div class="share w col col-6">
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    {% endif %}
     <span class="back-link">{%-include back_link.html-%}</span>
   </div>
 </article>
