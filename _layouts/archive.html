@@ -25,6 +25,7 @@ layout: default
   $("[data-tag]").click((e) => {
     currentTag = e.target.dataset.tag;
     filterByTagName(currentTag);
+    updateQueryString(currentTag);
   })
 
   function filterByTagName(tagName) {
