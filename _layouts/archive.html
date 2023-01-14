@@ -6,13 +6,15 @@ layout: default
   <div class="w col col-6">
     <h2>{{ page.title }}</h2>
     <!-- category page -->
-    {%-include navigation.html-%}
+    {% if page.title == "Category" %}{%-include navigation.html-%}{% endif %}
     <!-- tags page -->
-    <div>
-      {% for tag in site.data.tags %}
-        <a class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</a>
-      {% endfor %}
-    </div>
+    {% if page.title == "Tags" %}
+      <div>
+        {% for tag in site.data.tags %}
+          <a class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
 
