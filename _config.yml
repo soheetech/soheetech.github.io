@@ -26,8 +26,6 @@ futrue: true
 timezone: Asia/Seoul
 locale: "ko-KR"
 
-teaser: "/assets/images/post/teaser.png"
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
