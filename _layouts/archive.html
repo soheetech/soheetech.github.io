@@ -22,9 +22,10 @@ layout: default
 
 {% if page.title == "Tags" %}
 <script type="text/javascript">
-  $("[data-tag]").click((e) => {
+  $("a[data-tag]").click((e) => {
     currentTag = e.target.dataset.tag;
     filterByTagName(currentTag);
+    return false;
   })
 
   function filterByTagName(tagName) {
