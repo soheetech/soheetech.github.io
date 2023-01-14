@@ -262,6 +262,7 @@ footer { font-size: var(--font-small); }
     margin-left: var(--size-40);
     background-image: url('/assets/images/common/ico-rss.png');
   }
+  footer .sitemap a.social-github { padding-left: 0; }
 
   /* copyright */
   footer .copy { 
