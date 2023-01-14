@@ -11,9 +11,9 @@
 {%-endif-%}
 
 {%- if posts.size > 0 -%}
-  <ul>
+  <ul class="container">
     {%- for post in posts limit: include.limit -%}
-        <li>
+        <li class="col col-3">
           <p class="post-date">{{- post.date | date: site.theme_config.date_format -}}</p>
           <p class="post-title"><span>{{ post.category | capitalize }}</span><a href="{{ post.url | relative_url }}">{{ post.title | capitalize }}</a>
           <div><img src="{{ post.teaser | relative_url }}" alt="{{ post.title | capitalize }}" /></div>
