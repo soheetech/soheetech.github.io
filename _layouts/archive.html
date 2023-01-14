@@ -2,6 +2,11 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-{%-include navigation.html-%}
+<div class="container page-category">
+  <div class="w col col-6">
+    <h2>{{ page.title }}</h2>
+    {%-include navigation.html-%}
+  </div>
+</div>
+
 {%-include post_list.html category=page.which_category-%}
