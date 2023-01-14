@@ -6,14 +6,19 @@ layout: default
   <div class="post-meta w col col-6">
     <p><time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time><span>{{ page.category | capitalize }}</span></p>
     <h3 class="post-title">{{ page.title | capitalize }}</h3>
+    <div class="post-tag">
+      {% if page.tags %}
+        {% for tag in page.tags %}
+          {% if site.data.tags contains tag %}
+            <a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
   <div class="post-content w col col-6">{{ content }}</div>
   <div class="share w col col-6">
-    {% if page.tags %}
-      {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
-      {% endfor %}
-    {% endif %}
+    
     <span class="back-link">{%-include back_link.html-%}</span>
   </div>
 </article>
