@@ -158,7 +158,7 @@ header {
     line-height: 60px; 
   }
 
-  header nav > ul > li:hover > a, header nav > ul > li.active > a { color: var(--color-periwinkle); }
+  header nav > ul > li:hover > a, header nav > ul > li.selected > a { color: var(--color-periwinkle); }
 
   header nav a.ico-search { background-image: url('/assets/images/common/ico-search.png'); }
   header nav a.ico-menu { background-image: url('/assets/images/common/ico-menu.png'); }
@@ -211,7 +211,7 @@ header {
       border-radius: var(--size-20);
     }
 
-    header nav > ul > li > ul > li > a:hover, header nav > ul > li > ul > li.active > a {
+    header nav > ul > li > ul > li > a:hover, header nav > ul > li > ul > li.selected > a {
       background: var(--color-light-gray);
       opacity: 1;
     }
@@ -246,7 +246,7 @@ footer { font-size: var(--font-small); }
   }
 
   footer .sitemap ul.zero a, footer .sitemap a[class*="social"], footer .powered a, footer .powered span { opacity: var(--color-opacity); }
-  footer .sitemap ul.zero a:hover, footer .sitemap ul.zero li.active a, footer .sitemap a[class*="social"]:hover, footer .powered a:hover { opacity: 1; }
+  footer .sitemap ul.zero a:hover, footer .sitemap ul.zero li.selected a, footer .sitemap a[class*="social"]:hover, footer .powered a:hover { opacity: 1; }
 
   footer .sitemap ul.zero a {
     line-height: var(--size-50);
