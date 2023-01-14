@@ -11,7 +11,7 @@ layout: default
     {% if page.title == "Tags" %}
       <div>
         {% for tag in site.data.tags %}
-          <a href="#" class="item-tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</a>
+          <a href="#" class="item-tag" data-tag="{{tag}}">{{ site.data.format[tag] }}<span class="total">{% if tag.size != null %}{{ tag.size }}{% else %}0{% endif %}</span></a>
         {% endfor %}
       </div>
     {% endif %}
