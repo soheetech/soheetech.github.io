@@ -1,5 +1,5 @@
 ---
 layout: archive
-title: Category
+title: Blog
 ---
 
