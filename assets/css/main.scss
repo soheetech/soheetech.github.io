@@ -141,7 +141,10 @@ header {
 }
 
   /* logo */
-  header h1 a { font-size: var(--font-big); }
+  header h1 a { 
+    font-size: var(--font-big); 
+    font-family: 'PT Serif', serif;
+  }
 
   /* menu */
   header nav > ul { 
