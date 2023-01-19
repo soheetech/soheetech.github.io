@@ -156,13 +156,6 @@ header {
 
   header nav > ul > li:hover > a, header nav > ul > li.selected > a, header #btn-search:hover { color: var(--color-point); }
 
-
-    /* mobile */
-    @media (max-width: 1200px) {
-      header nav > ul > li { display: none; }
-      header nav > ul > li.vh { display: block; }
-    }
-
     /* dropdown menu */
     header nav > ul > li > ul {
       position: absolute;
@@ -296,7 +289,4 @@ footer { font-size: var(--font-small); }
     font-size: 12px;
   }
 
-  .post-list .post-teaser {
-    border-radius: var(--size-40);
-    margin-top: var(--size-40);
-  }
+  .post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-40); }
