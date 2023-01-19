@@ -13,10 +13,14 @@
 {%- if posts.size > 0 -%}
   <ul class="container post-list">
     {%- for post in posts limit: include.limit -%}
-        <li class="col col-3"{% if post.tags %}{% for tag in post.tags %} data-{{ tag }}{% endfor %}{% endif %}>
+        <li class="col col-2-8"{% if post.tags %}{% for tag in post.tags %} data-{{ tag }}{% endfor %}{% endif %}>
           <p class="post-date">{{- post.date | date: site.theme_config.date_format -}}</p>
           <p class="post-title"><span>{{ post.category | capitalize }}</span><a href="{{ post.url | relative_url }}">{{ post.title | capitalize }}</a>
-          <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title | capitalize }}" /></a></div>
+          {% if post.teaser != null %}
+            <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title | capitalize }}" /></a></div>
+          {% else %}
+            <p class="post-excerpt"><a href="{{ post.url | relative_url }}">{{ post.excerpt }}</a></p>
+          {% endif %}
         </li>
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
