@@ -19,7 +19,7 @@
           {% if post.teaser != null %}
             <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title | capitalize }}" /></a></div>
           {% else %}
-            <p class="post-excerpt"><a href="{{ post.url | relative_url }}">{{ post.excerpt }}</a></p>
+            <div class="post-excerpt"><a href="{{ post.url | relative_url }}">{{ post.excerpt }}</a></div>
           {% endif %}
         </li>
     {%- endfor -%}
