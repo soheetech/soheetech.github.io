@@ -1,0 +1,7 @@
+/* screen max width 768px */
+
+/* header */
+
+header nav > ul > li { display: none; }
+header nav > ul > li.vh { display: block; }
+
