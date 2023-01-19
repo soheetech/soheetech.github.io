@@ -14,7 +14,7 @@
           </ul>
         </nav>
         <h1 class="col col-2-8"><a href="{{ "/" | relative_url }}">SOHEE <i>Tech Blog</i></a></h1>
-        <div class="col col-3-8"><a href="#" id="btn-search">Search</a></div>
+        <div class="col col-3-8"><a href="#" class="btn-search">Search</a></div>
       </header>
       <section>{{ content }}</section>
       <footer>
@@ -53,8 +53,21 @@ rss_feed
           </div>
         </div>
       </footer>
-      <div id="search-wrap" class="vh">
-        <div class="w col col-6">{%- include search.html -%}</div>
+      <!-- mobile menu -->
+      <div id="menu-wrap" class="container vh">
+        <nav class="w col col-8-8">
+          <ul class="zero">
+            <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
+            <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a></li>
+            <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
+            <li><a href="#" class="btn-search">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- search -->
+      <div id="search-wrap" class="container vh">
+        <div class="w col col-8-8">{%- include search.html -%}</div>
       </div>
     </main>
 
@@ -67,6 +80,29 @@ rss_feed
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
       {% endfor %}
     {% endif %}
+    
+    <script type="text/javascript">
+      // search
+      $('.btn-search').click(function(){
+        if($('#search-wrap').hasClass('vh') == true){
+          $('#search-wrap').removeClass('vh');
+          if($('#menu-wrap').hasClass('vh') == false){
+            $('#menu-wrap').addClass('vh');
+          }
+        } else {
+          $('#search-wrap').addClass('vh');
+        }
+      });
+      
+      // menu
+      $('#btn-menu').click(function(){
+        if($('#menu-wrap').hasClass('vh') == true){
+          $('#menu-wrap').removeClass('vh');
+        } else {
+          $('#menu-wrap').addClass('vh');
+        }
+      });
+    </script>
     
   </body>
 </html>
