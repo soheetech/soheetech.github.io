@@ -274,6 +274,7 @@ footer { font-size: var(--font-small); }
   /* list */
   .post-list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: var(--size-60);
     padding-bottom: var(--size-60);
   }
