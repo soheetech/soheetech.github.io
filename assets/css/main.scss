@@ -154,7 +154,7 @@ header {
     font-size: var(--font-small);
   }
 
-  header nav > ul > li:hover > a, header nav > ul > li.selected > a, header #btn-search:hover { color: var(--color-point); }
+  header nav > ul > li:hover > a, header nav > ul > li.selected > a, header .btn-search:hover { color: var(--color-point); }
 
     /* dropdown menu */
     header nav > ul > li > ul {
@@ -204,12 +204,12 @@ header {
   /* search */
   header div.col { text-align: right; }
 
-  header #btn-search::before {
+  header .btn-search::before {
     content: '(';
     padding-right: var(--size-10);
   }
 
-  header #btn-search::after {
+  header .btn-search::after {
     content: ')';
     padding-left: var(--size-10);
   }
