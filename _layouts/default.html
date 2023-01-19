@@ -4,59 +4,53 @@
   <body a="{{ site.theme_config.appearance | default: "light" }}">
     <main class="page-content" aria-label="Content">
       <header class="container">
-        <div class="w col col-6">
-          <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-          <nav>
-            <ul class="zero">
-              <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-              <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-              <li{% if page.layout == "post" or page.layout == "category" or page.title == "Category" %} class="selected"{% endif %}><a href="{{ "/category" | relative_url }}">Categories</a>{%-include navigation.html-%}</li>
-              <li{% if page.title == "Tags" %} class="selected"{% endif %}><a href="{{ "/tags" | relative_url }}">Tags</a></li>
-              <li class="m-search"><a href="#" title="Search" alt="Search" class="ico-search">Search</a></li>
-              <li class="m-menu"><a href="#" title="Menu" alt="Menu" class="ico-menu">Menu</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="col col-3-8">
+          <ul class="zero">
+            <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
+            <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a>{%-include category.html-%}</li>
+            <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
+            <li class="m-menu"><a href="#" title="Menu" alt="Menu" class="ico-menu">Menu</a></li>
+          </ul>
+        </nav>
+        <h1 class="col col-2-8"><a href="{{ "/" | relative_url }}">SOHEE <i>Tech Blog</i></a></h1>
+        <div class="col col-3-8"><a href="#" id="btn-search">Search</a></div>
       </header>
       <section>{{ content }}</section>
       <footer>
-        <div class="sitemap container">
-          <div class="w col col-6">
-            <div>
-              <h6><a href="{{ "/category" | relative_url }}">Categories</a></h6>
-              {%-include navigation.html-%}
-            </div>
-            <div>
-              <h6>Contact</h6>
-              <p><a href="mailto:{{ site.email }}" class="social-mail">{{ site.email }}</a></p>
-              <h6>Follow</h6>
-              <p>
-                <a href="{{ "https://github.com/soheetech" | relative_url }}" target="_blank" class="social-github">
-                  <svg height="19" viewBox="0 0 16 16" width="15" data-view-component="true">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                  </svg>GitHub</a>
-                <a href="{{ "/feed.xml" | relative_url }}" target="_blank" class="social-rss">RSS</a>
-              </p>
-            </div>
-          </div>
-        </div>
         <div class="copy container">
-          <p class="w col col-6">
-           <span class="copyright">&copy; 2022-2023 Sohee Moon.</span>
-           <span class="powered"><span>Powered by </span><a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github.</a></span>
-          </p>
+          <p class="w col col-8-8">&copy; 2022-2023 {{ site.title }}. Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github.</a></p>
+        </div>
+        <div class="sitemap container">
+          <div class="col col-2-8">
+            <h6>Index</h6>
+            <ul class="zero">
+              <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
+              <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
+              <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a>{%-include category.html-%}</li>
+              <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col col-4-8">
+            <h6><a href="{{ "/blog" | relative_url }}">Categories</a></h6>
+            {%-include category.html-%}
+          </div>
+          <div class="col col-2-8">
+            <h6>Contact</h6>
+            <p><a href="mailto:{{ site.email }}" class="social-mail">{{ site.email }}</a></p>
+            <h6 class="follow">Follow</h6>
+            <p>
+              <a href="{{ "https://github.com/soheetech" | relative_url }}" target="_blank" class="social-github">
+                <svg height="19" viewBox="0 0 16 16" width="15" data-view-component="true">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>GitHub</a>
+              <a href="{{ "/feed.xml" | relative_url }}" target="_blank" class="social-rss">RSS</a>
+            </p>
+          </div>
         </div>
       </footer>
       <div id="search-wrap">
-        <div class="w col col-6">
-          <form id="search-form" action="{{ site.baseurl }}/search/" method="get" target="_self" enctype="multipart/form-data">
-            <fieldset>
-              <legend>search</legend>
-              <input id="search-header" type="text" name="keyword" placeholder="" />
-              <input id="search-button" type="submit" value="Search" />
-             </fieldset>
-          </form>
-        </div>
+        <div class="w col col-6">{%- include search.html -%}</div>
       </div>
     </main>
 
