@@ -25,4 +25,4 @@ header nav > ul > li, header div.col-3-8, footer .copy .powered, footer .sitemap
 header nav > ul > li.vh { display: block; }
 
 /* width auto */
-header nav, header h1, footer .sitemap .col-2-8 { width: auto; }
+header nav, header h1, footer .sitemap .col-2-8 { width: auto !important; }
