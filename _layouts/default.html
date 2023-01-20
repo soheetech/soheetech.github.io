@@ -3,68 +3,11 @@
   {%- include head.html -%}
   <body a="{{ site.theme_config.appearance | default: "light" }}">
     <main class="page-content" aria-label="Content">
-      <header class="container">
-        <nav class="col col-3-8">
-          <ul class="zero">
-            <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-            <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a>{%-include category.html-%}</li>
-            <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-            <li class="vh"><a href="#" title="Menu" alt="Menu" id="btn-menu"><span class="bar bar-top"></span><span class="bar bar-btm"></span></a></li>
-          </ul>
-        </nav>
-        <h1 class="col col-2-8"><a href="{{ "/" | relative_url }}">SOHEE <i>Tech Blog</i></a></h1>
-        <div class="col col-3-8"><a href="#" class="btn-search">Search</a></div>
-      </header>
+      {%- include header.html -%}
       <section>{{ content }}</section>
-      <footer>
-        <div class="copy container">
-          <p class="w col col-8-8">&copy; 2022-2023 {{ site.title }}.<span class="powered"> Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github.</a></span></p>
-        </div>
-        <div class="sitemap container">
-          <div class="col col-2-8">
-            <h6>Index</h6>
-            <ul class="zero">
-              <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-              <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-              <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-              <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-            </ul>
-          </div>
-          <div class="col col-4-8">
-            <h6><a href="{{ "/blog" | relative_url }}">Categories</a></h6>
-            {%-include category.html-%}
-          </div>
-          <div class="col col-2-8">
-            <h6>Contact</h6>
-            <p><a href="mailto:{{ site.email }}" class="social-mail"><span class="material-symbols-outlined">
-mail
-</span>{{ site.email }}</a></p>
-            <h6 class="follow">Follow</h6>
-            <p>
-              <a href="{{ "https://github.com/soheetech" | relative_url }}" target="_blank" class="social-github">
-                <svg height="19" viewBox="0 0 16 16" width="15" data-view-component="true">
-                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>GitHub</a>
-              <a href="{{ "/feed.xml" | relative_url }}" target="_blank" class="social-rss"><span class="material-symbols-outlined">
-rss_feed
-</span>RSS</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      {%- include footer.html -%}
       <!-- mobile menu -->
-      <div id="menu-wrap" class="container vh">
-        <nav class="w col col-8-8">
-          <ul class="zero">
-            <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-            <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-            <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-            <li><a href="#" class="btn-search">Search</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div id="menu-wrap" class="container vh">{%- include menu_mobile.html -%}</div>
       <!-- search -->
       <div id="search-wrap" class="container vh">
         <div class="w col col-8-8">{%- include search.html -%}</div>
@@ -75,6 +18,9 @@ rss_feed
       {%-include goat_counter.html-%}
     {%-endif-%}
 
+    <!-- script -->
+    <script src="{{ site.baseurl }}/assets/js/main.js" type="text/javascript"></script>
+    
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
@@ -86,34 +32,11 @@ rss_feed
 
     <script type="text/javascript">
 
-      // search button
-      $('.btn-search').click(function(){
-        if($('#search-wrap').hasClass('vh') == true){
-          $('#search-wrap').removeClass('vh');
-          if($('#menu-wrap').hasClass('vh') == false){
-            $('#menu-wrap').addClass('vh');
-          }
-        } else {
-          $('#search-wrap').addClass('vh');
-        }
-        return false;
-      });
-      
-      // menu button
-      $('#btn-menu').click(function(){
-        if($('#menu-wrap').hasClass('vh') == true){
-          $('#menu-wrap').removeClass('vh');
-        } else {
-          $('#menu-wrap').addClass('vh');
-        }
-        return false;
-      });
-      
      window.simpleJekyllSearch = new SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       json: '/search.json',
-      searchResultTemplate: '<li><span class="type-small">{date}</span><span>{category}</span><a href="{url}">{title}</a></li>',
+      searchResultTemplate: '<li><span class="results-date">{date}</span><span class="results-category">{category}</span><a href="{url}" class="results-title">{title}</a></li>',
       noResultsText: 'No results found',
       limit: 10000,
       fuzzy: false
