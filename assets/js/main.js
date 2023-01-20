@@ -19,8 +19,12 @@ $(document).ready(function(){
     if($('#search-wrap').hasClass('vh') == false){
       $('#search-wrap').addClass('vh');
     }
+    if($('#menu-wrap').hasClass('vh') == false){
+      $('#btn-menu').addClass('open');
+    } else {
+      $('#btn-menu').removeClass('open');
+    }
     $('#menu-wrap').toggleClass('vh');
-    $('#btn-menu').toggleClass('open');
     return false;
   });
   
