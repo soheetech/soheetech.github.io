@@ -1,0 +1,24 @@
+/* post */
+
+
+/* list */
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: var(--size-60);
+  padding-bottom: var(--size-60);
+}
+
+.post-list .post-date, .post-list .post-title span { opacity: var(--color-opacity); }
+
+.post-list .post-date { margin-bottom: var(--size-10); }
+
+.post-list .post-title span::after {
+  content: '/';
+  padding-left: var(--size-10);
+  padding-right: var(--size-20);
+  font-size: 12px;
+}
+
+.post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-40); }
