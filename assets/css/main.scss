@@ -156,6 +156,18 @@ header {
 
   header nav > ul > li:hover > a, header nav > ul > li.selected > a, header .btn-search:hover { color: var(--color-point); }
 
+    /* menu bar */
+    header #btn-menu { padding-top: 25px; }
+
+    header #btn-menu .bar {
+      display: block;
+      width: var(--size-60);
+      height: 1px;
+      background: var(--color-black);
+    }
+
+    header #btn-menu .bar-top { margin-bottom: var(--size-20); }
+
     /* dropdown menu */
     header nav > ul > li > ul {
       position: absolute;
