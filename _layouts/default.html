@@ -10,7 +10,7 @@
             <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
             <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a>{%-include category.html-%}</li>
             <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-            <li class="vh"><a href="#" title="Menu" alt="Menu" id="btn-menu">Menu</a></li>
+            <li class="vh"><a href="#" title="Menu" alt="Menu" id="btn-menu"><span class="bar bar-top"></span><span class="bar bar-btm"></span></a></li>
           </ul>
         </nav>
         <h1 class="col col-2-8"><a href="{{ "/" | relative_url }}">SOHEE <i>Tech Blog</i></a></h1>
