@@ -1,7 +1,6 @@
 $("[data-tag]").click((e) => {
   currentTag = e.target.dataset.tag;
   filterByTagName(currentTag);
-  updateQueryString(currentTag);
 });
 
 function filterByTagName(tagName) {
@@ -23,8 +22,3 @@ $(document).ready(function() {
     filterByTagName(currentTag)
   }
 });
-    
-function updateQueryString(tagName) {
-  const path = '${location.protocol}//${location.host}${location.pathname}?tag=${tagName}';
-  window.history.replaceState({ path }, '', path);
-}
