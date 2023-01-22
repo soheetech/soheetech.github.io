@@ -11,7 +11,7 @@
 {%-endif-%}
 
 {%- if posts.size > 0 -%}
-  <ul class="container post-list">
+  <ul class="container post-list d-flex">
     {%- for post in posts limit: include.limit -%}
         <li class="col col-3-12"{% if post.tags %}{% for tag in post.tags %} data-{{ tag }}{% endfor %}{% endif %}>
           <p class="post-date">{{- post.date | date: site.theme_config.date_format -}}</p>
