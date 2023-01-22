@@ -2,7 +2,7 @@ $("[data-tag]").click((e) => {
   currentTag = e.target.dataset.tag;
   filterByTagName(currentTag);
   updateQueryString(currentTag);
-})
+});
 
 function filterByTagName(tagName) {
   $('.post-list > li.vh').removeClass('vh');
@@ -12,7 +12,7 @@ function filterByTagName(tagName) {
     }
   });
   $('.item-tag').removeClass('selected');
-  $('.item-tag[data-tag="'+${tagName}+'"]').addClass('selected');
+  $('.item-tag[data-tag="'+'${tagName}'+'"]').addClass('selected');
   return false;
 }
   
