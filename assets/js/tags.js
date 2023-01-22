@@ -5,7 +5,8 @@ $("[data-tag]").click((e) => {
 });
 
 function filterByTagName(tagName) {
-  $('.post-list > li.vh').removeClass('vh');
+  console.log('data-${tagName}');
+  $('.post-list > li').removeClass('vh');
   $('.post-list > li').each((index, elem) => {
     if (!elem.hasAttribute('data-${tagName}')) {
       $(elem).addClass('vh');
