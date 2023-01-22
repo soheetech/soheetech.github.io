@@ -1,5 +1,5 @@
 <footer>
-  <div class="sitemap container">
+  <div class="sitemap container d-flex">
     <div class="col col-3-12">
       <h6>Contact</h6>
       <p><a href="mailto:{{ site.email }}" class="social-mail"><span class="material-symbols-outlined">mail</span>{{ site.email }}</a></p>
@@ -18,8 +18,8 @@
       {%- include category.html -%}
     </div>
   </div>
-  <div class="copy container">
+  <div class="copy container d-flex">
     <p class="col col-6-12">&copy; 2022-2023 {{ site.author }}.</p>
-    <p class="col col-6-12 powered">Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github</a>&<a href="{{ "https://jekyllrb.com/" | relative_url }}" target="_blank">Jekyll</a></p>
+    <p class="col col-6-12 powered">Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github</a>&nbsp;&&nbsp;<a href="{{ "https://jekyllrb.com/" | relative_url }}" target="_blank">Jekyll</a></p>
   </div>
 </footer>
