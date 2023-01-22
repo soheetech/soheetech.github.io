@@ -6,11 +6,11 @@
       {%- include header.html -%}
       <section>{{ content }}</section>
       {%- include footer.html -%}
-      <!-- mobile menu -->
-      <div id="menu-wrap" class="container vh">{%- include menu_mobile.html -%}</div>
+      <!-- dropdown menu -->
+      <div id="menu-wrap" class="container vh"><div class="col col-12-12">{%- include navigation.html -%}</div></div>
       <!-- search -->
       <div id="search-wrap" class="container vh">
-        <div class="w col col-8-8">{%- include search.html -%}</div>
+        <div class="col col-12-12">{%- include search.html -%}</div>
       </div>
     </main>
 
