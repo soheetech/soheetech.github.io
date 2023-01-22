@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: "ko" }}">
   {%- include head.html -%}
   <body a="{{ site.theme_config.appearance | default: "light" }}">
-    <main class="page-content" aria-label="Content"{% if page.layout == "home" %} class="main"{% endif %}>
+    <main class="page-content{% if page.layout == "home" %} main{% endif %}" aria-label="Content">
       {%- include header.html -%}
       <section>{{ content }}</section>
       {%- include footer.html -%}
