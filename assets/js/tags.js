@@ -13,7 +13,6 @@ function filterByTagName(tagName) {
   });
   $('.item-tag').removeClass('selected');
   $('.item-tag[data-tag="'+'${tagName}'+'"]').addClass('selected');
-  return false;
 }
   
 $(document).ready(function() {
