@@ -4,7 +4,7 @@ $("[data-tag]").click((e) => {
   updateQueryString(currentTag);
 });
 
-function filterByTagName(tagName) {\
+function filterByTagName(tagName) {
   $('.post-list > li').removeClass('vh');
   $('.post-list > li').each((index, elem) => {
     if (!elem.hasAttribute('data-'+tagName)) {
