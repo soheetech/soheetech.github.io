@@ -5,13 +5,14 @@
 
 .post-list {
   padding-top: var(--size-100);
-  padding-bottom: var(--size-100);
-}
-
-.post-list .post-date, .post-list .post-category {
+  padding-bottom: var(--size-70);
   font-size: var(--font-small);
-  color: var(--color-gray);
 }
 
-.post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-40); }
+.post-list > li { margin-bottom: var(--size-80); }
+
+  /* post meta */
+  .post-list .post-date, .post-list .post-category { color: var(--color-gray); }
+  .post-list .post-title { margin-top: var(--size-10); }
+  .post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-50); }
 
