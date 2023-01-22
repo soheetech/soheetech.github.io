@@ -1,22 +1,6 @@
 <footer>
-  <div class="copy container">
-    <p class="w col col-8-8">&copy; 2022-2023 {{ site.title }}.<span class="powered"> Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github.</a></span></p>
-  </div>
   <div class="sitemap container">
-    <div class="col col-2-8">
-      <h6>Index</h6>
-      <ul class="zero">
-        <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-        <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-        <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-        <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-      </ul>
-    </div>
-    <div class="col col-4-8">
-      <h6><a href="{{ "/blog" | relative_url }}">Categories</a></h6>
-      {%-include category.html-%}
-    </div>
-    <div class="col col-2-8">
+    <div class="col col-3-12">
       <h6>Contact</h6>
       <p><a href="mailto:{{ site.email }}" class="social-mail"><span class="material-symbols-outlined">mail</span>{{ site.email }}</a></p>
       <h6 class="follow">Follow</h6>
@@ -25,5 +9,17 @@
         <a href="{{ "/feed.xml" | relative_url }}" target="_blank" class="social-rss"><span class="material-symbols-outlined">rss_feed</span>RSS</a>
       </p>
     </div>
+    <div class="col col-3-12">
+      <h6>Index</h6>
+      {%- include navigation.html -%}
+    </div>
+    <div class="col col-6-12">
+      <h6><a href="{{ "/blog" | relative_url }}">Categories</a></h6>
+      {%- include category.html -%}
+    </div>
+  </div>
+  <div class="copy container">
+    <p class="col col-6-12">&copy; 2022-2023 {{ site.author }}.</p>
+    <p class="col col-6-12 powered">Powered by <a href="{{ "https://github.com/" | relative_url }}" target="_blank">Github</a>&<a href="{{ "https://jekyllrb.com/" | relative_url }}" target="_blank">Jekyll</a></p>
   </div>
 </footer>
