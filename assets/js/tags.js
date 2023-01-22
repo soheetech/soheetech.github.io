@@ -12,7 +12,7 @@ function filterByTagName(tagName) {
     }
   });
   $('.item-tag').removeClass('selected');
-  $('.item-tag[data-tag=${tagName}]').addClass('selected');
+  $('.item-tag[data-tag="'+'${tagName}'+'"]').addClass('selected');
   return false;
 }
   
