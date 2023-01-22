@@ -82,12 +82,10 @@
 
 .m-auto { margin: 0 auto; }
 
-.d-flex {
+.d-flex, header nav ul.zero {
   display: flex;
-  
+  flex-wrap: wrap;
 }
-
-.j-between { justify-content: space-between; }
 
 a[target="_blank"]::after {
   content: "↗";
