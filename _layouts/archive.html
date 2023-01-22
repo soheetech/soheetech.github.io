@@ -1,57 +1,14 @@
 ---
 layout: default
+custom_js: tags
 ---
 
-<div class="container page-category">
-  <div class="w col col-6">
-    <h2>{{ page.title }}</h2>
-    <!-- category page -->
-    {% if page.title == "Category" %}{%-include navigation.html-%}{% endif %}
-    <!-- tags page -->
-    {% if page.title == "Tags" %}
-      <div>
-        {% for tag in site.data.tags %}
-          <a href="#" class="item-tag" data-tag="{{tag}}">{{ site.data.format[tag] }}<span class="count">{{ site.tags[tag] | size }}</span></a>
-        {% endfor %}
-      </div>
-    {% endif %}
+<article class="container">
+  <div class="col col-3-12">
+    <h4>Categories</h4>
+    {%-include category.html-%}
+    <h4>Tags</h4>
+    {%-include tags.html-%}
   </div>
-</div>
-
-{%-include post_list.html category=page.which_category-%}
-
-{% if page.title == "Tags" %}
-<script type="text/javascript">
-  $("[data-tag]").click((e) => {
-    currentTag = e.target.dataset.tag;
-    filterByTagName(currentTag);
-    updateQueryString(currentTag);
-  })
-
-  function filterByTagName(tagName) {
-    $('.vh').removeClass('vh');
-    $('.post-list > li').each((index, elem) => {
-      if (!elem.hasAttribute(`data-${tagName}`)) {
-        $(elem).addClass('vh');
-      }
-    });
-    $(`.item-tag`).removeClass('selected');
-    $(`.item-tag[data-tag=${tagName}]`).addClass('selected');
-    return false;
-  }
-  
-  $(document).ready(function() {
-    let currentTag = "";
-    const queryTag = (new URLSearchParams(window.location.search)).get("tag");
-    if (queryTag) {
-      currentTag = queryTag;
-      filterByTagName(currentTag)
-    }
-  });
-    
-  function updateQueryString(tagName) {
-    const path = `${location.protocol}//${location.host}${location.pathname}?tag=${tagName}`;
-    window.history.replaceState({ path }, '', path);
-  }
-</script>
-{% endif %}
+  <div class="col col-9-12">{%-include post_list.html category=page.which_category-%}</div>
+</article>
