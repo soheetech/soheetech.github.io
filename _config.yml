@@ -1,13 +1,13 @@
+# Site Settings
+locale: "ko-KR"
 title: "Sohee Tech Blog" # name of the site
 author: "Sohee Moon" # name of site's author
 email: "soheetech@gmail.com" # email of site's author
 url: "soheetech.github.io" # root address of the site
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
   ...
 
-
-# Serving
-baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 favicon: "favicon.ico" # name+extension of favicon (which must be put on the root folder)
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
@@ -15,7 +15,6 @@ favicon: "favicon.ico" # name+extension of favicon (which must be put on the roo
 # Outputting
 permalink: /:categories/:title/
 timezone: Asia/Seoul
-locale: "ko-KR"
 
 
 # Theme
@@ -41,3 +40,4 @@ futrue: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
