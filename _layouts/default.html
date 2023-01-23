@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "ko" }}">
   {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "light" }}">
-    <main class="page-content{% if page.layout == "home" %} main{% endif %}" aria-label="Content">
+  <body theme="{{ site.theme_config.appearance | default: "light" }}">
+    <main{% if page.layout == "home" %} id="main"{% endif %} class="page-content" aria-label="Content">
       {%- include header.html -%}
       <section>{{ content }}</section>
-      {%- include footer.html -%}
+      {% if page.layout != "home" %}
+        {%- include footer.html -%}
+      {% endif %}
       <!-- dropdown menu -->
       <div id="menu-wrap" class="container vh"><div class="col col-12-12">{%- include navigation.html -%}</div></div>
       <!-- search -->
