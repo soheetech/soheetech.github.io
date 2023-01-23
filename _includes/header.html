@@ -1,4 +1,4 @@
-<header class="container d-flex">
+<header class="container d-flex{% if page.layout == "home" %} br-black{% endif %}">
   <h1 class="col col-3-12"><a href="{{ "/" | relative_url }}">SOHEE <i>Tech Blog</i></a></h1>
   <div class="col col-6-12">{%- include navigation.html -%}</div>
   <div class="col col-3-12">
