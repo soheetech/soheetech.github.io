@@ -139,8 +139,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 61px;
   z-index: 999;
-  background: var(--color-white);
+  background: transparent;
+  border-bottom: 1px solid transparent;
 }
 
   /* logo */
