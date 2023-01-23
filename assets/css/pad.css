@@ -13,13 +13,13 @@
   padding-right: var(--size-20);
 }
 
-.col-2-8 { width: calc((100% / 3) * 1); }
-.col-3-8 { width: calc((100% / 3) * 1); }
-.col-6-8 { width: 100%; }
-
 
 /* display none */
-header nav > ul > li, footer .sitemap .col-4-8 { display: none; }
+footer .sitemap .col-6-12 { display: none; }
+
 
 /* display block */
-header nav > ul > li.vh { display: block; }
+
+
+/* footer */
+footer .sitemap .col-3-12 { width: 50%; }
