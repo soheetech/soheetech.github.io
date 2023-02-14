@@ -10,9 +10,11 @@
   
   /* color */
   --color-white: #fff;
+  --color-t-white: rgba(255,255,255,0.5);
   --color-point: #7575cf;
-  --color-light-gray: #f3f3f3;
-  --color-gray: rgba(17,17,17,0.7);
+  --color-l-gray: #f3f3f3;
+  --color-gray: #e0e0e0;
+  --color-d-gray: rgba(17,17,17,0.7);
   --color-black: #111;
   --color-opacity: 0.7;
   
@@ -141,14 +143,11 @@ header {
   left: 0;
   height: 61px;
   z-index: 999;
-  background: transparent;
-  border-bottom: 1px solid transparent;
+  background: var(--color-t-white);
+  border-bottom: 1px solid var(--color-gray);
   backdrop-filter: blur(10px);
 }
 
-header.br-black { border-color: var(--color-black); }
-header.b-white { background: var(--color-white); }
-header.b-twhite { background: rgba(255,255,255,0.5); }
 
   /* logo */
   header h1 a { 
@@ -159,7 +158,8 @@ header.b-twhite { background: rgba(255,255,255,0.5); }
   /* nav */
   header nav > ul > li { margin-right: var(--size-60); }
 
-  header nav a:hover, header nav li.selected > a, header .btn-search.in-search:hover { color: var(--color-point); }
+  header nav > ul > li a { color: var(--color-d-gray); }
+  header nav a:hover, header nav li.selected > a { color: var(--color-black); }
 
     /* menu bar */
     header #btn-menu {
