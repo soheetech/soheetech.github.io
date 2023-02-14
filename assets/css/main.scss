@@ -129,8 +129,8 @@ section { padding-top: 60px; }
 header, header ul.zero a, footer, footer ul.zero a { font-size: var(--font-small); }
 
 header, header nav > ul.zero > li > a, header .btn-search .material-symbols-outlined, footer .copy {
-  height: 60px;
-  line-height: 60px;
+  height: 61px;
+  line-height: 61px;
 }
 
 
@@ -140,7 +140,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 61px;
+  height: 62px;
   z-index: 999;
   background: var(--color-t-white);
   border-bottom: 1px solid var(--color-gray);
@@ -150,7 +150,7 @@ header {
 
   /* logo */
   header h1 a { 
-    font-size: 16px; 
+    font-size: 17px; 
     font-family: 'PT Serif', 'Georgia', serif;
   }
 
@@ -165,7 +165,7 @@ header {
     header #btn-menu {
       display: inline-block;
       width: var(--size-50);
-      height: 60px;
+      height: 61px;
       position: relative;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -218,7 +218,7 @@ header {
   /* search */
   header div.col-3-12 { text-align: right; }
   header .btn-search .material-symbols-outlined {
-    font-size: 24px;
+    font-size: 25px;
     padding: 0;
   }
 
