@@ -86,7 +86,6 @@
 
 .d-flex, header nav ul.zero {
   display: flex;
-  flex-wrap: wrap;
 }
 
 a[target="_blank"]::after {
@@ -156,6 +155,7 @@ header {
   }
 
   /* nav */
+  header nav ul.zero { flex-wrap: wrap; }
   header nav > ul > li { margin-right: var(--size-60); }
 
   header nav > ul > li a { color: var(--color-d-gray); }
