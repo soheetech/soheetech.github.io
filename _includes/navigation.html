@@ -1,9 +1,8 @@
 <nav>
   <ul class="zero">
-    <li{% if page.layout == "home" %} class="selected"{% endif %}><a href="{{ "/" | relative_url }}">Home</a></li>
-    <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">About</a></li>
-    <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-    <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-    <li class="vh"><a href="#" class="btn-search">Search</a></li>
+    <li{% if page.title == "About" %} class="selected"{% endif %}><a href="{{ "/about" | relative_url }}">소개</a></li>
+    <li{% if page.layout == "post" or page.layout == "category" or page.title == "Blog" %} class="selected"{% endif %}><a href="{{ "/blog" | relative_url }}">블로그</a></li>
+    <li{% if page.title == "Projects" %} class="selected"{% endif %}><a href="{{ "/projects" | relative_url }}">프로젝트</a></li>
+    <li class="vh"><a href="#" class="btn-search">검색</a></li>
   </ul>
 </nav>
