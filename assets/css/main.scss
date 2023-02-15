@@ -128,7 +128,7 @@ section { padding-top: 60px; }
 
 header, header ul.zero a, footer, footer ul.zero a { font-size: var(--font-small); }
 
-header, header nav > ul.zero > li > a, header .btn-search .material-symbols-outlined, footer .copy {
+header, header nav > ul.zero > li > a, header .btn-search .material-symbols-outlined {
   height: 61px;
   line-height: 61px;
 }
@@ -226,23 +226,9 @@ header {
 /* footer */
 
 footer {
-  border-top: 1px solid var(--color-black);
-  line-height: 1.5;
+  color: var(--color-d-gray);
 }
 
-  /* sitemap */
-  footer .sitemap {
-    padding-top: var(--size-70);
-    padding-bottom: var(--size-70);
-  }
-
-  footer h6 { margin-bottom: var(--size-40); }
-  footer h6.follow { margin-top: var(--size-60); }
-
-  footer .sitemap ul.zero a, footer .sitemap a[class*="social"], footer .copy { color: var(--color-gray); }
-  footer .sitemap ul.zero a:hover, footer .sitemap ul.zero li.selected a, footer .sitemap a[class*="social"]:hover { color: var(--color-point); }
-
-  footer .sitemap ul.zero a, footer .sitemap p  { line-height: var(--size-60); }
 
   footer .sitemap a[class*="social"] { margin-right: var(--size-30); }
 
