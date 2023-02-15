@@ -4,7 +4,7 @@
   <body theme="{{ site.theme_config.appearance | default: "light" }}">
     <main{% if page.layout == "home" %} id="main"{% endif %} class="page-content" aria-label="Content">
       {%- include header.html -%}
-      <section>{{ content }}</section>
+      <section{% if page.title == "About" %} class="bg-gray"{% endif %}>{{ content }}</section>
       {%- include footer.html -%}
       <!-- dropdown menu -->
       <div id="menu-wrap" class="container vh"><div class="col col-12-12">{%- include navigation.html -%}</div></div>
