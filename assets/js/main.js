@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // search button
+  // header search button
   $('.btn-search').click(function(){
     if($('#menu-wrap').hasClass('vh') == false){
       $('#menu-wrap').addClass('vh');
@@ -8,14 +8,14 @@ $(document).ready(function(){
     }
     $('#search-wrap').toggleClass('vh');
     if($('#search-wrap').hasClass('vh') == true){
-      $('header .btn-search').text('Search');
+      $('header .btn-search > span').text('search');
     } else {
-      $('header .btn-search').text('Close');
+      $('header .btn-search > span').text('close');
     }
     return false;
   });
       
-  // mobile menu button
+  // mobile dropdown menu
   $('#btn-menu').click(function(){
     if($('#search-wrap').hasClass('vh') == false){
       $('#search-wrap').addClass('vh');
