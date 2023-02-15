@@ -19,7 +19,7 @@ $(document).ready(function(){
   $('#btn-menu').click(function(){
     if($('#search-wrap').hasClass('vh') == false){
       $('#search-wrap').addClass('vh');
-      $('header .btn-search').text('Search');
+      $('header .btn-search > span').text('search');
     }
     $('#menu-wrap').toggleClass('vh');
     if($('#menu-wrap').hasClass('vh') == true){
