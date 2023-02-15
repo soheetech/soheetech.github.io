@@ -9,7 +9,9 @@
   font-size: var(--font-small);
 }
 
-.post-list > li { margin-bottom: var(--size-80); }
+#main .post-list { padding-left: calc((100% / 4) * 1); }
+
+.post-list > li { margin-bottom: var(--size-90); }
 
   /* post meta */
   .post-list .post-date, .post-list .post-category { color: var(--color-d-gray); }
