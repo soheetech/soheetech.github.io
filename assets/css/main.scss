@@ -10,7 +10,6 @@
   
   /* color */
   --color-white: #fff;
-  --color-t-white: rgba(255,255,255,0.5);
   --color-point: #7575cf;
   --color-l-gray: #f3f3f3;
   --color-gray: #e0e0e0;
@@ -121,9 +120,10 @@ body {
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+  padding-top: 62px;
 }
 
-section { padding-top: 60px; }
+body.bg-gray { background: var(--color-l-gray); }
 
 
 /* header & footer */
@@ -144,9 +144,8 @@ header {
   left: 0;
   height: 62px;
   z-index: 999;
-  background: var(--color-t-white);
+  background: var(--color-white);
   border-bottom: 1px solid var(--color-gray);
-  backdrop-filter: blur(10px);
 }
 
 
