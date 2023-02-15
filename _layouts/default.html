@@ -5,9 +5,7 @@
     <main{% if page.layout == "home" %} id="main"{% endif %} class="page-content" aria-label="Content">
       {%- include header.html -%}
       <section>{{ content }}</section>
-      {% if page.layout != "home" %}
-        {%- include footer.html -%}
-      {% endif %}
+      {%- include footer.html -%}
       <!-- dropdown menu -->
       <div id="menu-wrap" class="container vh"><div class="col col-12-12">{%- include navigation.html -%}</div></div>
       <!-- search -->
