@@ -17,7 +17,7 @@
 
 
 /* display none */
-header .col-6-12, header .btn-search.in-search, footer .sitemap .col-6-12, footer .sitemap .col-3-12:nth-child(2), footer .powered { display: none !important; }
+header .h-nav, header .btn-search.in-search { display: none !important; }
 
 
 /* display block */
