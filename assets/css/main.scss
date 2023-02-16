@@ -33,6 +33,7 @@
   --size-80: 80px;
   --size-90: 96px;
   --size-100: 120px;
+  --size-200: 240px;
  
 }
 
@@ -88,6 +89,8 @@
 .d-flex, header nav ul.zero {
   display: flex;
 }
+
+.f-wrap { flex-wrap: wrap; }
 
 a[target="_blank"]::after {
   content: "↗";
