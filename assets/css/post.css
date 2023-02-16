@@ -4,7 +4,7 @@
 /* list */
 
 .post-list {
-  padding-top: var(--size-100);
+  padding-top: var(--size-200);
   padding-bottom: var(--size-70);
   font-size: var(--font-small);
 }
