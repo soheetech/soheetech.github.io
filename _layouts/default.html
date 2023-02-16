@@ -9,7 +9,7 @@
       <!-- dropdown menu -->
       <div id="menu-wrap" class="container vh"><div class="col col-12-12">{%- include navigation.html -%}</div></div>
       <!-- search -->
-      <div id="search-wrap" class="container vh">{%- include search.html -%}</div>
+      {%- include search.html -%}
     </main>
 
     {%-if site.goat_counter and jekyll.environment == "production"-%}
