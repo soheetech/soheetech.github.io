@@ -13,6 +13,5 @@
 
   /* post meta */
   .post-list .post-date, .post-list .post-category { color: var(--color-d-gray); }
-  .post-list .post-title { margin-top: var(--size-10); }
   .post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-50); }
 
