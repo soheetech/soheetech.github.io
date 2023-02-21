@@ -4,7 +4,7 @@
   <body theme="{{ site.theme_config.appearance | default: "light" }}"{% if page.title == "About" %} class="bg-gray"{% endif %}>
     <main{% if page.layout == "home" %} id="main"{% endif %} class="page-content" aria-label="Content">
       {%- include header.html -%}
-      <section class="d-flex">
+      <section class="container d-flex">
         <article id="sidebar" class="col col-3-12">{%- include category.html -%}</article>
         <article class="col col-6-12">
           <div>{{ content }}</div>
