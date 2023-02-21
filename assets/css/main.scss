@@ -284,9 +284,3 @@ footer {
 /* section */
 section > article { padding-top: var(--size-80); }
 
-/* sidebar */
-#sidebar {
-  position: fixed;
-  height: 100%;
-  border-right: 1px solid var(--color-gray);
-}
