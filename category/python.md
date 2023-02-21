@@ -1,6 +1,6 @@
 ---
 
 layout: category
-title: example2
+title: Python
 
 ---
