@@ -281,7 +281,8 @@ footer {
     overflow-y: scroll;
   }
 
-section { padding-top: var(--size-80); }
+/* section */
+section > article { padding-top: var(--size-80); }
 
 /* sidebar */
 #sidebar {
