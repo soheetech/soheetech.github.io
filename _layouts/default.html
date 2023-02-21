@@ -5,12 +5,10 @@
     <main{% if page.layout == "home" %} id="main"{% endif %} class="page-content" aria-label="Content">
       {%- include header.html -%}
       <section class="container d-flex">
-        <article id="sidebar" class="container"><div class="col col-3-12">{%- include category.html -%}</div></article>
-        <article class="pl-3-12">
-          <div class="col col-6-12">
+        <article id="sidebar" class="col col-3-12">{%- include category.html -%}</article>
+        <article id="contents" class="col col-6-12">
             <div>{{ content }}</div>
             {%- include footer.html -%}
-          </div>
         </article>
       </section>
       <!-- dropdown menu -->
