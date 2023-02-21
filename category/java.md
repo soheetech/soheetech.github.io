@@ -1,7 +1,7 @@
 ---
 
 layout: category
-title: example
+title: JAVA
 
 ---
 
