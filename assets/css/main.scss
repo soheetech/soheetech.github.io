@@ -286,6 +286,7 @@ section > article { padding-top: var(--size-80); }
 
 /* sidebar */
 #sidebar {
-  min-height: 100%;
+  position: fixed;
+  height: 100%;
   border-right: 1px solid var(--color-gray);
 }
