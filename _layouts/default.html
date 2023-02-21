@@ -6,9 +6,11 @@
       {%- include header.html -%}
       <section class="container d-flex">
         <article id="sidebar" class="col col-3-12">{%- include category.html -%}</article>
-        <article class="col col-6-12">
-          <div>{{ content }}</div>
-          {%- include footer.html -%}
+        <article class="pl-3-12">
+          <div class="col col-6-12">
+            <div>{{ content }}</div>
+            {%- include footer.html -%}
+          </div>
         </article>
       </section>
       <!-- dropdown menu -->
