@@ -129,7 +129,10 @@ header {
   border-bottom: 1px solid var(--color-gray);
 }
 
-header .d-flex { justify-content: space-between; }
+header .d-flex {
+  justify-content: space-between;
+  height: 61px;
+}
 
 
   /* logo */
