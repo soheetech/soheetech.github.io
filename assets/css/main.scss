@@ -75,6 +75,13 @@ a[target="_blank"]::after {
   padding-left: var(--size-10);
 }
 
+a[class*="social"] svg {
+  vertical-align: text-bottom;
+  fill: currentColor;
+  margin-right: 5px;
+}
+
+
 .count {
   font-size: 11px;
   background: var(--color-light-gray);
@@ -150,7 +157,7 @@ header .d-flex {
   header nav > ul > li { margin-right: var(--size-60); }
 
   header nav > ul > li a { color: var(--color-d-gray); }
-  header nav a:hover, header nav li.selected > a { color: var(--color-black); }
+  header nav a:hover, header nav li.selected > a, footer a:hover { color: var(--color-black); }
 
     /* menu bar */
     header #btn-menu {
@@ -223,14 +230,7 @@ footer {
 }
 
 
-  footer .sitemap a[class*="social"] { margin-right: var(--size-30); }
-
-  footer .sitemap a[class*="social"] svg {
-    vertical-align: text-bottom;
-    fill: currentColor;
-    margin-right: 5px;
-  }
-
+  
 
 /* dropdown menu */
 
