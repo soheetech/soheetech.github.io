@@ -136,7 +136,12 @@ header .d-flex { justify-content: space-between; }
   header h1 a { 
     font-size: 17px; 
     font-family: 'PT Serif', 'Georgia', serif;
+    background: url('/assets/images/common/logo.png') no-repeat;
+    background-size: 17px 17px;
+    background-position: left center;
+    padding-left: 25px;
   }
+
 
   /* nav */
   header nav > ul > li { margin-right: var(--size-60); }
