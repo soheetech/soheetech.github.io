@@ -67,9 +67,7 @@ header .d-flex {
 
   /* nav */
   header nav > ul > li { margin-right: var(--size-60); }
-
-  header nav > ul > li a { color: var(--color-d-gray); }
-  header nav a:hover, header nav li.selected > a, footer a:hover { color: var(--color-black); }
+  header nav a:hover, header nav li.selected > a { color: var(--color-point); }
 
     /* menu bar */
     header #btn-menu {
@@ -140,7 +138,7 @@ footer {
   padding-bottom: var(--size-60);
 }
 
-
+footer a:hover { color: var(--color-black); }
   
 
 /* dropdown menu */
