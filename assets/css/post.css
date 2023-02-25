@@ -53,9 +53,6 @@
   margin-right: var(--size-40);
 }
 
-.page-post .w-post-tags h5::before {
-  content: '<span class="material-symbols-outlined">sell</span>'
-}
 
 
 /* post detail - contents */
