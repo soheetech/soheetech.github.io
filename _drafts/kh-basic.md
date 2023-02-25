@@ -11,9 +11,6 @@ tags:
   - theory
   - jvm
 
-date: 2023-02-25 15:29:00 +0900
-last_modified_at: 2023-02-25 15:29:00 +0900
-
 published: true
 
 ---
