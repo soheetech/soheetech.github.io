@@ -20,22 +20,3 @@
   /* post meta */
   .post-list .post-date, .post-list .post-category { color: var(--color-d-gray); }
   .post-list .post-teaser, .post-list .post-excerpt  { margin-top: var(--size-50); }
-
-
-
-/* meta */
-
-ul[class*="tags"].zero li { 
-  display: inline-block;
-  margin-right: var(--size-20);
-  margin-bottom: var(--size-20);
-}
-
-ul[class*="tags"].zero li a {
-  display: inline-block;
-  padding: var(--size-10) var(--size-30);
-  font-size: var(--font-small);
-  border-radius: var(--size-60);
-  background: var(--color-l-gray);
-  color: var(--color-d-gray);
-}
