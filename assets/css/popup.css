@@ -4,7 +4,7 @@
 #w-menu, #w-search {
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 999;
   }
 
   /* menu */
@@ -18,11 +18,27 @@
   /* search */
   #w-search {
     right: 0;
-    background: rgba(255,255,255,0.3);
+    width: 100%;
+    height: 100vh;
+  }
+
+  #w-search #bg-search {
+    background: var(--color-d-gray);
     backdrop-filter: blur(10px);
-    height: calc(100% - 60px);
-    padding-top: var(--size-100);
-    padding-bottom: var(--size-100);
+    width: 100%;
+    height: 100vh;
+  }
+
+  #w-search .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    max-width: 440px;
+    overflow-y: scroll;
+    padding: var(--size-70);
   }
 
   #search-bar input {
