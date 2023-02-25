@@ -104,11 +104,11 @@ a[class*="social"] svg {
 }
 
 .site-tags .count::before {
-  content: '(';
+  content: '( ';
 }
 
 .site-tags .count::after {
-  content: ')';
+  content: ' )';
 }
 
 
