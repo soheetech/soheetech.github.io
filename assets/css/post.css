@@ -53,6 +53,11 @@
   margin-right: var(--size-40);
 }
 
+.page-post .w-post-tags h5 .material-symbols-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
 
 
 /* post detail - contents */
