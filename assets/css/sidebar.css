@@ -1,0 +1,26 @@
+/* sidebar */
+
+
+#sidebar { padding-right: var(--size-50); }
+#sidebar > div { margin-bottom: var(--size-70); }
+
+#sidebar h4 { margin-bottom: var(--size-40); }
+
+#sidebar ul.zero a {
+  line-height: 1.8;
+  color: var(--color-d-gray);
+}
+
+#sidebar .tag ul.zero li { 
+  display: inline-block;
+  margin-right: var(--size-20);
+  margin-bottom: var(--size-20);
+}
+
+#sidebar .tag ul.zero li a {
+  display: inline-block;
+  padding: var(--size-10) var(--size-30);
+  font-size: var(--font-small);
+  border-radius: var(--size-60);
+  background: var(--color-l-gray);
+}
