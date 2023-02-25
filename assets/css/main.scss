@@ -65,6 +65,8 @@
   padding-right: var(--size-50);
 }
 
+#main .container { padding: 0; }
+
 .d-flex { display: flex; }
 .d-i-flex, header nav ul.zero { display: inline-flex; }
 
