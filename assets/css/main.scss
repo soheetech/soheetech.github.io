@@ -289,7 +289,7 @@ footer {
 
 #sidebar h4 { margin-bottom: var(--size-40); }
 
-#sidebar .category ul.zero a {
+#sidebar ul.zero a {
   line-height: 1.8;
   color: var(--color-d-gray);
 }
@@ -297,5 +297,9 @@ footer {
 #sidebar .tag ul.zero li { display: inline-block; }
 
 #sidebar .tag ul.zero li a {
-
+  display: inline-block;
+  padding: var(--size-20) var(--size-40);
+  font-size: var(--font-small);
+  border-radius: var(--size-60);
+  background: var(--color-l-gray);
 }
