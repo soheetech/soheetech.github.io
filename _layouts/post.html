@@ -6,7 +6,7 @@ layout: default
   <div class="col col-3-12 post-meta">
     <h4>Post Details</h4>
     <p>Published <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time></p>
-    <p>{{ page.last_modified_at }}</p>
+    <p>{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}</p>
     <h4>Category</h4>
     <p><a href="/category/{{ page.category }}">{{ page.category | capitalize }}</a></p>
     {% if page.tags %}
