@@ -76,6 +76,7 @@ a[class*="social"] svg {
 .container {
   max-width: 1240px;
   margin: 0 auto;
+  padding-top: var(--size-80);
 }
 
 .c-pd {
