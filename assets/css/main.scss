@@ -66,6 +66,9 @@
 .container {
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.container.c-pd {
   padding-left: var(--size-50);
   padding-right: var(--size-50);
 }
@@ -277,10 +280,22 @@ footer {
 
 /* sidebar */
 
-#sidebar { padding-top: var(--size-80); }
+#sidebar {
+  padding-top: var(--size-80);
+  padding-right: var(--size-50);
+}
 
 #sidebar > div { margin-bottom: var(--size-70); }
 
 #sidebar h4 { margin-bottom: var(--size-40); }
 
-#sidebar ul li a { color: var(--color-d-gray); }
+#sidebar .category ul.zero a {
+  line-height: 1.8;
+  color: var(--color-d-gray);
+}
+
+#sidebar .tag ul.zero li { display: inline-block; }
+
+#sidebar .tag ul.zero li a {
+
+}
