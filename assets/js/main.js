@@ -2,8 +2,8 @@ $(document).ready(function(){
 
   // header search button
   $('.btn-search').click(function(){
-    if($('#menu-wrap').hasClass('vh') == false){
-      $('#menu-wrap').addClass('vh');
+    if($('#w-menu').hasClass('vh') == false){
+      $('#w-menu').addClass('vh');
       $('#btn-menu').removeClass('open');
     }
     $('#w-search').toggleClass('vh');
@@ -20,8 +20,8 @@ $(document).ready(function(){
     if($('#w-search').hasClass('vh') == false){
       $('#w-search').addClass('vh');
     }
-    $('#menu-wrap').toggleClass('vh');
-    if($('#menu-wrap').hasClass('vh') == true){
+    $('#w-menu').toggleClass('vh');
+    if($('#w-menu').hasClass('vh') == true){
       $('#btn-menu').removeClass('open');
     } else {
       $('#btn-menu').addClass('open');
