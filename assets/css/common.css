@@ -97,10 +97,12 @@ a[class*="social"] svg {
   color: var(--color-point);
 }
 
-.count::before {
-  content: '( ';
-}
+.count::before { content: '( '; }
+.count::after { content: ' )'; }
 
-.count::after {
-  content: ' )';
-}
+
+/* h tag */
+
+h4 { margin-bottom: var(--size-40); }
+
+
