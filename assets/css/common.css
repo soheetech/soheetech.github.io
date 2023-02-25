@@ -76,13 +76,14 @@ a[class*="social"] svg {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding-top: var(--size-80);
 }
 
-.c-pd {
+.c-pd-side {
   padding-left: var(--size-50);
   padding-right: var(--size-50);
 }
+
+.c-pd-top { padding-top: var(--size-80); }
 
 .g-1-3 { width: calc( 100% / 3 ); }
 .g-2-3 { width: calc( ( 100% / 3 ) * 2 ); }
