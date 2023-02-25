@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<article class="container page-post d-flex">
-  <div class="col col-3-12 post-meta">
-    <h4>Post Details</h4>
-    <p>Published <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time></p>
-    <p>{{ page.last_modified_at | date: '%b %d, %Y' }}</p>
-    <h4>Category</h4>
-    <p><a href="/category/{{ page.category }}">{{ page.category | capitalize }}</a></p>
-    {% if page.tags %}
-      <h4>Tags</h4>
+<article class="container c-pd-top c-pd-side page-post">
+  <div class="post-meta">
+    <p><a href="/category/{{ page.category }}">{{ page.category }}</a></p>
+    <h3 class="post-title">{{ page.title }}</h3>
+    <p>Published <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time>, Last Updated <time>{{ page.last_modified_at | date: '%b %d, %Y' }}</time></p>
+  </div>
+  <div class="post-content">{{ content }}</div>
+  {% if page.tags %}
+    <div class="post-tags">
       <ul class="zero">
         {% for tag in page.tags %}
           {% if site.data.tags contains tag %}
@@ -18,11 +18,7 @@ layout: default
           {% endif %}
         {% endfor %}
       </ul>
-    {% endif %}
-  </div>
-  <div class="col col-6-12">
-    <h3 class="post-title">{{ page.title | capitalize }}</h3>
-    <div class="post-content">{{ content }}</div>
-  </div>
+    </div>
+  {% endif %}
 </article>
 
