@@ -29,6 +29,8 @@
 
 /* post detail - meta */
 
+.page-post { line-height: 1.8; }
+
 .page-post .post-meta { 
   padding-bottom: var(--size-50); 
   margin-bottom: var(--size-50); 
@@ -40,8 +42,15 @@
 
 .page-post .post-title { font-size: 32px; }
 
-
+.page-post .w-post-tags {
+  padding-top: var(--size-50); 
+  margin-top: var(--size-50); 
+  border-top: 1px dashed var(--color-gray);
+}
 
 /* post detail - contents */
 
 .page-post .post-content { font-size: var(--font-big); }
+
+
+
