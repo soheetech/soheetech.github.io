@@ -94,6 +94,7 @@ a[class*="social"] svg {
 .count {
   font-size: 11px;
   margin-left: var(--size-10);
+  color: var(--color-point);
 }
 
 .count::before {
