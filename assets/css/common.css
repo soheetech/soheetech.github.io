@@ -89,24 +89,17 @@ a[class*="social"] svg {
 .g-2-3 { width: calc( ( 100% / 3 ) * 2 ); }
 
 
-/* category & tag count */
+/* count */
 
 .count {
   font-size: 11px;
   margin-left: var(--size-10);
 }
 
-.site-category .count {
-  background: var(--color-l-gray);
-  padding: 1px 6px;
-  border-radius: 100%;
-  color: var(--color-point);
-}
-
-.site-tags .count::before {
+.count::before {
   content: '( ';
 }
 
-.site-tags .count::after {
+.count::after {
   content: ' )';
 }
