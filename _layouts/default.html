@@ -33,11 +33,11 @@
     <script type="text/javascript">
 
      window.simpleJekyllSearch = new SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
+      searchInput: document.getElementById('input-search'),
+      resultsContainer: document.getElementById('c-results'),
       json: '/search.json',
-      searchResultTemplate: '<li><span class="results-date">{date}</span><span class="results-category">{category}</span><a href="{url}" class="results-title">{title}</a></li>',
-      noResultsText: 'No results found',
+      searchResultTemplate: '<li><span class="s-date">{date}</span><span class="s-category">{category}</span><a href="{url}" class="s-title">{title}</a></li>',
+      noResultsText: '검색 결과가 없습니다.',
       limit: 10000,
       fuzzy: false
      });
