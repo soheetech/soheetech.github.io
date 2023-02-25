@@ -4,7 +4,6 @@
 /* list */
 
 .post-list {
-  padding-top: var(--size-80);
   padding-bottom: var(--size-70);
   font-size: var(--font-small);
 }
