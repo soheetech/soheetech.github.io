@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<div class="container c-pd d-flex">
+<div class="container c-pd-top c-pd-side d-flex">
   <div class="g-1-3">
     <h6>Contact</h6>
     <p><a href="mailto:{{ site.email }}" class="social-mail"><span class="material-symbols-outlined">mail</span>{{ site.email }}</a></p>
