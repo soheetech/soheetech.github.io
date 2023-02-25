@@ -1,21 +1,23 @@
 
 /* dropdown menu */
 
-#menu-wrap, #w-search {
+#w-menu, #w-search {
     position: fixed;
-    left: 0;
-    width: 100%;
+    top: 0;
     z-index: 99;
   }
 
   /* menu */
-  #menu-wrap {
+  #w-menu {
     top: 60px;
+    left: 0;
+    width: 100%;
     background: var(--color-white);
   }
 
   /* search */
   #w-search {
+    right: 0;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
     height: calc(100% - 60px);
