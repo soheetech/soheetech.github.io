@@ -2,13 +2,26 @@
 layout: default
 ---
 
-<ul class="container post-list">
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li class="col col-3">
-      <p class="post-date">{{- post.date | date: site.theme_config.date_format -}}</p>
-      <p class="post-title"><span>{{ post.category | capitalize }}</span><a href="{{ post.url | relative_url }}">{{ post.title | capitalize }}</a>
-      <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title | capitalize }}" /></a></div>
-    </li>
-  {%- endfor -%}
-</ul>
+
+<div class="container c-pd-top d-flex p-archive">
+  {%-include sidebar.html-%}
+  <article class="g-2-3">
+    <ul class="post-list d-flex f-wrap">
+      {% assign category = page.category | default: page.title %}
+      {% for post in site.categories[category] %}
+        <li>
+          <p class="post-category"><a href="/category/{{ post.category }}">{{ post.category }}</a></p>
+          <p class="post-date">{{ post.date | date: site.theme_config.date_format }}</p>
+          <p class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% if post.teaser != null %}
+            <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title }}" /></a></div>
+          {% else %}
+            <div class="post-excerpt"><a href="{{ post.url | relative_url }}">{{ post.excerpt }}</a></div>
+          {% endif %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </article>
+</div>
+
+
