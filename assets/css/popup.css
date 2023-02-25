@@ -1,0 +1,36 @@
+
+/* dropdown menu */
+
+#menu-wrap, #w-search {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  /* menu */
+  #menu-wrap {
+    top: 60px;
+    background: var(--color-white);
+  }
+
+  /* search */
+  #w-search {
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    height: calc(100% - 60px);
+    padding-top: var(--size-100);
+    padding-bottom: var(--size-100);
+  }
+
+  #search-bar input {
+    width: 100%;
+    height: var(--size-70);
+    border: 1px solid var(--color-black);
+    padding: 0 var(--size-30);
+  }
+
+  #results-wrap {
+    margin-top: var(--size-70);
+    overflow-y: scroll;
+  }
