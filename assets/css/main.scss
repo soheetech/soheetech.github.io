@@ -91,14 +91,24 @@ a[class*="social"] svg {
   margin-right: 5px;
 }
 
-
 .count {
   font-size: 11px;
+  margin-left: var(--size-10);
+}
+
+.site-category .count {
   background: var(--color-light-gray);
   padding: 1px 6px;
   border-radius: 100%;
-  margin-left: var(--size-10);
   color: var(--color-point);
+}
+
+.site-tags .count::before {
+  content: '(';
+}
+
+.site-tags .count::after {
+  content: ')';
 }
 
 
@@ -294,7 +304,11 @@ footer {
   color: var(--color-d-gray);
 }
 
-#sidebar .tag ul.zero li { display: inline-block; }
+#sidebar .tag ul.zero li { 
+  display: inline-block;
+  margin-right: var(--size-20);
+  margin-bottom: var(--size-20);
+}
 
 #sidebar .tag ul.zero li a {
   display: inline-block;
