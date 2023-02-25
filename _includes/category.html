@@ -1,5 +1,5 @@
   <ul class="site-category zero">
-    <li{% if page.title == "Blog" %} class="selected"{% endif %}><a href="/blog">All Posts</a></li>
+    <li{% if page.title == "Blog" %} class="selected"{% endif %}><a href="/blog">All Posts<span class="count">{{ site.posts | size }}</span></a></li>
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
       {% if node.title != null %}
