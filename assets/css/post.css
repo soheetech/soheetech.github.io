@@ -9,7 +9,10 @@
   font-size: var(--font-small);
 }
 
-.post-list > li { margin-bottom: var(--size-90); }
+.post-list > li {
+  padding: 0 var(--size-50);
+  margin-bottom: var(--size-90);
+}
 
   /* post meta */
   .post-list .post-date, .post-list .post-category { color: var(--color-d-gray); }
