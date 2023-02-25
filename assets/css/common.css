@@ -113,6 +113,11 @@ h4 { margin-bottom: var(--size-40); }
 
 /* meta */
 
+ul[class*="category"].zero a, ul[class*="tags"].zero a {
+  line-height: 1.8;
+  color: var(--color-d-gray);
+}
+
 ul[class*="tags"].zero li { 
   display: inline-block;
   margin-right: var(--size-20);
