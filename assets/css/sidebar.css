@@ -4,8 +4,6 @@
 #sidebar { padding-right: var(--size-50); }
 #sidebar > div { margin-bottom: var(--size-70); }
 
-#sidebar h4 { margin-bottom: var(--size-40); }
-
 #sidebar ul.zero a {
   line-height: 1.8;
   color: var(--color-d-gray);
