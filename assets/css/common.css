@@ -64,6 +64,8 @@ a[target="_blank"]::after {
   padding-left: var(--size-10);
 }
 
+a[class*="social"] { margin-right: var(--size-40); }
+
 a[class*="social"] svg {
   vertical-align: text-bottom;
   fill: currentColor;
