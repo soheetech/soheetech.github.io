@@ -3,7 +3,7 @@
 
 entries:
   - post_list:
-      limit: 10
+      limit: 50
       show_more: true
       show_more_text: more
       show_more_url: archive.html
