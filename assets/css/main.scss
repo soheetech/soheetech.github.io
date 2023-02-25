@@ -272,8 +272,10 @@ footer {
 
 /* sidebar */
 
+.p-archive article { width: calc( (100% / 3) * 2 ); }
+
 #sidebar {
-  width: calc( 100% / 3);
+  width: calc( 100% / 3 );
 }
 
 
