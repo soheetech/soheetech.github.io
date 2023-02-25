@@ -11,7 +11,7 @@ $(document).ready(function(){
   });
   
   // search close
-  $('#w-search').click(function(){
+  $('#bg-search').click(function(){
     $('#w-search').toggleClass('vh');
   });
       
