@@ -6,20 +6,19 @@ $(document).ready(function(){
       $('#menu-wrap').addClass('vh');
       $('#btn-menu').removeClass('open');
     }
-    $('#search-wrap').toggleClass('vh');
-    if($('#search-wrap').hasClass('vh') == true){
-      $('header .btn-search > span').text('search');
-    } else {
-      $('header .btn-search > span').text('close');
-    }
+    $('#w-search').toggleClass('vh');
     return false;
+  });
+  
+  // search close
+  $('#w-search').click(function(){
+    $('#w-search').toggleClass('vh');
   });
       
   // mobile dropdown menu
   $('#btn-menu').click(function(){
-    if($('#search-wrap').hasClass('vh') == false){
-      $('#search-wrap').addClass('vh');
-      $('header .btn-search > span').text('search');
+    if($('#w-search').hasClass('vh') == false){
+      $('#w-search').addClass('vh');
     }
     $('#menu-wrap').toggleClass('vh');
     if($('#menu-wrap').hasClass('vh') == true){
