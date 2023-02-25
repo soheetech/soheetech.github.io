@@ -48,6 +48,12 @@
   border-top: 1px dashed var(--color-gray);
 }
 
+.page-post .w-post-tags h5 {
+  padding: var(--size-10) 0;
+  margin-right: var(--size-40);
+}
+
+
 /* post detail - contents */
 
 .page-post .post-content { font-size: var(--font-big); }
