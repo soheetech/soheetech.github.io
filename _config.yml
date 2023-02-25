@@ -15,6 +15,8 @@ favicon: "favicon.ico" # name+extension of favicon (which must be put on the roo
 # Outputting
 permalink: /:categories/:title/
 timezone: Asia/Seoul
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
 
 
 # Theme
