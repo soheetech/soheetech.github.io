@@ -108,11 +108,6 @@ h4 { margin-bottom: var(--size-40); }
 
 /* category & tag */
 
-
-
-
-/* meta */
-
 ul[class*="category"].zero a, ul[class*="tags"].zero a {
   line-height: 1.8;
   color: var(--color-d-gray);
