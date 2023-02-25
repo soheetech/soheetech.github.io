@@ -4,12 +4,10 @@
 /* list */
 
 .post-list {
-  padding-top: var(--size-100);
+  padding-top: var(--size-80);
   padding-bottom: var(--size-70);
   font-size: var(--font-small);
 }
-
-#main .post-list { padding-top: var(--size-200); }
 
 .post-list > li {
   padding: 0 var(--size-50);
