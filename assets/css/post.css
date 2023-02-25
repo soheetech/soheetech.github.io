@@ -12,6 +12,7 @@
 .post-list > li {
   padding: 0 var(--size-50);
   margin-bottom: var(--size-90);
+  flex: calc( 100% / 3 );
 }
 
   /* post meta */
