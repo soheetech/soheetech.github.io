@@ -276,8 +276,11 @@ footer {
 
 #sidebar {
   width: calc( 100% / 3 );
+  padding-top: var(--size-80);
 }
 
+#sidebar > div { margin-bottom: var(--size-70); }
 
+#sidebar h4 { margin-bottom: var(--size-40); }
 
-#sidebar h4 {}
+#sidebar ul li a { color: var(--color-d-gray); }
