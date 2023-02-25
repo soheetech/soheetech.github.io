@@ -4,19 +4,22 @@ layout: default
 
 <article class="container c-pd-top c-pd-side page-post">
   <div class="post-meta">
-    <p><a href="/category/{{ page.category }}">{{ page.category }}</a></p>
+    <p class="post-category"><a href="/category/{{ page.category }}">{{ page.category }}</a></p>
     <h3 class="post-title">{{ page.title }}</h3>
-    <p>Published <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time>, Last Updated <time>{{ page.last_modified_at | date: '%b %d, %Y' }}</time></p>
+    <p class="post-date">Published <time datetime="{{ page.date }}" class="type-small">{{ page.date | date: site.theme_config.date_format }}</time> / Last Updated <time>{{ page.last_modified_at | date: '%b %d, %Y' }}</time></p>
   </div>
   <div class="post-content">{{ content }}</div>
   {% if page.tags %}
-    <ul class="post-tags zero">
-      {% for tag in page.tags %}
-        {% if site.data.tags contains tag %}
-          <li><a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <div class="d-flex">
+      <h5>Tags</h5>
+      <ul class="post-tags zero">
+        {% for tag in page.tags %}
+          {% if site.data.tags contains tag %}
+            <li><a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   {% endif %}
 </article>
 
