@@ -277,12 +277,7 @@ footer {
 
 /* sidebar */
 
-.p-archive article { width: calc( (100% / 3) * 2 ); }
-
-#sidebar {
-  width: calc( 100% / 3 );
-  padding-top: var(--size-80);
-}
+#sidebar { padding-top: var(--size-80); }
 
 #sidebar > div { margin-bottom: var(--size-70); }
 
