@@ -269,6 +269,7 @@ footer {
   }
 
 /* section */
+section.container { padding: 0; }
 section > article { padding-top: var(--size-80); }
 
 #sidebar { border-right: 1px solid var(--color-gray); }
