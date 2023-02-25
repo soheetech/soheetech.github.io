@@ -10,15 +10,13 @@ layout: default
   </div>
   <div class="post-content">{{ content }}</div>
   {% if page.tags %}
-    <div class="post-tags">
-      <ul class="zero">
-        {% for tag in page.tags %}
-          {% if site.data.tags contains tag %}
-            <li><a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+    <ul class="post-tags zero">
+      {% for tag in page.tags %}
+        {% if site.data.tags contains tag %}
+          <li><a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   {% endif %}
 </article>
 
