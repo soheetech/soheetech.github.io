@@ -128,4 +128,6 @@ ul[class*="tags"].zero li a {
   color: var(--color-d-gray);
 }
 
+ul[class*="tags"].zero li a::before { content: '#'; }
+
 ul[class*="category"].zero li.selected a, ul[class*="category"].zero li a:hover, ul[class*="tags"].zero li a.selected, ul[class*="tags"].zero li a:hover { color: var(--color-black); }
