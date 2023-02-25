@@ -12,8 +12,10 @@
 .post-list > li {
   padding: 0 var(--size-50);
   margin-bottom: var(--size-90);
-  width: calc( 100% / 3 );
+  width: calc( 100% / 2 );
 }
+
+#main .post-list > li { width: calc( 100% / 3 ); }
 
   /* post meta */
   .post-list .post-date, .post-list .post-category { color: var(--color-d-gray); }
