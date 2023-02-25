@@ -214,7 +214,6 @@ header .d-flex {
       }
 
   /* search */
-  header div.col-3-12 { text-align: right; }
   header .btn-search .material-symbols-outlined {
     font-size: 25px;
     padding: 0;
@@ -234,9 +233,8 @@ footer {
 
 /* dropdown menu */
 
-#menu-wrap, #search-wrap {
+#menu-wrap, #w-search {
     position: fixed;
-    top: 60px;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -244,12 +242,13 @@ footer {
 
   /* menu */
   #menu-wrap {
+    top: 60px;
     background: var(--color-white);
   }
 
   /* search */
-  #search-wrap {
-    background: rgba(255,255,255,0.5);
+  #w-search {
+    background: rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
     height: calc(100% - 60px);
     padding-top: var(--size-100);
@@ -270,7 +269,5 @@ footer {
 
 /* section */
 section.container { padding: 0; }
-section > article { padding-top: var(--size-80); }
 
-#sidebar { border-right: 1px solid var(--color-gray); }
 
