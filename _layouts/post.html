@@ -15,7 +15,7 @@ layout: default
       <ul class="post-tags zero">
         {% for tag in page.tags %}
           {% if site.data.tags contains tag %}
-            <li><a href="/tags/?tag={{ tag }}" class="item-tag"><span class="material-symbols-outlined">label_important</span> {{ site.data.format[tag] }}</a></li>
+            <li><a href="/tags/?tag={{ tag }}" class="item-tag">{{ site.data.format[tag] }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
