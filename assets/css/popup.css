@@ -59,8 +59,8 @@
 
   #btn-s-close {
     position: absolute;
-    right: 40px;
-    top: var(--size-70);
+    right: 41px;
+    top: 47px;
   }
 
   #btn-s-close .material-symbols-outlined {
