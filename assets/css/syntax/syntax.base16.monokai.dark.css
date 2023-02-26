@@ -3,7 +3,7 @@ div.highlighter-rouge, figure.highlight {
   margin-bottom: var(--size-50);
   font-size: var(--font-size);
   line-height: 1.8;
-  border-radius: var(--size-50);
+  border-radius: var(--size-40);
 }
 
  /* line numbers*/
@@ -27,6 +27,7 @@ div.highlighter-rouge, figure.highlight {
 .highlight, .highlight .w {
   color: #f8f8f2;
   background-color: #272822;
+  border-radius: var(--size-40);
 }
 .highlight .err {
   color: #272822;
