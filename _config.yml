@@ -50,6 +50,7 @@ last-modified-at:
     date-format: '%b %d, %y'
 
 # rouge
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
