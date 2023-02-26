@@ -71,12 +71,12 @@
 .post-content > ul { margin-bottom: var(--size-70); }
 .post-content > ul > li::before {
   content: '•';
-  padding-right: var(--size-10);
+  padding-right: var(--size-20);
 }
 .post-content > ul > li > ul > li { padding-left: var(--size-30); }
 .post-content > ul > li > ul > li::before {
   content: '∘';
-  padding-right: var(--size-10);
+  padding-right: var(--size-20);
 }
 
 .post-content a:hover { border-bottom: 1px solid var(--color-black); }
