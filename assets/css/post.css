@@ -33,7 +33,7 @@
 
 .page-post .post-meta { 
   padding-bottom: var(--size-50); 
-  margin-bottom: var(--size-50); 
+  margin-bottom: var(--size-70); 
   border-bottom: 1px solid var(--color-gray);
 }
 
