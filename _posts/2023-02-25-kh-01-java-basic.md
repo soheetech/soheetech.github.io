@@ -19,13 +19,13 @@ published: true
 ---
 
 <h4>프로그래밍(Programming)이란?</h4>
-- 프로그램(Program): 컴퓨터가 인식할 수 있는 명령어의 나열(집합)
-- 프로그래밍(Programming): 프로그램을 작성하는 과정(=코딩)
-- 프로그래머(Programmer): 프로그램을 작성하는 사람
-- 프로그래밍 언어: 프로그램을 작성하기 위한 언어체계, 사람이 컴퓨터와 소통하게 하는 요소
+- 프로그램(Program) : 컴퓨터가 인식할 수 있는 명령어의 나열(집합)
+- 프로그래밍(Programming) : 프로그램을 작성하는 과정(=코딩)
+- 프로그래머(Programmer) : 프로그램을 작성하는 사람
+- 프로그래밍 언어 : 프로그램을 작성하기 위한 언어체계, 사람이 컴퓨터와 소통하게 하는 요소
 
 
-<h5>프로그래밍 언어 순위</h5>
+<h5>※ 프로그래밍 언어 순위</h5>
 - <a href="https://www.tiobe.com/tiobe-index/" target="_blank">TIOBE Index</a>: 프로그래밍 언어의 인기도를 나타내는 지표, 검색엔진 검색 결과 수로 순위를 매김
 - <a href="http://pypl.github.io/PYPL.html" target="_blank">PYPL</a>: 구글 트렌드 통계 데이터를 기반으로 특정 프로그래밍 언어 튜토리얼이 검색된 수로 순위를 매김
 
@@ -46,17 +46,19 @@ published: true
 Java를 실행하기 위한 가상 기계, OS(운영체제)에 관계없이 독립적으로 동작함
 
 
+
 <h5>cf. C와 Java</h5>
 
-C: OS가 코드를 직접 해석하기 때문에 C언어는 OS 따라 코드가 다른 부분이 존재함
+- C: OS가 코드를 직접 해석하기 때문에 C언어는 OS 따라 코드가 다른 부분이 존재함
+- Java: OS에 맞는 JVM을 설치해 OS 종류 관계없이 JVM이라는 가상머신이 코드를 동일하게 해석함
 
-Java: OS에 맞는 JVM을 설치해 OS 종류 관계없이 JVM이라는 가상머신이 코드를 동일하게 해석함
 
 
 <h5>JVM의 Java 코드 실행 순서</h5>
 코드 작성 -> 실행(Ctrl+F11) -> 컴파일러(Compiler) 번역: byte code(.class) -> JVM 전달 -> JVM: 인터프리터(Interpreter) 방식으로 한줄씩 해석
 
 *컴파일러(Compiler): 코드를 2진수(0, 1)로 변환하는 번역기*
+
 
 
 <h4>JAVA 프로그래밍</h4>
