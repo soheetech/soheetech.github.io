@@ -67,10 +67,18 @@
 .post-content h4, .post-content h5 { font-weight: 600; }
 .post-content h4 { font-size: 18px; }
 .post-content h5 { margin-bottom: var(--size-10); }
+
 .post-content > ul { margin-bottom: var(--size-70); }
-.post-content > ul > li::before { content: '• ';}
+.post-content > ul > li::before {
+  content: '•';
+  padding-right: var(--size-10);
+}
 .post-content > ul > li > ul > li { padding-left: var(--size-30); }
-.post-content > ul > li > ul > li::before { content: '∘ '; }
+.post-content > ul > li > ul > li::before {
+  content: '∘';
+  padding-right: var(--size-10);
+}
+
 .post-content a:hover { border-bottom: 1px solid var(--color-black); }
 
 
