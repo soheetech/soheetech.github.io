@@ -7,9 +7,15 @@ tags:
   - kh
   - java
   - variable
+  - type
+  - escape
+  - final
+  - casting
 
 date: 2023-02-21
 last_modified_at: 2023-02-25
+
+published: true
 ---
 
 값(Data) 처리 과정: 프로그램 실행 시 사용할 값(Data)이 있다면 그 값은 먼저 메모리에 기록되어야 함
