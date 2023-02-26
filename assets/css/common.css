@@ -135,30 +135,3 @@ ul[class*="tags"].zero li a::before { content: '#'; }
 ul[class*="category"].zero li.selected a, ul[class*="category"].zero li a:hover, ul[class*="tags"].zero li a.selected, ul[class*="tags"].zero li a:hover { color: var(--color-black); }
 
 
-
-/* codeblock */
-
-.highlight table { border: 0; }
-  
-div.highlighter-rouge, figure.highlight {
-  position: relative;
-  margin-bottom: var(--size-50);
-  font-size: var(--font-size);
-  line-height: 1.8;
-  border-radius: var(--size-50);
-}
-
- /* line numbers*/
- .gutter, .rouge-gutter {
-    width: 1em;
-    color: #999;
-    border-right: 1px solid #444;
-    text-align: right;
-      
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
