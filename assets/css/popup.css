@@ -66,4 +66,5 @@
   #btn-s-close .material-symbols-outlined {
     font-size: 28px;
     padding-right: 0;
+    color: var(--color-d-gray);
   }
