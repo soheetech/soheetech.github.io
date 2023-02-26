@@ -69,7 +69,10 @@
   font-size: 18px;
   margin-top: var(--size-70);
 }
-.post-content h5 { margin-bottom: var(--size-10); }
+.post-content h5 {
+  margin-top: var(--size-50);
+  margin-bottom: var(--size-10);
+}
 
 .post-content > ul { margin-bottom: var(--size-70); }
 .post-content > ul > li::before {
