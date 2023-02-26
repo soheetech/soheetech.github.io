@@ -57,6 +57,10 @@
     overflow-y: scroll;
   }
 
+  #w-results .s-date, #w-results .s-category, #btn-s-close .material-symbols-outlined { color: var(--color-d-gray); }
+
+  #w-results .s-date { margin-left: var(--size-20); }
+
   #btn-s-close {
     position: absolute;
     right: 41px;
@@ -66,5 +70,5 @@
   #btn-s-close .material-symbols-outlined {
     font-size: 28px;
     padding-right: 0;
-    color: var(--color-d-gray);
+    
   }
