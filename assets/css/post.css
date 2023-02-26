@@ -81,4 +81,14 @@
 
 .post-content a:hover { border-bottom: 1px solid var(--color-black); }
 
+.post-content em {
+  font-size: var(--font-size);
+  color: var(--color-d-gray);
+}
+.post-content em::before {
+  content: '⁎';
+  padding-right: var(--size-10);
+}
+
+
 
