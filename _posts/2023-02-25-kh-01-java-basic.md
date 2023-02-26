@@ -51,7 +51,7 @@ JAVA 프로그래밍
 클래스(class)
 객체를 만들기 위한 일종의 설계도. 자바에서 모든 코드는 반드시 클래스 안에 존재해야 하며 서로 관련된 코드들을 그룹으로 나누어 별도의 클래스를 구성, 클래스들이 모여 하나의 Java 애플리케이션을 구성함.
 
-```
+```java
 public class 클래스명 {
   // 주석을 제외한 모든 코드는 블록 클래스 {} 내에 작성
 }
@@ -59,7 +59,7 @@ public class 클래스명 {
 
 주석(comment): 코드에 대한 설명이나 그 외 다른 정보를 넣을 때 사용하며 컴파일 시 컴파일러가 주석 부분은 건너 뜀
 
-```
+```java
 /* 범위 주석, /와 / 사이의 내용은 주석으로 간주함 */
 // 한 줄 주석, / 뒤의 내용은 주석으로 간주함
 ```
@@ -68,7 +68,7 @@ main(main method)
 public static void main(String[] args)는 고정된 형태의 메서드 선언부로 Java Application을 실행하는데 필요한 메서드(프로그램 실행 시 java.exe에 의해 호출됨)
 모든 클래스가 main 메서드를 가지고 있어야 하는 것은 아니지만 하나의 Java 애플리케이션에는 main method를 포함한 클래스가 반드시 하나 이상 존재해야 함
 
-```
+```java
 public class 클래스명 {
   public static void main(String[] args){ // main method 선언부
     // 코드 작성
