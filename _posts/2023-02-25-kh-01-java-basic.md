@@ -34,26 +34,29 @@ published: true
 - 운영체제(OS)에 독립적: OS 관계 없이 동일 코드로 동작함(=이식성이 높음)
 - 객체 지향 프로그래밍(OOP) 언어
 - 사용하기 쉬운 언어
--- 능률적이고 명확한 코드 작성 가능
--- 다른 언어의 단점 보완: 포인터, 메모리 관리
+  + 능률적이고 명확한 코드 작성 가능
+  + 다른 언어의 단점 보완: 포인터, 메모리 관리
 - 자동 메모리 관리(Garbage Collection)
 - 동적 로딩 지원
 - 멀티 쓰레드 지원
 - 네트워크와 분산환경 지원
 
+
 <h4>JVM(Java Virtual Machine)</h4>
 Java를 실행하기 위한 가상 기계, OS(운영체제)에 관계없이 독립적으로 동작함
 
-cf.
+
+<h5>cf. C와 Java</h5>
 
 C: OS가 코드를 직접 해석하기 때문에 C언어는 OS 따라 코드가 다른 부분이 존재함
 
 Java: OS에 맞는 JVM을 설치해 OS 종류 관계없이 JVM이라는 가상머신이 코드를 동일하게 해석함
 
+
 <h5>JVM의 Java 코드 실행 순서</h5>
 코드 작성 -> 실행(Ctrl+F11) -> 컴파일러(Compiler) 번역: byte code(.class) -> JVM 전달 -> JVM: 인터프리터(Interpreter) 방식으로 한줄씩 해석
 
-* 컴파일러(Compiler): 코드를 2진수(0, 1)로 변환하는 번역기
+*컴파일러(Compiler): 코드를 2진수(0, 1)로 변환하는 번역기*
 
 
 <h4>JAVA 프로그래밍</h4>
@@ -76,7 +79,7 @@ public class 클래스명 {
 ```
 
 <h5>main(main method)</h5>
-public static void main(String[] args)는 고정된 형태의 메서드 선언부로 Java Application을 실행하는데 필요한 메서드(프로그램 실행 시 java.exe에 의해 호출됨)
+'public static void main(String[] args)'는 고정된 형태의 메서드 선언부로 Java Application을 실행하는데 필요한 메서드(프로그램 실행 시 java.exe에 의해 호출됨)
 모든 클래스가 main 메서드를 가지고 있어야 하는 것은 아니지만 하나의 Java 애플리케이션에는 main method를 포함한 클래스가 반드시 하나 이상 존재해야 함
 
 ```java
