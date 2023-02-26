@@ -1,7 +1,15 @@
 ---
 layout: post
+
+title: '[프로그래머스/Lv.0] 두 수의 나눗셈'
+category: CodeTest
+tags:
+-
+
+date: 2023-02-21
+last_modified_at: 2023-02-25
+
 ---
-프로그래머스 : 두 수의 나눗셈
 
 문제
 정수 num1과 num2가 매개변수로 주어질 때, num1을 num2로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요. (단, 소수점 이하 버림)
