@@ -40,14 +40,30 @@
     padding: var(--size-70);
   }
 
-  #search-bar input {
+  #bar-search { margin-bottom: var(--size-60); }
+
+  #bar-search label { font-size: 18px; }
+
+  #bar-search input {
     width: 100%;
     height: var(--size-70);
     border: 1px solid var(--color-black);
     padding: 0 var(--size-30);
+    margin-top: var(--size-50);
   }
 
   #w-results {
     margin-top: var(--size-70);
     overflow-y: scroll;
+  }
+
+  #btn-s-close {
+    position: absolute;
+    right: 45px;
+    top: var(--size-70);
+  }
+
+  #btn-s-close .material-symbols-outlined {
+    font-size: 28px;
+    padding-right: 0;
   }
