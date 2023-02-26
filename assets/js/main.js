@@ -14,6 +14,11 @@ $(document).ready(function(){
   $('#bg-search').click(function(){
     $('#w-search').toggleClass('vh');
   });
+  
+   $('#btn-s-close').click(function(){
+    $('#w-search').toggleClass('vh');
+     return false;
+  });
       
   // mobile dropdown menu
   $('#btn-menu').click(function(){
