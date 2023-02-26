@@ -65,8 +65,9 @@
 .page-post .post-content { font-size: var(--font-big); }
 
 .post-content h4, .post-content h5 { font-weight: 600; }
+.post-content h4 { font-size: 18px; }
 .post-content h5 { margin-bottom: var(--size-10); }
-.post-content ul { margin-bottom: var(--size-40); }
+.post-content ul { margin-bottom: var(--size-70); }
 .post-content ul li::before { content: '• ';}
 .post-content a:hover { background: var(--color-l-gray); }
 
