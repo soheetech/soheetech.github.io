@@ -40,6 +40,8 @@
 .page-post .post-category { margin-bottom: var(--size-40); }
 .page-post .post-category a, .page-post .post-date { color: var(--color-d-gray); }
 
+.page-post .post-date .material-symbols-outlined { vertical-align: middle; }
+
 .page-post .post-title { font-size: 32px; }
 
 .page-post .w-post-tags {
