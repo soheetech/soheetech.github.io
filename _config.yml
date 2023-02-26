@@ -54,3 +54,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  
+# Get some CSS
+Rouge::Themes::Base16.mode(:light).render(scope: '.highlight')
+
