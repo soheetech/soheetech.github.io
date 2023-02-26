@@ -34,7 +34,7 @@
       searchInput: document.getElementById('input-search'),
       resultsContainer: document.getElementById('c-results'),
       json: '/search.json',
-      searchResultTemplate: '<li><span class="s-date">{date}</span><span class="s-category">{category}</span><a href="{url}" class="s-title">{title}</a></li>',
+      searchResultTemplate: '<li><p><span class="s-category">{category}</span><span class="s-date">{date}</span></p><p><a href="{url}" class="s-title">{title}</a></p></li>',
       noResultsText: '검색 결과가 없습니다.',
       limit: 10000,
       fuzzy: false
