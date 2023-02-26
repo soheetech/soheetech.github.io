@@ -69,6 +69,6 @@
 .post-content h5 { margin-bottom: var(--size-10); }
 .post-content ul { margin-bottom: var(--size-70); }
 .post-content ul li::before { content: '• ';}
-.post-content a:hover { background: var(--color-l-gray); }
+.post-content a:hover { border-bottom: 1px solid var(--color-black); }
 
 
