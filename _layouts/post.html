@@ -6,7 +6,7 @@ layout: default
   <div class="post-meta">
     <p class="post-category"><a href="/category/{{ page.category }}">{{ page.category }}</a></p>
     <h3 class="post-title">{{ page.title }}</h3>
-    <p class="post-date">Published <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>, Last Updated <time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: '%b %d, %Y' }}</time></p>
+    <p class="post-date"><span class="material-symbols-outlined">schedule</span> Published <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>, Last Updated <time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: '%b %d, %Y' }}</time></p>
   </div>
   <div class="post-content">{{ content }}</div>
   {% if page.tags %}
