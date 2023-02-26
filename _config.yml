@@ -48,3 +48,9 @@ plugins:
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at: 
     date-format: '%b %d, %y'
+
+# rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
