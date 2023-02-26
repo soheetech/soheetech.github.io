@@ -1,8 +1,8 @@
 ---
 layout: post
 
-title: "02 - "
-category: java
+title: "[KH/JAVA] 스캐너(Scanner)와 연산자(operator)"
+category: JAVA
 tags: 
   - kh
   - java
@@ -11,6 +11,8 @@ tags:
 
 date: 2023-02-22
 last_modified_at: 2023-02-25
+
+published: true
 ---
 
 스캐너(Scanner) : 프로그램 실행 중 키보드 입력을 받을 수 있게 하는 역할
