@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "[KH] 변수(Variable)"
+title: "[KH/JAVA] 변수(Variable)"
 category: JAVA
 tags: 
   - kh
