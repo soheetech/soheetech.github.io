@@ -1,4 +1,28 @@
-.highlight table td { padding: 5px; }
+div.highlighter-rouge, figure.highlight {
+  position: relative;
+  margin-bottom: var(--size-50);
+  font-size: var(--font-size);
+  line-height: 1.8;
+  border-radius: var(--size-50);
+}
+
+ /* line numbers*/
+ .gutter, .rouge-gutter {
+    width: 1em;
+    color: #999;
+    border-right: 1px solid #444;
+    text-align: right;
+      
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.highlight table { border: 0; }
+.highlight table td { padding: var(--size-30) var(--size-50); }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #f8f8f2;
