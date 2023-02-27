@@ -98,5 +98,20 @@
   padding-right: var(--size-10);
 }
 
+.post-content table { margin: var(--size-30) 0; }
 
+.post-content table th {
+  background: var(--color-l-gray); 
+  font-weight: normal;
+  padding: var(--size-20) 0;
+  
+}
+
+.post-content table td {
+  color: var(--color-d-gray);
+  text-align: center;
+  padding: var(--size-20) 0;
+}
+
+.post-content table td.left { text-align: left; }
 
