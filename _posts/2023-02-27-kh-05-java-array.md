@@ -49,7 +49,8 @@ last_modified_at: 2023-02-27
 
 ![kh_05_array](https://user-images.githubusercontent.com/121299334/221569228-5a188840-237a-4096-9394-8a8583f9b109.png)
 
-
+<br />
+<br />
 <h5>배열 초기화</h5>
 - 인덱스를 이용한 초기화
 ```java
