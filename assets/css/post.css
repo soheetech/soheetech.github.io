@@ -114,3 +114,5 @@
 
 .post-content > table td.left { text-align: left; }
 
+.post-content img { margin: var(--size-60) auto; }
+
