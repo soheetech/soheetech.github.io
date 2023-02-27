@@ -1,15 +1,21 @@
 ---
 layout: post
 
-title: "03 - "
-category: java
+title: "[KH/JAVA] 제어문, 조건문, 반복문"
+category: JAVA
 tags: 
   - kh
   - java
   - control
+  - if
+  - switch
+  - for
+  - while
 
 date: 2023-02-23
 last_modified_at: 2023-02-25
+
+published: true
 ---
 
 제어문(control)
