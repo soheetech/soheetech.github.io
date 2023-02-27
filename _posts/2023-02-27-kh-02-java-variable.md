@@ -6,6 +6,7 @@ category: JAVA
 tags: 
   - kh
   - java
+  - programming
   - variable
   - type
   - escape
