@@ -177,7 +177,7 @@ published: true
 - 특정한 값에 의미를 부여하는 경우(pi 등)
 
 <h4>문자열 표현</h4>
-컴퓨터에서 단어나 문장을 문자열이라고 표현하며 큰 따옴표(" ")로 묶여 있으면 문자열로 인식함, Java에서는 String 객체를 이용해 저장함
+컴퓨터에서 단어나 문장을 문자열이라고 표현하며 큰 따옴표(" ")로 묶여 있으면 문자열로 인식함, Java에서는 String 객체를 이용해 저장함<br />
 ** 다른 자료형 + "문자열" (순서 상관X) -> 문자열*
 
 <h4>형변환(Casting)</h4>
@@ -186,7 +186,7 @@ published: true
 
 <h5>자동 형변환</h5>
 값의 범위(크기 아님)가 큰 자료형과 값의 범위가 작은 자료형의 연산 시 컴파일러가 자동으로 값의 범위가 작은 자료형을 값의 범위가 큰 자료형으로 변환함<br />
-byte(1byte) → short(2byte) / char(2byte) → int(4byte) → long(8byte) → float(4byte) → double(8byte)
+byte(1byte) → short(2byte) / char(2byte) → int(4byte) → long(8byte) → float(4byte) → double(8byte)<br />
 *단, byte와 short 자료형 값의 계산 결과는 무조건 int로 처리함*
 
 <h5>강제 형변환</h5>
