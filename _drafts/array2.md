@@ -36,6 +36,8 @@ title: "2차원 배열"
 
 2차원 배열 구조
 
+![array2](https://user-images.githubusercontent.com/121299334/221776102-7e10325c-7e97-42d8-90b9-404779ca909d.png)
+
 ```java
 int[][] arr = new int[2][4];
 
