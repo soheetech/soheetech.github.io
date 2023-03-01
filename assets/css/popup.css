@@ -9,10 +9,16 @@
 
   /* menu */
   #w-menu {
-    top: 60px;
+    top: 62px;
     left: 0;
     width: 100%;
     background: var(--color-white);
+  }
+
+  #w-menu ul { display: block; }
+  #w-menu li { width: 100%; }
+  #w-menu li a { 
+    padding: var(--size-30) var(--size-50);
   }
 
   /* search */
