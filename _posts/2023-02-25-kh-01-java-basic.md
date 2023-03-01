@@ -13,9 +13,6 @@ tags:
 
 date: 2023-02-20
 last_modified_at: 2023-02-25
-
-published: true
-
 ---
 
 <h4>프로그래밍(Programming)이란?</h4>
@@ -56,6 +53,10 @@ Java 프로그래밍 언어로 작성된 후 컴파일되어 Java 플랫폼에�
 - Java 애플리케이션 : 일반적인 운영체제에 설치된 Java 플랫폼에서 바로 실행되는 Java 프로그램, 실행을 위해 main() 함수가 필요함
 - Java 애플릿 : HTML로 작성된 웹 페이지에 포함되어 웹 브라우저를 통해 실행 가능함, &lt;APPLET&gt; 태그를 이용
 
+<h5>Java 프로그램 실행 순서</h5>
+| 코드 작성(.java) -> 실행(Ctrl+F11) -> 컴파일러(Compiler) 번역 : byte code(.class) -> JVM 전달 -> JVM : 인터프리터(Interpreter) 방식으로 한줄씩 해석 |
+*컴파일러(Compiler): 코드를 2진수(0, 1)로 변환하는 번역기*
+
 
 <h4>Java 플랫폼</h4>
 프로그램의 실행을 위한 하드웨어와 소프트웨어 환경으로 운영체제도 플랫폼의 일종이라 할 수 있음<br />
@@ -76,10 +77,7 @@ Java 프로그램을 실행하기 위한 실행 환경을 제공하는 가상 �
 
 
 
-<h5>JVM의 Java 코드 실행 순서</h5>
-코드 작성(.java) -> 실행(Ctrl+F11) -> 컴파일러(Compiler) 번역 : byte code(.class) -> JVM 전달 -> JVM : 인터프리터(Interpreter) 방식으로 한줄씩 해석
 
-*컴파일러(Compiler): 코드를 2진수(0, 1)로 변환하는 번역기*
 
 <h5>JVM 메모리(RAM) 구조</h5>
 - Static : static 예약어로 선정된 필드, 메소드가 저장되는 공간. ex) 클래스 변수 등
