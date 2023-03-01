@@ -8,21 +8,15 @@
   padding-right: var(--size-50);
 }
 
-.col { 
-  padding-left: var(--size-20);
-  padding-right: var(--size-20);
-}
-
 
 
 
 /* display none */
-header .h-nav, header .btn-search.in-search { display: none !important; }
+header .w-nav > nav { display: none !important; }
 
 
 /* display block */
 header #btn-menu { display: inline-block !important; }
-#menu-wrap nav li.vh { display: block !important; }
 
 
 /* width */
