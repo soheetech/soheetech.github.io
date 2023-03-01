@@ -121,7 +121,7 @@ class 클래스명 {
 <h5>main() method</h5>
 - Java 언어에서 메소드는 클래스 안에만 정의할 수 있으며 main() 메소드는 Java 프로그램을 실행시킬 때 가장 먼저 실행되는 메소드를 의미함
 - main() 메소드의 형식은 'public static void main(String[] args)'라는 고정된 형태의 메서드 선언부로 정의되어야 함
-- Java Application을 실행하는데 필요한 메서드(프로그램 실행 시 java.exe에 의해 호출됨)로 모든 클래스가 main 메서드를 가지고 있어야 하는 것은 아니지만 하나의 Java 애플리케이션에는 main() method를 포함한 클래스가 반드시 하나 이상 존재해야 함
+- Java Application을 실행하는데 필요한 메서드(프로그램 실행 시 java.exe에 의해 호출됨)로 모든 클래스가 main 메서드를 가지고 있어야 하는 것은 아니지만 하나의 Java 애플리케이션에는 main() method를 포함한 클래스가 반드시 하나 이상 존재해야 함<br />
 *'public'과 'static'의 위치를 바꿀 수 있지만 일반적으로 'public static'의 순서로 정의하는 것이 관례*
 
 ```java
