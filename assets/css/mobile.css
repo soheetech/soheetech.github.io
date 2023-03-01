@@ -1,16 +1,6 @@
 /* screen max width 768px */
 
 
-/* grid */
-
-.container {
-  padding-left: var(--size-50);
-  padding-right: var(--size-50);
-}
-
-
-
-
 /* display none */
 header .w-nav > nav { display: none !important; }
 
@@ -21,7 +11,7 @@ header #btn-menu { display: inline-block !important; }
 
 /* width */
 header h1 { width: auto !important; }
-footer .sitemap .col-3-12, footer .copy .col-6-12 { width: 100%; }
+#main .post-list > li { width: 100%; }
 
 
 /* header */
