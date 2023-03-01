@@ -18,6 +18,7 @@
   #w-menu ul { display: block; }
   #w-menu li { width: 100%; }
   #w-menu li a { 
+    display: block;
     padding: var(--size-30) var(--size-50);
   }
 
