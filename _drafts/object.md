@@ -87,7 +87,55 @@ Java 프로그램 구성의 기본 단위로 객체를 만들기 위한 모형 �
 
 필드 접근제한자
 <table>
+  <tr>
+    <th colspan="2">구분</th>
+    <th>해당 클래스 내부</th>
+    <th>같은 패키지 내</th>
+    <th>후손 클래스 내</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>public</td>
+    <td>O</td>
+    <td>O</td>
+    <td>O</td>
+    <td>O</td>
+  </tr>
+  <tr>
+    <td>#</td>
+    <td>protected</td>
+    <td>O</td>
+    <td>O</td>
+    <td>O</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>~</td>
+    <td>(default)</td>
+    <td>O</td>
+    <td>O</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>private</td>
+    <td>O</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
+
+필드 예약어(static)
+같은 타입의 여러 객체가 공유할 목적의 필드에 사용하며, 프로그램 시작시 정적 메모리(static) 영역에 자동 할당되는 멤버에 적용
+
+```java
+public class Academy {
+  private static int temp1;
+}
+```
 
 
 - 메소드(method) : =알고리즘, 필드에 저장되어 있는 상태값을 조회/변경하거나 상태와 관련된 특별한 동작을 수행하는데 사용함
