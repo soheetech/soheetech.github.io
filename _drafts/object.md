@@ -10,6 +10,24 @@ Java에서는 객체를 직접적으로 정의하여 다루지 않고 비슷한 
 <h5>추상화(Abstraction)</h5>
 프로그래밍의 대상이 되는 사물을 표현하는 방식, 구체적인 모든 사실이 아니라 전형적이고 필요한 부분만을 발췌(⇒ 유연성 확보)하여 사물을 이해하고 표현하는 것.
 
+추상화 예시
+<table>
+  <tr>
+    <th colspan="2">Person</th>
+  </tr>
+  <tr>
+    <td>정보(속성)</td>
+    <td>- pNo : String<br />- name : String<br />- gender : char<br />...</td>
+  </tr>
+  <tr>
+    <td rowspan="2">기능(행동)</td>
+    <td>+ Person()</td>
+  </tr>
+  <tr>
+    <td>+setXXX() : void<br />+ getXXX : 각 자료형</td>
+  </tr>
+</table>
+
 
 <h5>객체(Object)</h5>
 독립적으로 존재하며 각각 구분해서 인식 할 수 있는 개별 대상 하나하나를 표현한 것<br />
