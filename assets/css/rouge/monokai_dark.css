@@ -29,6 +29,7 @@ div.highlighter-rouge, figure.highlight {
   background-color: #272822;
   border-radius: var(--size-40);
 }
+.markdown-section pre { background-color: #272822; }
 .highlight {
   margin-bottom: 30px;
   margin-top: 27px;
