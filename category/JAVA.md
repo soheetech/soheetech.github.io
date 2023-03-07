@@ -1,8 +1,0 @@
----
-
-layout: category
-title: JAVA
-
----
-
- 
