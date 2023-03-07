@@ -1,12 +1,7 @@
 ---
-layout: default
+layout: post
 ---
 
-
-<div class="container c-pd-top d-flex p-archive">
-  {%-include sidebar.html-%}
-  <article class="g-2-3">
-    <ul class="post-list d-flex f-wrap">
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
         <li>
@@ -20,8 +15,4 @@ layout: default
           {% endif %}
         </li>
       {%- endfor -%}
-    </ul>
-  </article>
-</div>
-
 
