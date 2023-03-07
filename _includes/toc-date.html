@@ -14,9 +14,8 @@
             <li class="divider"></li>
           
             <!-- category loop -->
-            {% assign activecate = page.category | default: page.title %}
             {% for category in site.categories %}
-                <li{% if post.category == activecate.title || page.title == activecate.title %} class="active"{% endif %}><a href="/category/{{ category[0] }}">{{ category[0] }}<span class="count">({{ category[1] | size }})</span></a></li>
+                <li{% if post.category == category.title || page.title == category.title %} class="active"{% endif %}><a href="/category/{{ category[0] }}">{{ category[0] }}<span class="count">({{ category[1] | size }})</span></a></li>
             {% endfor %}
             
             <li class="divider"></li>
