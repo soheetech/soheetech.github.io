@@ -10,7 +10,7 @@ div.highlighter-rouge, figure.highlight {
 }
 
  /* line numbers*/
- .gutter, .rouge-gutter {
+ .gutter, .rouge-gutter, .highlight table td.rouge-gutter {
     width: 1em;
     color: #999;
     border-right: 1px solid #444;
