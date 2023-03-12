@@ -335,6 +335,10 @@ body, .book-summary {
     padding: 0 15px;
 }
 
+.book-summary ul.summary li a:hover {
+    text-decoration: none;
+}
+
 .book-summary ul.summary li.grouplabel {
     margin-top: 40px;
     padding: 10px 30px;
