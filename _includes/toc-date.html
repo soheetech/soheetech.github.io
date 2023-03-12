@@ -18,7 +18,6 @@
                 <li class="chapter{% if page.title == category[0] or page.category == category[0] %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}/{{ category[0] | downcase }}/"><a href="/{{ category[0] | downcase }}/"><i class="fa fa-folder-o"></i>{{ category[0] }}<span class="count">({{ category[1] | size }})</span></a></li>
             {% endfor %}
             
-            <li class="divider"></li>
         </ul>
     </nav>
 </div>
