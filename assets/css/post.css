@@ -1,0 +1,21 @@
+
+
+/* post detail markdown */
+
+.markdown-section h1 { font-size: 24px; }
+
+.markdown-section h2 { font-size: 20px; }
+
+.markdown-section h3 { font-size: 18px; }
+
+.markdown-section h4 { font-size: 16px; }
+
+.markdown-section code {
+  color: var(--c-point);
+  border-radius: 5px;
+  background-color: var(--c-l-gray-bg);
+}
+
+.markdown-section table tr:nth-child(2n) { background-color: #fff; }
+
+.markdown-section table th { background: var(--c-l-gray-bg); }
