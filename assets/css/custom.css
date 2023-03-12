@@ -33,9 +33,8 @@
     --font-custom: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif;
 }
 
-a {
-    transition: .3s ease-in-out all;
-}
+a { transition: .3s ease-in-out all; }
+a:hover { text-decoration: none; }
 
 
 
@@ -351,7 +350,6 @@ body, .book-summary {
 
 .book-summary ul.summary li a:hover, .book-summary ul.summary li.active > a {
     background: var(--c-l-gray-bg);
-    text-decoration: none;
     color: var(--c-point-green);
 }
 
