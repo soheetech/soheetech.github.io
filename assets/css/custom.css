@@ -1,6 +1,29 @@
 ---
 ---
 
+
+:root {
+    /* theme color */
+    --c-tip: #42b983;
+    --c-tip-bg: #e2f5ec;
+    --c-tip-text: #215d42;
+    --c-tip-title: #359469;
+    --c-warning: #e7c000;
+    --c-warning-bg: rgba(255, 229, 100, .25);
+    --c-warning-text: #6b5900;
+    --c-warning-title: #b29400;
+    --c-danger: #c00;
+    --c-danger-bg: #ffe0e0;
+    --c-danger-text: #600;
+    --c-danger-title: #c00;
+    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+body, .book-summary { 
+    font-family: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif; 
+}
+
 .book-body {
     overflow-y: scroll;
 }
@@ -143,11 +166,12 @@
 }
 
 
-/* Custom font settings */
+/* custom font */
 
 .book.font-family-0, .book.font-family-1 {
     font-family: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif;
 }
+
 
 /* Render wide tables */
 
@@ -250,41 +274,21 @@
     color: var(--c-danger-title);
 }
 
-:root {
-    --c-tip: #42b983;
-    --c-tip-bg: #e2f5ec;
-    --c-tip-text: #215d42;
-    --c-tip-title: #359469;
-    --c-warning: #e7c000;
-    --c-warning-bg: rgba(255, 229, 100, .25);
-    --c-warning-text: #6b5900;
-    --c-warning-title: #b29400;
-    --c-danger: #c00;
-    --c-danger-bg: #ffe0e0;
-    --c-danger-text: #600;
-    --c-danger-title: #c00;
-    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  
-    /* color */
-    --color-white: #fff;
-    --color-point: #7575cf;
-    --color-l-gray: #f3f3f3;
-    --color-gray: #e0e0e0;
-    --color-d-gray: rgba(17,17,17,0.5);
-    --color-black: #111;
-    --color-opacity: 0.7;
 
-    /* size */
-    --size-10: 4px;
-    --size-20: 8px;
-    --size-30: 12px;
-    --size-40: 16px;
-    --size-50: 24px;
-    --size-60: 32px;
-    --size-70: 48px;
-    --size-80: 80px;
-    --size-90: 96px;
-    --size-100: 120px;
-    --size-200: 240px;
+/* sidebar */
+.book-summary {
+    background: #fff;
+}
 
+.book-summary ul.summary li.grouplabel {
+    padding: 10px 15px;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.book-summary ul.summary li span.count {
+    display: inline;
+    padding: 0 4px;
+    font-size: 12px;
 }
