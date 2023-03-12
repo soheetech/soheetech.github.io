@@ -9,6 +9,13 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="{{site.description}}">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="{{site.baseurl}}/{{site.favicon_path}}" type="image/x-icon">
 
 {%- if site.gitbook_version -%}
     <meta name="generator" content="Jekyll (using style of GitBook {{ site.gitbook_version | escape }})">
@@ -20,12 +27,10 @@
     <meta name="author" content="{{ site.author | escape }}">
 {%- endif -%}
 
-
 <!-- web font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
 
 <!-- css -->
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/style.css">
@@ -37,13 +42,6 @@
 
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css">
-
-<meta name="HandheldFriendly" content="true"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
-<link rel="shortcut icon" href="{{site.baseurl}}/{{site.favicon_path}}" type="image/x-icon">
 
 {% if site.extra_css %}
     {%- for extra_css in site.extra_css -%}
