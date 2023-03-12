@@ -11,7 +11,7 @@
 .markdown-section h4 { font-size: 16px; }
 
 .markdown-section code {
-  color: var(--c-point);
+  color: #F99417;
   border-radius: 5px;
   background-color: var(--c-l-gray-bg);
 }
