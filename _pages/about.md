@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About
+permalink: /about/
 ---
 
 <div class="container c-pd-top c-pd-side d-flex">
