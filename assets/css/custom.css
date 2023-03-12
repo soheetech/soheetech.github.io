@@ -24,6 +24,7 @@
     --c-l-gray-bg: #f6f6f6;
     --c-l-gray-border: #eee;
     --c-black: #111;
+    --c-point-green: #116530;
     
     /* theme font */
     --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -351,10 +352,7 @@ body, .book-summary {
 .book-summary ul.summary li a:hover, .book-summary ul.summary li.active > a {
     background: var(--c-l-gray-bg);
     text-decoration: none;
-}
-
-.book-summary ul.summary li.active > a {
-    color: var(--c-black);
+    color: var(--c-point-green);
 }
 
 .book-summary ul.summary li i.fa {
