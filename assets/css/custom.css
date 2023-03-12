@@ -16,12 +16,24 @@
     --c-danger-bg: #ffe0e0;
     --c-danger-text: #600;
     --c-danger-title: #c00;
+    
+    /* custom color */
+    --c-l-gray: #aaa;
+    --c-black: #111;
+    
+    /* border color */
+    --b-l-gray: #eee;
+    
+    /* theme font */
     --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    
+    /* custom font */
+    --font-custom: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif;
 }
 
 
 body, .book-summary { 
-    font-family: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif; 
+    font-family: var(--font-custom); 
 }
 
 .book-body {
@@ -138,10 +150,14 @@ body, .book-summary {
 }
 
 #book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
-    border: 2px solid #eee;
+    border: 2px solid var(--b-l-gray);
     border-radius: 5px;
     background: #f6f6f6;
     color: #888;
+}
+
+#book-search-input input::placeholder {
+    color: #aaa;
 }
 
 @media (max-width: 1240px) {
@@ -179,7 +195,7 @@ body, .book-summary {
 /* custom font */
 
 .book.font-family-0, .book.font-family-1 {
-    font-family: 'Public Sans', 'Noto Sans KR', 'Arial', 'Malgun Gothic', sans-serif;
+    font-family: var(--font-custom);
 }
 
 
@@ -288,6 +304,7 @@ body, .book-summary {
 /* sidebar */
 .book-summary {
     background: #fff;
+    color: var(--c-black);
 }
 
 .book-summary h1 {
@@ -305,9 +322,13 @@ body, .book-summary {
 .book-summary ul.summary li.grouplabel {
     margin-top: 40px;
     padding: 10px 15px;
-    color: #aaa;
+    color: var(--c-l-gray);
     font-weight: bold;
     font-size: 13px;
+}
+
+.book-summary ul.summary li i.fa {
+    padding-right: 12px;
 }
 
 .book-summary ul.summary li span.count {
