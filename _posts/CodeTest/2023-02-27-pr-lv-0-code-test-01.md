@@ -33,7 +33,8 @@ class Solution {
     public int solution(int num1, int num2) {
     
         int answer = (int)((num1 / num2) * 1000);
-        // 매개변수 num1과 num2가 int형이므로 나눗셈 단계에서 소수점 이하가 버려지는 문제가 있음
+        // 매개변수 num1과 num2가 int형
+        // -> 나눗셈 단계에서 소수점 이하가 버려지는 문제 있음
         return answer;
         
     }
