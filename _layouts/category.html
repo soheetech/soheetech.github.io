@@ -5,7 +5,7 @@ layout: post
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
         <li>
-          <p class="post-date">{{ post.date | date: '%b %d, %y' }}</p>
+          <p class="post-date">{{ post.date | date: '%b %d, %Y' }}</p>
           <p class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           {% if post.teaser != null %}
             <div class="post-teaser"><a href="{{ post.url | relative_url }}"><img src="{{ post.teaser | relative_url }}" alt="{{ post.title }}" /></a></div>
