@@ -129,9 +129,19 @@ body, .book-summary {
 
 #book-search-input {
     display: block;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 10px 15px;
 }
 #book-search-input-link {
     display: none;
+}
+
+#book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background: #f6f6f6;
+    color: #888;
 }
 
 @media (max-width: 1240px) {
@@ -279,6 +289,18 @@ body, .book-summary {
 .book-summary {
     background: #fff;
 }
+
+.book-summary h1 {
+    margin: 20px 0;
+}
+
+.book-summary h1 a {
+    font-size: 18px;
+    color: #111;
+    padding: 10px 15px;
+    letter-spacing: -0.1px;
+}
+
 
 .book-summary ul.summary li.grouplabel {
     padding: 10px 15px;
