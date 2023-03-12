@@ -9,13 +9,13 @@
         </div>
         <ul class="summary">
             <li class="chapter{% if page.url == "/index.html" or page.url == "/" %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}"><a href="{{site.baseurl}}/"><i class="fa fa-home"></i>Home</a></li>
-            <li class="chapter{% if page.url == "/about/" %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}/about/"><a href="{{site.baseurl}}/about/"><i class="fa fa-user"></i>About</a></li>
+            <li class="chapter{% if page.url == "/about/" %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}/about/"><a href="{{site.baseurl}}/about/"><i class="fa fa-user-o"></i>About</a></li>
             
             <li class="grouplabel">Category</li>
             
             <!-- category loop -->
             {% for category in site.categories %}
-                <li class="chapter{% if page.title == category[0] or page.category == category[0] %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}/{{ category[0] | downcase }}/"><a href="/{{ category[0] | downcase }}/"><i class="fa fa-folder"></i>{{ category[0] }}<span class="count">({{ category[1] | size }})</span></a></li>
+                <li class="chapter{% if page.title == category[0] or page.category == category[0] %} active{% endif %}" data-level="1.1" data-path="{{site.baseurl}}/{{ category[0] | downcase }}/"><a href="/{{ category[0] | downcase }}/"><i class="fa fa-folder-o"></i>{{ category[0] }}<span class="count">({{ category[1] | size }})</span></a></li>
             {% endfor %}
             
             <li class="divider"></li>
