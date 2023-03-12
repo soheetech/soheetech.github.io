@@ -14,11 +14,15 @@ last_modified_at: 2023-02-27
 정수 `num1`과 `num2`가 매개변수로 주어질 때, `num1`을 `num2`로 나눈 값에 1,000을 곱한 후 정수 부분을 `return` 하도록 `solution` 함수를 완성해주세요.
 
 ## 예시
+<div class="table-wrapper" markdown="block">
+    
 | num1 | num2 | result |
-|------|------|--------|
+|:-:|:-:|:-:|
 | 3 | 2 | 1500 |
 | 7 | 3 | 2333 |
 | 1 | 16 | 62 |
+    
+</div>
 
 
 
