@@ -12,16 +12,19 @@ date: 2023-02-26
 last_modified_at: 2023-02-27
 ---
 
-<h4>문제</h4>
-정수 num1과 num2가 매개변수로 주어질 때, num1을 num2로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.
+# 문제
+정수 `num1`과 `num2`가 매개변수로 주어질 때, `num1`을 `num2`로 나눈 값에 1,000을 곱한 후 정수 부분을 `return` 하도록 `soltuion` 함수를 완성해주세요.
 
-<h5>예시</h5>
-- num1 = 3, num2 = 2 → 1500
-- num1 = 7, num2 = 3 → 2333
-- num1 = 1, num2 = 16 → 62
+## 예시
+| num1 | num2 | result |
+|--|--|--|
+| 3 | 2 |1500|
+| 7 | 3 |2333|
+| 1 | 16 |62|
 
 
-<h4>오답</h4>
+
+# 오답
 
 ```java
 class Solution {
@@ -35,7 +38,9 @@ class Solution {
 }
 ```
 
-<h4>정답</h4>
+
+
+# 풀이
 
 ```java
 class Solution {
@@ -49,4 +54,5 @@ class Solution {
     }
 }
 ```
+
 
