@@ -16,7 +16,6 @@ favicon_path: "favicon.ico" # customize the link favicon in header, will be {{si
 
 # Outputting
 permalink: /:categories/:title:output_ext
-date-format: '%b %d, %y'
 
 collections:
   pages:
