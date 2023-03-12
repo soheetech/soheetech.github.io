@@ -62,6 +62,8 @@ kramdown:
   syntax_highlighter:     rouge
   syntax_highlighter_opts:
     guess_lang:           true
+    block:
+      line_numbers: true
 
 syntax_highlighter_style: monokai_dark
 
