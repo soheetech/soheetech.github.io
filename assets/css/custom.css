@@ -160,7 +160,11 @@ body, .book-summary {
 #book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
     border: 2px solid var(--c-l-gray-border);
     border-radius: 5px;
-    background: var(--c-l-gray-bg);
+    background-color: var(--c-l-gray-bg);
+    background-image: url('/assets/images/common/ico-search.png');
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    padding: 7px 15px 7px 37px;
 }
 
 #book-search-input input::placeholder {
@@ -344,9 +348,13 @@ body, .book-summary {
     border-radius: 5px;
 }
 
-.book-summary ul.summary li a:hover {
+.book-summary ul.summary li a:hover, .book-summary ul.summary li.active > a {
     background: var(--c-l-gray-bg);
     text-decoration: none;
+}
+
+.book-summary ul.summary li.active > a {
+    color: var(--c-black);
 }
 
 .book-summary ul.summary li i.fa {
