@@ -1,4 +1,4 @@
-# Site Settings
+# Settings
 locale:       "ko-KR"
 title:        "Sohee Tech Blog" # name of the site
 longtitle:    "Sohee Tech Blog"
@@ -16,6 +16,7 @@ favicon_path: "favicon.ico" # customize the link favicon in header, will be {{si
 
 # Outputting
 permalink: /:categories/:title:output_ext
+date-format: '%b %d, %y'
 
 collections:
   pages:
@@ -51,7 +52,7 @@ exclude:
   - _drafts
 
 
-# markdown render engine.
+# Conversion
 markdown:         kramdown
 kramdown:
   auto_ids:               true
