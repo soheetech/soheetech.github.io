@@ -5,7 +5,6 @@ div.highlighter-rouge, figure.highlight {
 
 pre.highlight { padding: 1em 0.3em; }
 
-
 .highlight table, .highlight table td, .highlight table th, .highlight table tr { 
   border: 0;
   padding: 0;
@@ -35,7 +34,6 @@ pre.highlight { padding: 1em 0.3em; }
 }
 
 .markdown-section pre { background-color: #272822; }
-.markdown-section code, .markdown-section pre { font-family: Consolas, "Liberation Mono", Menlo, Courier, D2Coding, 'D2 coding', monospace; }
 
 .highlight {
   margin-bottom: 30px;
