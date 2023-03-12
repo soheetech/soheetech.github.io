@@ -3,12 +3,19 @@ div.highlighter-rouge, figure.highlight {
   line-height: 1.8;
 }
 
+.highlight table, .highlight table td, .highlight table th, .highlight table tr { 
+  border: 0;
+  padding: 0;
+  background: #272822;
+}
+
  /* line numbers*/
  .gutter, .rouge-gutter {
     width: 1em;
     color: #999;
     border-right: 1px solid #444;
     text-align: right;
+    vertical-align: top;
       
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -18,7 +25,6 @@ div.highlighter-rouge, figure.highlight {
     user-select: none;
   }
 
-.highlight table { border: 0; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #f8f8f2;
