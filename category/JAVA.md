@@ -2,5 +2,5 @@
 
 layout: category
 title: JAVA
-permalink: 
+permalink: /java/
 ---
