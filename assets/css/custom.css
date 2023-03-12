@@ -130,7 +130,7 @@ body, .book-summary {
 #book-search-input {
     display: block;
     border: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding: 10px 15px;
 }
 #book-search-input-link {
@@ -303,6 +303,7 @@ body, .book-summary {
 
 
 .book-summary ul.summary li.grouplabel {
+    margin-top: 40px;
     padding: 10px 15px;
     color: #aaa;
     font-weight: bold;
