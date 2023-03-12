@@ -3,6 +3,8 @@ div.highlighter-rouge, figure.highlight {
   line-height: 1.8;
 }
 
+pre.highlight { padding: 1em 0.3em; }
+
 .highlight table, .highlight table td, .highlight table th, .highlight table tr { 
   border: 0;
   padding: 0;
@@ -31,6 +33,7 @@ div.highlighter-rouge, figure.highlight {
   background-color: #272822;
 }
 .markdown-section pre { background-color: #272822; }
+
 .highlight {
   margin-bottom: 30px;
   margin-top: 27px;
