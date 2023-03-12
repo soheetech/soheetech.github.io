@@ -31,6 +31,7 @@ div.highlighter-rouge, figure.highlight {
   margin-left: 0px;
   margin-right: 0px;
   width: 100%;
+  border-radius: 10px;
 }
 .highlight .err {
   color: #272822;
@@ -159,7 +160,7 @@ div.highlighter-rouge, figure.highlight {
 }
 /* Name */
 .highlight .n {
-	color: #ffffff;
+  color: #ffffff;
 }
 .highlight .py, .highlight .nx {
   color: #ffffff;
