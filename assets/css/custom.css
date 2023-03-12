@@ -73,7 +73,7 @@ body, .book-summary {
 }
 
 .book .book-body .book-header {
-    background: #ffffff;
+    background: #fff;
 }
 
 .book.color-theme-1 .book-body .book-header {
@@ -157,7 +157,7 @@ body, .book-summary {
 }
 
 #book-search-input input::placeholder {
-    color: #aaa;
+    color: var(--c-l-gray);
 }
 
 @media (max-width: 1240px) {
@@ -327,8 +327,13 @@ body, .book-summary {
     font-size: 13px;
 }
 
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    color: var(--c-black);
+}
+
 .book-summary ul.summary li i.fa {
     padding-right: 12px;
+    color: var(--c-l-gray);
 }
 
 .book-summary ul.summary li span.count {
