@@ -138,6 +138,7 @@ body, .book-summary {
     box-shadow: none;
     outline: 0;
     line-height: 38px;
+    display: inline-block;
 }
 
 #book-search-input-link {
