@@ -125,39 +125,26 @@ body, .book-summary {
 
 /* Style for search page on mobile screens */
 
-#book-search-input-link {
-    padding: 6px;
-    background: 0 0;
-    background: inherit;
-    transition: top .5s ease;
-    border-bottom: 1px solid rgba(0,0,0,.07);
-    border-top: 1px solid rgba(0,0,0,.07);
-    margin-bottom: 10px;
-    margin-top: -1px;
-}
-
-#book-search-input-link a {
-    width: 100%;
-    background: 0 0;
-    border: 1px solid transparent;
-    box-shadow: none;
-    outline: 0;
-    line-height: 38px;
-    padding: 7px 7px;
-    color: #757575;
-}
-
-#book-search-input {
+#book-search-input, #book-search-input-link {
     display: block;
     border: 0;
     margin-bottom: 0;
     padding: 10px 15px;
 }
+
+
+#book-search-input-link a {
+    width: 100%;
+    box-shadow: none;
+    outline: 0;
+    line-height: 38px;
+}
+
 #book-search-input-link {
     display: none;
 }
 
-#book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
+#book-search-input-link a, #book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
     border: 2px solid var(--c-l-gray-border);
     border-radius: 5px;
     background-color: var(--c-l-gray-bg);
