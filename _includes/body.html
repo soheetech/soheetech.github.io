@@ -13,7 +13,7 @@
             <div class="search-noresults">
                 <section class="normal markdown-section">
                     {% if page.category %}
-                        <p class="post-category">{{ post.category }}</p>
+                        <p class="post-category">{{ page.category }}</p>
                     {% endif %}
                     {% if page.title %}
                         <h1 id="{{ page.id }}">{{ page.title | escape }}</h1>
@@ -21,7 +21,7 @@
                         <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
                     {% endif %}
                     {% if page.date %}
-                        <p class="post-date">Published {{ post.date | date: '%b %d, %Y' }} / Last Updated {{ last_modified_at }}</p>
+                        <p class="post-date">Published {{ page.date | date: '%b %d, %Y' }} / Last Updated {{ page.last_modified_at }}</p>
                     {% endif %}
 
                     {{ content }}
