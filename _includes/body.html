@@ -21,7 +21,7 @@
                         <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
                     {% endif %}
                     {% if page.date %}
-                        <p class="post-date">Published {{ page.date | date: '%b %d, %Y' }} / Last Updated {{ page.last_modified_at }}</p>
+                        <p class="post-date">Published {{ page.date | date: '%b %d, %Y' }} / Last Updated {{ page.last_modified_at | date: '%b %d, %Y' }}</p>
                     {% endif %}
 
                     {{ content }}
