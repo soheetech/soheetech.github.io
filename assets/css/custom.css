@@ -155,7 +155,7 @@ body, .book-summary {
     padding: 7px 15px 7px 37px;
 }
 
-#book-search-input input::placeholder {
+#book-search-input input::placeholder, #book-search-input-link a {
     color: var(--c-l-gray);
 }
 
