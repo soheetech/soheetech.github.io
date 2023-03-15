@@ -1,4 +1,7 @@
 
+/* category post list */
+ul.page-category li { list-style: none; }
+
 
 /* post detail markdown */
 
