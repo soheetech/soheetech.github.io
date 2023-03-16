@@ -1,15 +1,8 @@
 ---
 layout: post
 
-title: "[KH/JAVA] 자바(JAVA) 프로그래밍 기초"
 category: JAVA
-tags: 
-  - kh
-  - java
-  - programming
-  - basic
-  - theory
-  - jvm
+title: "[KH/JAVA] 자바(JAVA) 프로그래밍 기초"
 
 date: 2023-02-20
 last_modified_at: 2023-03-01
