@@ -17,11 +17,11 @@ import java.util.Scanner;
 // 미작성시 설계도(class)가 없어 스캐너를 못 만듦
 
 public class ScannerExample1 {
-	public static void main(String[] args) {
+  public static void main(String[] args) {
     
     Scanner sc = new Scanner(System.in);
-			    // 프로그램 안에 스캐너라는 기계를 만듦
-    			// System.in : 키보드 입력
+		// 프로그램 안에 스캐너라는 기계를 만듦
+    		// System.in : 키보드 입력
     
     int input = sc.nextInt();
     // 입력받은 정수를 input 변수에 대입
