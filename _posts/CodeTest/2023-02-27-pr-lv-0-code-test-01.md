@@ -1,10 +1,9 @@
 ---
 layout: post
 
-title: '[프로그래머스/JAVA] Lv.0 두 수의 나눗셈'
 category: CodeTest
-tags:
-- programmers
+tags: programmers
+title: "[프로그래머스/JAVA] Lv.0 두 수의 나눗셈"
 
 date: 2023-02-26
 last_modified_at: 2023-02-27
