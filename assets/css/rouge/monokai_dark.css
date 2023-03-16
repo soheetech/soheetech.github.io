@@ -9,6 +9,7 @@ pre.highlight { padding: 1em 0.3em; }
   border: 0;
   padding: 0;
   background: #272822;
+  margin-bottom: 0;
 }
 
  /* line numbers*/
