@@ -169,4 +169,5 @@ last_modified_at: 2023-03-17
 - 반환 값이 있다면 반환 값을 가지고 자신을 호출한 메소드로 돌아감
 
 ![return](https://user-images.githubusercontent.com/121299334/225670882-ea04a725-c464-4b60-bb7c-b75222242807.png)
+
 <small>STACK의 자료구조 : LIFO(Last-Input-First-Out)</small>
