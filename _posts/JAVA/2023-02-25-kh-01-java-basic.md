@@ -172,3 +172,8 @@ public class 클래스명 {
 
 > 프로그램 작성(Hello.java) → 컴파일 명령(javac Hello.java) : 클래스이름.class 생성 → 실행 명령(java Hello) : `main()` 메소드
 
+## 버전 확인
+
+> 명령 프롬포트(cmd) → java -version 
+
+
