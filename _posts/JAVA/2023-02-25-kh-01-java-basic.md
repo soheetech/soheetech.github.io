@@ -117,6 +117,11 @@ last_modified_at: 2023-03-01
 - JVM, Java 기본 API를 한데 묶어 부르는 말 
 
 # JAVA 프로그래밍
+
+## 버전 확인
+
+> 명령 프롬포트(cmd) → java -version 
+
 ## 주석(comments)
 - 소스 코드의 이해를 돕기 위해 프로그래머가 작성하는 설명문
 - 코드에 대한 설명이나 그 외 다른 정보를 넣을 때 사용함
@@ -171,9 +176,5 @@ public class 클래스명 {
 ## 실행
 
 > 프로그램 작성(Hello.java) → 컴파일 명령(javac Hello.java) : 클래스이름.class 생성 → 실행 명령(java Hello) : `main()` 메소드
-
-## 버전 확인
-
-> 명령 프롬포트(cmd) → java -version 
 
 
