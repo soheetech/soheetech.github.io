@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 배열(Array)"
 
 date: 2023-02-26
