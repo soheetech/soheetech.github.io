@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 스캐너(Scanner)와 연산자(operator)"
 
 date: 2023-02-22
