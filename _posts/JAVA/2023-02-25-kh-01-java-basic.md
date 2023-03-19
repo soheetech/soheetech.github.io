@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 자바(JAVA) 프로그래밍 기초"
 
 date: 2023-02-20
