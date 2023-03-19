@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 객체 배열(Object Array)"
 
 date: 2023-03-07
