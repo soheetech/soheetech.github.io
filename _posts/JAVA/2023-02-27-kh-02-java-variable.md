@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 변수(Variable)"
 
 date: 2023-02-21
