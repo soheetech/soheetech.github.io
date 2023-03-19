@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 메소드(Method)"
 
 date: 2023-03-03
