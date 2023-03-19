@@ -2,6 +2,7 @@
 layout: post
 
 category: JAVA
+tag: Theory
 title: "[KH/JAVA] 상속(Inheritance)"
 
 date: 2023-03-08
