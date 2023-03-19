@@ -2,7 +2,7 @@
 layout: post
 
 category: JAVA
-title: "[KH/JAVA] 메소드(Method)"
+title: "[KH/JAVA] 객체 배열(Object Array)"
 
 date: 2023-03-07
 last_modified_at: 2023-03-19
