@@ -11,11 +11,18 @@ ul.page-category .post-date {
   color: var(--c-l-gray); 
   font-size: .9em;
 }
+
+ul.page-category .post-excerpt a {
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
 ul.page-category .post-excerpt a * { 
   font-size: 14px; 
   font-weight: normal;
-  display: inline;
 }
+
 ul.page-category .post-excerpt ul { padding-left: 0; }
 
 
