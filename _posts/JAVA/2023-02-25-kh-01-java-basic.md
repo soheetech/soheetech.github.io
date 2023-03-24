@@ -6,7 +6,7 @@ tag: Theory
 title: "[KH/JAVA] 자바(JAVA) 프로그래밍 기초"
 
 date: 2023-02-20
-last_modified_at: 2023-03-01
+last_modified_at: 2023-03-25
 ---
 
 
@@ -19,6 +19,7 @@ last_modified_at: 2023-03-01
 ## 프로그래밍 언어 순위
 - [TIOBE Index](https://www.tiobe.com/tiobe-index/) : 프로그래밍 언어의 인기도를 나타내는 지표, 검색엔진 검색 결과 수로 순위를 매김
 - [PYPL](http://pypl.github.io/PYPL.html) : 구글 트렌드 통계 데이터를 기반으로 특정 프로그래밍 언어 튜토리얼이 검색된 수로 순위를 매김
+
 
 # JAVA 프로그래밍 언어 특징
 - C/C++ 언어와 유사(문법적)하나 단순하여 사용하기 쉬운 언어 
@@ -44,20 +45,24 @@ last_modified_at: 2023-03-01
 - 보안성
   + 바이트코드는 JVM에서 실행되므로 문제가 발생해도 OS나 컴퓨터 자원에 직접적인 영향 X 
 
+
 # Java 프로그램
 - Java 프로그래밍 언어로 작성된 후 컴파일되어 Java 플랫폼에서 실행될 수 있는 프로그램
-  + 확장자 .class
+  + 확장자 `.class`
 - Java 언어로 작성된 소스 파일
-  + 확장자 .java
+  + 확장자 `.java`
 - 클래스(class) 파일 또는 바이트코드(bytecode)라고도 함
-  + 바이트 코드(=클래스 파일)
-    * Java 소스를 컴파일한 결과물
-    * 확장자는 .class
-    * 자바 플랫폼의 JVM에서 실행 가능한 코드로 컴퓨터상에서 직접적으로 실행될 수 있는 기계어가 아님.
+
+## 바이트 코드(=클래스 파일)
+- Java 소스를 컴파일한 결과물
+- 확장자는 `.class`
+- 자바 플랫폼의 JVM에서 실행 가능한 코드
+- 컴퓨터상에서 직접적으로 실행될 수 있는 기계어가 아님.
+- "write once, run anywhere."
 
 ## Java 애플리케이션
 - 일반적인 운영체제에 설치된 Java 플랫폼에서 바로 실행되는 Java 프로그램
-- 실행되려면 main() 함수를 하나 포함해야 하고 main() 함수에서 실행이 시작됨 
+- 실행되려면 `main()` 함수를 하나 포함해야 하고 `main()` 함수에서 실행이 시작됨 
 
 ## Java 애플릿
 - JVM을 탑재한 웹 브라우저에서 실행되는 Java 프로그램
@@ -66,11 +71,12 @@ last_modified_at: 2023-03-01
 
 ## Java 프로그램 실행 순서
 
-> 코드 작성(.java) → 실행(Ctrl+F11) → 컴파일러(Compiler) 번역 : byte code(.class) → JVM 전달 → JVM : 인터프리터(Interpreter) 방식으로 한줄씩 해석
+> 자바 소스 파일(.java) → 실행 → 컴파일러(Compiler) 번역 → 자바 바이트 코드(byte code/.class) → JVM 전달 → JVM : 인터프리터(Interpreter) 방식으로 한줄씩 해석
 
 <small>컴파일러(Compiler) : 코드를 2진수(0, 1)로 변환하는 번역기</small>
  
-# Java 플랫폼
+ 
+# Java 플랫폼(Platform)
 ## 일반적 플랫폼
 - 프로그램이 실행되는 하드웨어 또는 소프트웨어 환경
 - 대부분의 플랫폼은 기반이 되는 하나의 하드웨어와 거기에 설치된 운영체제를 합친 조합 
@@ -80,12 +86,12 @@ last_modified_at: 2023-03-01
   + cf. C언어의 경우 운영체제가 바로 프로그램의 실행환경이 됨
 - 소프트웨어 플랫폼으로 여러 다른 하드웨어에 설치될 수 있으며 운영체제에 적합한 Java 플랫폼을 설치해야함
 - 운영체제와 상관없이 Java 플랫폼이 설치되어 있는 곳이면 어디에서든 실행이 가능함
-  + "write once, run anywhere."
 - Java VM과 Java API로 구성됨
 - JVM은 실행환경을 제공하는 가상의 기계로 Java 플랫폼의 기초가 되며 여러 하드웨어 플랫폼에 설치될 수 있음
 - Java API : 프로그램에 사용되도록 이미 만들어져 제공되는 것, 유용한 기능을 제공하는 소프트웨어 컴포넌트들
 - 바이트코드는 컴퓨터상에서 직접 수행되는 네이티브 코드보다 느릴 수 있으나 컴파일러와 가상기계의 발전을 통해 성능을 유사한 수준으로 높일 수 있음
 
+![image](https://user-images.githubusercontent.com/121299334/227618295-ae02e4bc-e6d1-4245-8341-a1d6bbd6dbee.png)
 
 
 ## JVM(Java Virtual Machine)
@@ -95,23 +101,29 @@ last_modified_at: 2023-03-01
 - new 연산자에 의해 할당되었던 메모리를 자동으로 수집(=메모리 정리)하는 가비지 컬렉션(garbage collection)을 수행함
 - 운영체제에 관계없이 독립적으로 동작함 
 
+![image](https://user-images.githubusercontent.com/121299334/227618484-d7c7d443-5f16-41d2-ba0b-8050527f1ae9.png)
+
+
 ## JVM 메모리(RAM) 구조
-- Static 
-  + static 예약어로 선정된 필드, 메소드가 저장되는 공간.
-  + 클래스 변수 등
-- Heap 
-  + new 연산자에 의해 동적으로 할당하고 저장되는 공간.
-  + 객체, 배열 등
-- Stack
-  + 메소드를 호출하면 자동생성, 메소드가 끝나면 자동소멸.
-  + 지역변수, 매개변수, 메소드 호출 등 
+
+### Static 
+- `static` 예약어로 선정된 필드, 메소드가 저장되는 공간.
+- 클래스 변수 등
+
+### Heap 
+- `new` 연산자에 의해 동적으로 할당하고 저장되는 공간.
+- 객체, 배열 등
+
+### Stack
+- 메소드를 호출하면 자동생성, 메소드가 끝나면 자동소멸.
+- 지역변수, 매개변수, 메소드 호출 등 
 
 ## Java API(Application Programming Interface)
 - Java 프로그램의 개발(실행)에 필요한 각종 클래스 라이브러리(library)와 인터페이스들을 묶은 패키지(클래스 묶음)들로 구성됨
 - 패키지들은 계층 구조로 분류되며 상위 패키지와 하위 패키지를 구분하기 위해 표기법을 사용함
 - Java 플랫폼에 기본으로 포함된 기본(핵심) API와 그 외의 확장 API로 구분됨
-- 패키지 java.lang은 최상위 패키지 java에 포함되어 있는 서브 패키지 lang을 의미함
-- java.util.Vector는 java.util 패키지에 포함되어 있는 클래스 Vector를 의미함 
+- 패키지 `java.lang`은 최상위 패키지 java에 포함되어 있는 서브 패키지 `lang`을 의미함
+- `java.util.Vector`는 `java.util` 패키지에 포함되어 있는 클래스 `Vector`를 의미함 
 
 ## JDK(=Java Software Development Kit)
 - Java 소스 코드의 컴파일 및 실행에 필요한 Java 컴파일러
@@ -134,7 +146,8 @@ last_modified_at: 2023-03-01
 //                컴파일러는 /*와 */ 사이의 내용을 무시함
 // 2) /** ... */ : 소스 코드 맨 앞에 소스 코드에 대한 전반적인 설명을 적기 위해 사용함
 //                 컴파일러가 사이의 내용을 무시함
-//                 javadoc 유틸리티 사용 시 주석 안의 문장을 자동으로 추출 → 매뉴얼 생성 가능
+//                 javadoc 유틸리티 사용 시 주석 안의 문장을 자동으로 추출
+//				   → 매뉴얼(API 문서) 생성 가능
 // 3) // ... : 한 줄 주석
 //             컴파일러가 '//'를 만나면 같은 라인에서 그 이후의 내용을 무시함
 ```
@@ -145,8 +158,11 @@ last_modified_at: 2023-03-01
  - 서로 관련된 코드들을 그룹으로 나누어 별도의 클래스를 구성하고 클래스들이 모여 하나의 Java 애플리케이션을 구성함. 
  
 ``` java
- public class 클래스명 { ...}
- class 클래스명 { ...}
+public class 클래스명 { ...}
+// public class는 파일에 최대 1개
+// 파일명은 '퍼블릭클래스명.java'
+
+class 클래스명 { ...}
  ``` 
 
 ## main() method
@@ -165,17 +181,17 @@ public class 클래스명 {
 
 ## 출력
 ```java
- System.out.print(); 
- // () 안의 내용을 출력함
+// System.out : 표준 출력을 담당하는 객체
+
+System.out.print(); 
+// () 안의 내용을 출력함
  
- System.out.println(); 
- // () 안의 내용을 출력하고 줄바꿈
- 
- // System.out : 표준 출력을 담당하는 객체
+System.out.println(); 
+// () 안의 내용을 출력하고 줄바꿈
 ``` 
 
-## 실행
+## 명령 프롬포트를 이용해 실행하는 방법
 
-> 프로그램 작성(Hello.java) → 컴파일 명령(javac Hello.java) : 클래스이름.class 생성 → 실행 명령(java Hello) : `main()` 메소드
+> 프로그램 작성(Hello.java) → 컴파일 명령(javac Hello.java) : 클래스이름.class 생성 → 실행 명령(java Hello) : `main()` 메소드 실행
 
 
