@@ -3,40 +3,11 @@ layout: post
 
 category: JAVA
 tag: Theory
-title: "[KH/JAVA] 스캐너(Scanner)와 연산자(operator)"
+title: "[KH/JAVA] 연산자(operator)"
 
 date: 2023-02-22
-last_modified_at: 2023-02-25
+last_modified_at: 2023-03-25
 ---
-
-# 스캐너(Scanner)
-프로그램 실행 중 키보드 입력을 받을 수 있게 하는 역할
-
-```java
-import java.util.Scanner;
-// import : 다른 패키지에 존재하는 클래스를 얻어오는 구문
-// 미작성시 설계도(class)가 없어 스캐너를 못 만듦
-
-public class ScannerExample1 {
-  public static void main(String[] args) {
-    
-    Scanner sc = new Scanner(System.in);
-		// 프로그램 안에 스캐너라는 기계를 만듦
-    		// System.in : 키보드 입력
-    
-    int input = sc.nextInt();
-    // 입력받은 정수를 input 변수에 대입
-    // nextInt() : 다음에 입력된 정수를 읽어옴(키보드로 입력된 정수)
-    // next() : 다음 입력되는 한 단어(String) 읽어옴, 띄어쓰기 포함 X
-    // nextLine() : 다음 한 줄(Line) 읽어옴, 띄어쓰기 포함 O
-    
-    // nextChar()와 같은 문자 하나(char)를 입력 받는 기능은 별도로 없음
-    // (char)'a' != (string)"a"
-    // → nextLine().charAt(0)과 같은 방법으로 값을 입력받을 수 있음
-    
-  }
-}
-```
 
 # 연산자(operator)
 <div class="table-wrapper" markdown="block">
