@@ -14,13 +14,13 @@ ul.page-category .post-date {
 
 ul.page-category .post-excerpt a {
   display: block;
-  word-wrap: break-word;
   overflow: hidden;
 }
 
 ul.page-category .post-excerpt a * { 
   font-size: 14px; 
   font-weight: normal;
+  word-wrap: break-word;
 }
 
 ul.page-category .post-excerpt ul { padding-left: 0; }
