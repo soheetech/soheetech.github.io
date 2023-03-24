@@ -56,7 +56,7 @@ body, .book-summary {
 .book.with-summary .book-body .book-header {
     position: fixed;
     width: calc(100% - 300px);
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 .book-body .body-inner {
