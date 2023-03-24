@@ -1,9 +1,22 @@
 
 /* category post list */
+
+ul.page-category { padding-left: 0; }
 ul.page-category li { list-style: none; }
+
+ul.page-category .post-date { color: var(--c-l-gray); }
+ul.page-category .post-excerpt { white-space: pre; }
+ul.page-category .post-excerpt a * { 
+  font-size: 14px; 
+  font-weight: normal;
+  display: inline;
+}
+ul.page-category .post-excerpt ul { padding-left: 0; }
 
 
 /* post detail markdown */
+
+.markdown-section a { color: var(--c-black); }
 
 .markdown-section h1 { font-size: 1.25em; } /* 20px */
 .markdown-section>:first-child { font-size: 1.5em; } /* 24px */
