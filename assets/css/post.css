@@ -12,6 +12,8 @@ ul.page-category .post-date {
   font-size: .9em;
 }
 
+ul.page-category .post-title a { font-size: 1em; }
+
 ul.page-category .post-excerpt a {
   display: block;
   word-wrap: break-word;
