@@ -2,9 +2,15 @@
 /* category post list */
 
 ul.page-category { padding-left: 0; }
-ul.page-category li { list-style: none; }
+ul.page-category li { 
+  list-style: none; 
+  margin-bottom: 2em;
+}
 
-ul.page-category .post-date { color: var(--c-l-gray); }
+ul.page-category .post-date { 
+  color: var(--c-l-gray); 
+  font-size: .9em;
+}
 ul.page-category .post-excerpt a * { 
   font-size: 14px; 
   font-weight: normal;
