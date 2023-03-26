@@ -32,10 +32,10 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 /* post detail markdown */
 
 .markdown-section { 
-  line-height: 37px; 
+  line-height: 40px; 
   background-image: url('/assets/images/common/bg-line.png');
 }
-.markdown-section p, .markdown-section li, .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6, .markdown-section div { 
+.markdown-section p, .markdown-section ol, .markdown-section ul, .markdown-section li, .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6, .markdown-section div { 
   padding: 0;
   margin: 0;
   font-size: 1em;
