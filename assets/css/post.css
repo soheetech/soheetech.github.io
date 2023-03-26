@@ -31,12 +31,12 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 /* post detail markdown */
 
+.markdown-section > p, .markdown-section li, .markdown-section > h1, .markdown-section > h2, .markdown-section > h3, .markdown-section > h4, .markdown-section > h5, .markdown-section > h6, .markdown-section > div { border-top: 2px solid var(--c-l-gray-border); }
+
 .markdown-section a { color: var(--c-black); }
 
-.markdown-section h1 { font-size: 1.25em; } /* 20px */
 .markdown-section>:first-child { font-size: 1.5em; } /* 24px */
-.markdown-section h2 { font-size: 1.125em; } /* 18px */
-.markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 { font-size: 1em; } /* 16px */
+.markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 { font-size: 1em; } /* 16px */
 
 .markdown-section code {
   color: #D63206;
