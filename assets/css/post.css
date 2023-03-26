@@ -34,7 +34,6 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 .markdown-section { 
   line-height: 40px; 
   background-image: url('/assets/images/common/bg-line.png');
-  padding: 40px 0;
   font-family: 'NanumBarunPen';
 }
 .markdown-section p, .markdown-section ol, .markdown-section ul, .markdown-section li, .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6, .markdown-section div { 
@@ -62,7 +61,6 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 .markdown-section>:first-child, .markdown-section .post-date, .markdown-section .page-title { /* post-category */
   text-align: center;
-  font-weight: bold;
 }
 
 
