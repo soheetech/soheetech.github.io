@@ -3,7 +3,7 @@ layout: post
 
 category: GitHub
 tag: Error
-title: "Error: Docker pull failed with exit code 1"
+title: "[GitHub/Error] Docker pull failed with exit code 1"
 
 date: 2023-03-26
 last_modified_at: 2023-03-26
