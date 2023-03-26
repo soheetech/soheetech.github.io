@@ -103,7 +103,7 @@ last_modified_at: 2023-03-26
 - 여러 인터페이스를 상속받는 다중 상속도 가능함
 
 ```java
-interface 자식인터페이스 extends 부모인터페이스 { … }
+interface 자식인터페이스 extends 부모인터페이스 { }
 ```
 
 ### 자식 클래스가 부모 인터페이스를 상속받는 경우
@@ -111,8 +111,8 @@ interface 자식인터페이스 extends 부모인터페이스 { … }
 - 구현을 통해 클래스를 정의할 때 implements를 사용
 
 ```java
-class 자식클래스 implements 부모인터페이스 { … }
-class 자식클래스 extends 부모클래스 implements 부모인터페이스1, 부모인터페이스2 {…}
+class 자식클래스 implements 부모인터페이스 { }
+class 자식클래스 extends 부모클래스 implements 부모인터페이스1, 부모인터페이스2 { }
 ```
 
 ## 인터페이스 사용 시 장점
