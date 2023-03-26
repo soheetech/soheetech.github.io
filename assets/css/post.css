@@ -43,6 +43,10 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
   font-weight: normal;
 }
 
+.markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 { font-weight: bold; }
+
+.markdown-section h1 { font-size: 1.1em; }
+
 .markdown-section a { color: var(--c-black); }
 
 .markdown-section code {
@@ -59,9 +63,27 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 /* post datail info */
 
-.markdown-section>:first-child, .markdown-section .post-date, .markdown-section .page-title { /* post-category */
+.markdown-section .post-category {
+  color: var(--c-l-gray);
+  margin-bottom: 38px;
+  border-bottom: 2px solid #d0d3da;
+}
+
+.markdown-section .post-category::before {
+  content: 'Category : ';
+}
+
+.markdown-section .post-date, .markdown-section .page-title { /* post-category */
   text-align: center;
 }
 
+.markdown-section .page-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
-
+.markdown-section .post-date {
+  font-size: .9em;
+  color: var(--c-l-gray);
+  margin-bottom: 40px;
+}
