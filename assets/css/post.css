@@ -34,7 +34,6 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 .markdown-section { 
   line-height: 40px; 
   background-image: url('/assets/images/common/bg-line.png');
-  position: relative;
   padding-top: 120px;
 }
 .markdown-section p, .markdown-section ol, .markdown-section ul, .markdown-section li, .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6, .markdown-section div { 
@@ -62,15 +61,8 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 .markdown-section>:first-child { /* post-category */
   text-align: center;
-  border-radius: 50%;
-  border: 2px solid var(--c-black);
-  font-size: 1em;
-  position: absolute;
-  top: 62px;
-  left: 48%;
-  padding: 7px 20px;
-  line-height: 1;
   font-family: 'Pangolin', cursive;
+  font-size: 13px;
 }
 
 .markdown-section .post-date {
