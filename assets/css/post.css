@@ -70,6 +70,7 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
   left: 48%;
   padding: 7px 20px;
   line-height: 1;
+  font-family: 'Pangolin', cursive;
 }
 
 .markdown-section .post-date {
