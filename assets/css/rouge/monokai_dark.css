@@ -5,7 +5,7 @@ div.highlighter-rouge, figure.highlight {
   line-height: 40px;
 }
 
-pre.highlight { padding: 1em 0.3em; }
+pre.highlight { padding: 20px 5px; }
 
 .highlight table, .highlight table td, .highlight table th, .highlight table tr { 
   border: 0;
