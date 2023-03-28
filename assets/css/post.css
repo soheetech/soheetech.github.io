@@ -61,6 +61,8 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 .markdown-section pre { padding: 0 20px; }
 
+.markdown-section blockquote { margin-bottom: 0; }
+
 
 /* post datail info */
 
