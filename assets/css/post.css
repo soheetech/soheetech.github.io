@@ -59,6 +59,7 @@ ul.page-category .post-excerpt ul { padding-left: 0; }
 
 .markdown-section table th { background: var(--c-l-gray-bg); }
 
+.markdown-section pre { padding: 0 20px; }
 
 
 /* post datail info */
