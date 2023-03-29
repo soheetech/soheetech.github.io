@@ -3,7 +3,7 @@ layout: post
 
 category: JAVA
 tag: Theory
-title: "[KH/JAVA] 패키지(Package)"
+title: "[KNOU/JAVA] 패키지(Package)"
 
 date: 2023-03-29
 last_modified_at: 2023-03-29
