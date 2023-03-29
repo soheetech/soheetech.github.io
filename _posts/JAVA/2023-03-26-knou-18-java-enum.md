@@ -3,7 +3,7 @@ layout: post
 
 category: JAVA
 tag: Theory
-title: "[KH/JAVA] 열거 자료형"
+title: "[KNOU/JAVA] 열거 자료형"
 
 date: 2023-03-26
 last_modified_at: 2023-03-26
