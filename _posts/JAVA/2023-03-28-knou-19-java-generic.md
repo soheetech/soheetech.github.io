@@ -3,7 +3,7 @@ layout: post
 
 category: JAVA
 tag: Theory
-title: "[KH/JAVA] 제네릭(Generic)"
+title: "[KNOU/JAVA] 제네릭(Generic)"
 
 date: 2023-03-28
 last_modified_at: 2023-03-28
