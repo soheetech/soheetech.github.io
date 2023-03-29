@@ -3,7 +3,7 @@ layout: post
 
 category: JAVA
 tag: Theory
-title: "[KH/JAVA] 람다식(Lambda)"
+title: "[KNOU/JAVA] 람다식(Lambda)"
 
 date: 2023-03-28
 last_modified_at: 2023-03-28
