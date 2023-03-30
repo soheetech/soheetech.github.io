@@ -99,6 +99,7 @@ BufferedInputStream bis = new BufferedInputSteam(fis);
 ```
 
 
+
 # 바이트 스트림
 
 ## InputStream 클래스
