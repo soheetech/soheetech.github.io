@@ -236,16 +236,82 @@ setSize(width, height)
 
 ## 배치 관리자의 종류
 
+<div class="table-wrapper" markdown="block">
+
+| 배치 관리자 | 설명 |
+| :-: | :- |
+| BorderLayout | 중앙, 동, 서, 남, 북에 배치함<br />중앙이 크게 설정되고 나머지는 최소한으로 설정<br />Frame, Window, Dialog의 기본 배치 관리자 |
+| FlowLayout | 한 행에 순서대로 수평으로 배치(모자라면 다음 행에) 선호 크기로 배치함<br />Panel의 기본 배치 관리자 |
+| GridLayout | 바둑판 모양으로 격자 형식으로 배치<br />컴포넌트 크기가 동일함 |
+| CardLayout | 한 번에 한 장의 카드(컴포넌트)를 보여줌 |
+
+</div>
+
 
 ## BorderLayout
+Center, East, West, South, North 영역에 배치
+
+- 한 영역에 컴포넌트 1개만 배치함
+- 컴포넌트 사이의 수평/수직 간격을 지정할 수 있음
+- 컨테이너 크기를 확장하면 남북의 컴포넌트는 수평으로 동서는 수직으로 확장됨, 중앙이 가장 커짐
+
+### 생성자
+
+```java
+BorderLayout(int hgap, int vgap)
+```
 
 
 ## FlowLayout
+자식 컴포넌트를 한 줄에 차례로 배치
+
+- 공간이 모자라면 다음 줄에 배치함
+- 적정 크기(preferred size)로 배치함
+- 중앙/좌/우로 정렬, 수평/수직 간격을 지정할 수 있음
+
+### 생성자
+
+```java
+FlowLayout()
+FlowLayout(int align, int hgap, int vgap)
+// align은 FlowLayout.LEFT, FlowLayout.RIGHT, FlowLayout.CENTER,
+// FlowLayout.LEADING, FlowLayout.TRAILING 중 하나
+```
 
 
 ## GridLayout
+- 바둑판 모양의 격자에 차례로 배치함
+  + 좌에서 우로(변경 가능), 위에서 아래로
+- 자식 컴포넌트들의 크기는 동일
+
+### 생성자
+
+```java
+GridLayout(int rows, int cols, int hgap, int vgap)
+// rows 또는 cols 중 하나가 0인 경우 임의 개수 가능
+```
 
 
 ## CardLayout
 
+- 자식 컴포넌트를 카드로 간주
+- 한번에 하나의 카드만 보여줌
+
+### 생성자
+
+```java
+CardLayout(int hgap, int vgap)
+```
+
+### 메소드
+
+```java
+void first(Container parent)
+// 컨테이너의 첫 번째 카드를 보여줌
+
+void next(Container parent)
+void show(Container parent, String name)
+// add()할 때 이름을 지정한 경우,
+// 해당 이름의 카드를 보여줌
+```
 
